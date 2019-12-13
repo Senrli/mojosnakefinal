@@ -1,0 +1,202 @@
+module vga_cga(
+  input rst,           // reset: restarts frame
+  input clk,				// master clock for the VGA
+  input wr_en,			//write enable for vram
+  input	wr_addr[12],			//write address
+  input wr_data[16],			//write data
+
+  output r[8],
+  output g[8],
+  output b[8],
+	
+  output o_hs,           // horizontal sync
+  output o_vs,           // vertical sync
+  output o_blk,            //blanking signal
+  
+  output o_clk    
+  ) {
+
+  // xil_XXX modules aren't real modules but rather
+  // hardware primitives inside the FPGA.
+  
+  // The OODR2 is used to output the FPGA clock to
+  // an output pin because a clock can't be directly
+  // routed as an output.
+  xil_ODDR2 oddr (
+    #DDR_ALIGNMENT("NONE"),
+    #INIT(0),
+    #SRTYPE("SYNC")
+  );
+  
+  
+  //sig pix_clk;
+  sig scan_addr[12];
+  
+  const HS_STA = 16;              // horizontal sync start
+  const HS_END = 16 + 96;         // horizontal sync end
+  const HA_STA = 16 + 96 + 48;    // horizontal active pixel start
+  const VS_STA = 480 + 10;        // vertical sync start
+  const VS_END = 480 + 10 + 2;    // vertical sync end
+  const VA_END = 480;             // vertical active pixel end
+  const LINE   = 800;             // complete line (pixels)
+  const SCREEN = 525;             // complete screen (lines)
+  		
+  .clk(clk){
+    .rst(rst){
+  dff vga_ctr[1]; 
+  dff h_count[10];  // line position
+  dff v_count[10];  // screen position 
+  dff char_disp_delay_ctr[26]; //delay counter for the character display counter, for debug only
+  dff char_disp_ctr[8]; //character display counter, for debug only
+    }
+  }
+  
+  sig rd_addr[12];			//read address for vram
+  sig rd_data[8];
+  
+  sig o_x[10];          // current pixel x position
+  sig o_y[9];           // current pixel y position
+  
+  sig char_x[3];				//x val of the character
+  sig char_y[4];				//y val of the character
+  
+  sig char_row[5];			//row of character rom, in total 30 rows
+  sig char_col[7];			//columns of character rom, in total 80 cols
+
+
+  sig r_fg;
+  sig r_bg;
+  sig g_fg;
+  sig g_bg;
+  sig b_fg;
+  sig b_bg;
+  sig bright_fg;
+  sig bright_bg;
+
+  sig r_intensity[2];
+  sig g_intensity[2];
+  sig b_intensity[2];
+  
+  vram_cga vram(
+    .clk(clk),
+    .rst(rst),
+    .read_addr(rd_addr),
+    .write_en(wr_en),
+    .write_addr(wr_addr),
+    .write_data(wr_data)
+    );
+  
+  vga_0816_rom rom(
+    .row(char_y),
+    .col(char_x)
+    );
+
+  cga_color_lut cga_color_lut;
+  
+  
+  
+  always {
+  
+    // Connections for the ODDR2
+    oddr.C0 = clk;
+    oddr.C1 = ~clk;
+    oddr.CE = 1;
+    oddr.D0 = 0; // using 0 for D0 and 1 for D1 inverts the clock
+    oddr.D1 = 1; // because D0 is output on the rising edge of C0
+    oddr.R = 0;
+    oddr.S = 0;
+
+    //  data format for the character's second byte is as follows:
+    //- Bit 8 : Blue foreground
+    //- Bit 9 : Green foreground
+    //- Bit 10: Red foreground
+    //- Bit 11: Bright foreground
+    //- Bit 12: Blue background
+    //- Bit 13: Green background
+    //- Bit 14: Red background
+    //- Bit 15: Bright background; or blinking text
+    
+    r_fg = vram.out_char[10];
+    r_bg = vram.out_char[14];
+    g_fg = vram.out_char[9];
+    g_bg = vram.out_char[13];
+    b_fg = vram.out_char[8];
+    b_bg = vram.out_char[12];
+    bright_fg = vram.out_char[11];
+    bright_bg = vram.out_char[15];
+
+    r_intensity = c{(~rom.row_of_pixels)&r_bg&bright_bg|rom.row_of_pixels&r_fg&bright_fg, (~rom.row_of_pixels)&r_bg|rom.row_of_pixels&r_fg};
+    g_intensity = c{(~rom.row_of_pixels)&g_bg&bright_bg|rom.row_of_pixels&g_fg&bright_fg, (~rom.row_of_pixels)&g_bg|rom.row_of_pixels&g_fg};
+    b_intensity = c{(~rom.row_of_pixels)&b_bg&bright_bg|rom.row_of_pixels&b_fg&bright_fg, (~rom.row_of_pixels)&b_bg|rom.row_of_pixels&b_fg};
+  
+    o_clk = oddr.Q;
+    vga_ctr.d = vga_ctr.q + 1;  //generation for VGA clock
+    char_disp_delay_ctr.d = char_disp_delay_ctr.q +1; //generation for debug char clock
+    
+    if (char_disp_delay_ctr.q==50000000){
+      char_disp_ctr.d=char_disp_ctr.q+1;      //increment after 1s delay
+      }
+    
+
+    if (1) {
+
+			if (h_count.q == LINE-1){  // end of line
+
+				h_count.d = 0;
+				v_count.d = v_count.q + 1;
+			}
+			else 
+				h_count.d = h_count.q + 1;			
+			if (v_count.q == SCREEN-1)  // end of screen
+				v_count.d = 0;
+		}
+    
+    		// generate sync signals (active low for 640x480)
+		o_hs = ~((h_count.q >= HS_STA) & (h_count.q < HS_END));
+		o_vs = ~((v_count.q >= VS_STA) & (v_count.q < VS_END));
+		
+		
+    		// keep x and y bound within the active pixels
+		o_x = (h_count.q < HA_STA) ? 0 : (h_count.q - HA_STA);
+		o_y = (v_count.q >= VA_END) ? (VA_END - 1) : (v_count.q);
+    
+    o_blk = h_count.q >= HA_STA;
+    
+		char_row = o_y/16;
+		char_col = o_x/8;
+		
+		char_y = o_y- char_row*16;
+		char_x = o_x- char_col*8 -1;
+    
+    scan_addr = char_row*80+char_col;
+		
+		rd_addr = char_row*80+char_col;
+    
+
+    rom.ascii_code = vram.out_char[7:0];
+
+    
+   if (h_count.q < HA_STA || v_count.q >=480){ 
+		r = 8x{0};
+		g = 8x{0};
+		b = 8x{0};
+    }else{
+
+      if(rom.row_of_pixels){
+        cga_color_lut.r = r_fg;
+        cga_color_lut.g = g_fg;
+        cga_color_lut.b = b_fg;
+        cga_color_lut.bright = bright_fg;
+      }else{
+        cga_color_lut.r = r_bg;
+        cga_color_lut.g = g_bg;
+        cga_color_lut.b = b_bg;
+        cga_color_lut.bright = bright_bg;
+      }
+
+      r = cga_color_lut.r_cga_out;
+      g = cga_color_lut.g_cga_out;
+      b = cga_color_lut.b_cga_out;
+    
+  }
+}

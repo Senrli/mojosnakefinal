@@ -1,0 +1,19 @@
+module game_overlay (
+    input state,
+    input clk,  // clock
+    input rst,  // reset
+    output out
+  ) {
+
+  dff overlay_ctr[8](
+    .clk(clk), 
+    .rst(rst)
+  );
+  
+  always {
+    //case(overlay_ctr.q){
+    //  0:
+        out = 0;
+    //}
+  }
+}

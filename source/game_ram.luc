@@ -1,0 +1,25 @@
+module game_ram (
+    input clk,  // clock
+    input rst,  // reset
+    input read_addr[16],
+    input write_en,
+    input write_data[16],
+    input write_addr[11],
+    output out_char[16]
+  ) {
+
+  simple_ram disp_game_mem(
+    #SIZE(16), 
+    #DEPTH(1904), 
+    .clk(clk),  
+    .write_en(write_en),
+    .address(write_addr),
+    .write_data(write_data)
+  );  
+  
+  
+  
+  always {
+    out_char = 0;
+  }
+}

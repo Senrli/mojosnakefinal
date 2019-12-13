@@ -1,0 +1,29 @@
+module hex_boole (
+    input alufn[6],  // alufn[5:0]
+    input a[16],     // a[15:0]
+    input b[16],     // b[15:0]
+    output out[16]   // 16bit output value
+  ) {
+
+  always {
+    case(alufn[3:0])
+    {
+      b1000: 
+        out = a & b;     // and      
+      b1110: 
+        out = a | b;     // or      
+      b0110: 
+        out = a ^ b;     // xor
+      b1010: 
+        out = a;         // "A"
+      b0001:  
+        out = ~(a | b);  // nor
+      b0010:   
+        out = ~(a & b);  // nand
+      b0011:    
+        out = ~(a ^ b);  // xnor
+      default:
+        out = 0;
+  }
+}
+}

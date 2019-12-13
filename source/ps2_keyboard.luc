@@ -1,0 +1,158 @@
+module ps2_keyboard(
+    input clk,		//50M clock
+    input rst,	//reset
+    input ps2k_clk,	//PS2 plug clock signal in
+    input ps2k_data,		//PS2 plug data signal in
+    output ps2_state,		//current state of the keyboard, if pressed ps2_state=1 
+    output ps2_byte[8]    //which key has been pressed
+    ){
+ 
+    .clk(clk){
+        .rst(rst){
+            dff ps2k_clk_r0;        //ps2k_clk status register
+            dff ps2k_clk_r1;
+            dff ps2k_clk_r2;
+
+
+            dff ps2_byte_r[8];		//save one byte received from the keyboard
+            dff temp_data[8];	    //temporary data receiving
+            dff num[4];				//number counter
+
+            dff key_f0;		//f0 flag, set high if receiving a f0
+            dff ps2_state_r;	//keyboard status，ps2_state_r=1 meaning key pressed
+        }
+    }
+
+    //sig pos_ps2k_clk; 	// ps2k_clk rising edge signal bit
+    sig neg_ps2k_clk;	// ps2k_clk falling edge signals bit
+
+
+
+    always{
+        //check the logic difference between the rising edge and the falling edge and then make a deduction
+        //if the first is high then the second is low, then we toggle into the receiving mode
+        ps2k_clk_r0.d = ps2k_clk;
+        ps2k_clk_r1.d = ps2k_clk_r0.q;
+        ps2k_clk_r2.d = ps2k_clk_r1.q;
+
+        neg_ps2k_clk = (~ps2k_clk_r0.q) & ps2k_clk_r1.q;	//take the logic value of the falling edge
+
+
+        if(neg_ps2k_clk){       //if we detect a falling edge
+            case(num.q){
+                //11 bits in total, including 8 data, 1 start, 1 stop and 1 parity
+		        //define a buffer of 1 byte
+                0:	num.d = num.q + 1;
+				1:	
+					num.d = num.q + 1;
+					temp_data.d[0] = ps2k_data;	//bit0
+
+				2:
+					num.d = num.q + 1;
+					temp_data.d[1] = ps2k_data;	//bit1
+
+				3:
+					num.d = num.q + 1;
+					temp_data.d[2] = ps2k_data;	//bit2
+
+				4:
+					num.d = num.q + 1;
+					temp_data.d[3] = ps2k_data;	//bit3
+
+				5:	
+					num.d = num.q + 1;
+					temp_data.d[4] = ps2k_data;	//bit4
+
+				6:	
+					num.d = num.q + 1;
+					temp_data.d[5] = ps2k_data;	//bit5
+
+				7:	
+					num.d = num.q + 1;
+				    temp_data.d[6] = ps2k_data;	//bit6
+
+				8:	
+					num.d = num.q + 1;
+					temp_data.d[7] = ps2k_data;	//bit7
+
+				9:	
+					num.d = num.q + 1;	//even parity check, we ignore for now
+
+				10: 
+					num.d = 0;	//clear number counter
+
+				default: 
+                    num.d = num.q;
+            }
+        }
+
+        if(num.q == 4d10){                  //finish capturing one frame
+            if(temp_data.q == 8hf0){        //decide whether it is the break byte
+                key_f0.d = 1b1;             //if yes then write a 1 into register
+            }
+            else{                           //if it is not, meaning just a normal byte
+                if(!key_f0.q){              //if previously a f0 has not been detected
+                    ps2_state_r.d = 1b1;    //set the register high
+					ps2_byte_r.d = temp_data.q;	//save the key 
+                }
+                else{                       //if there is a f0
+                    ps2_state_r.d = 1b0;    //remove the state
+					key_f0.d = 1b0;         //set that register low
+                }
+            }
+        }
+
+        case(ps2_byte_r.q){
+            8h15: ps2_byte = 8h51;	//Q
+		    8h1d: ps2_byte = 8h57;	//W
+		    8h24: ps2_byte = 8h45;	//E
+		    8h2d: ps2_byte = 8h52;	//R
+		    8h2c: ps2_byte = 8h54;	//T
+		    8h35: ps2_byte = 8h59;	//Y
+		    8h3c: ps2_byte = 8h55;	//U
+		    8h43: ps2_byte = 8h49;	//I
+		    8h44: ps2_byte = 8h4f;	//O
+		    8h4d: ps2_byte = 8h50;	//P				  	
+		    8h1c: ps2_byte = 8h41;	//A
+		    8h1b: ps2_byte = 8h53;	//S
+		    8h23: ps2_byte = 8h44;	//D
+		    8h2b: ps2_byte = 8h46;	//F
+		    8h34: ps2_byte = 8h47;	//G
+		    8h33: ps2_byte = 8h48;	//H
+		    8h3b: ps2_byte = 8h4a;	//J
+		    8h42: ps2_byte = 8h4b;	//K
+		    8h4b: ps2_byte = 8h4c;	//L
+		    8h1a: ps2_byte = 8h5a;	//Z
+		    8h22: ps2_byte = 8h58;	//X
+		    8h21: ps2_byte = 8h43;	//C
+		    8h2a: ps2_byte = 8h56;	//V
+		    8h32: ps2_byte = 8h42;	//B
+		    8h31: ps2_byte = 8h4e;	//N
+		    8h3a: ps2_byte = 8h4d;	//M
+
+            8h75: ps2_byte = 8h18;    //UP
+            8h72: ps2_byte = 8h19;    //DOWN
+            8h6b: ps2_byte = 8h1b;    //LEFT
+            8h74: ps2_byte = 8h1a;    //RIGHT
+
+            8h16: ps2_byte = 8h31;    //1
+            8h1e: ps2_byte = 8h32;    //2
+            8h26: ps2_byte = 8h33;    //3
+            8h25: ps2_byte = 8h34;    //4
+            8h2e: ps2_byte = 8h35;    //5
+            8h36: ps2_byte = 8h36;    //6
+            8h3d: ps2_byte = 8h37;    //7
+            8h3e: ps2_byte = 8h38;    //8
+            8h46: ps2_byte = 8h39;    //9
+            8h45: ps2_byte = 8h30;    //0
+
+            default: ps2_byte = 8d00;        //nothing
+        }
+     
+    ps2_state = ps2_state_r.q;
+    }
+
+}
+
+
+ 

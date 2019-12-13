@@ -1,0 +1,23 @@
+module vga_0816_rom (
+  input  ascii_code[8],
+  input  row[4],
+  input  col[3],
+  output row_of_pixels
+  ) {
+
+  vga_0816_rom_007f rom_007f(
+    .ascii_segment(ascii_code[6:0]),
+    .row(row),
+    .col(col)
+  );
+  
+  vga_0816_rom_80ff rom_80ff(
+    .ascii_segment(ascii_code[6:0]),
+    .row(row),
+    .col(col)
+  );
+  
+  always {
+    row_of_pixels = (~ascii_code[7])? rom_007f.pixel: rom_80ff.pixel;
+  }
+}

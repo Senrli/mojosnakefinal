@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Fri Dec 13 17:43:36 2019
+# Process ID: 226848
+# Log file: C:/Users/Sen/Desktop/MojoSnakeFINAL/MojoSnake/work/planAhead/MojoSnake/planAhead.log
+# Journal file: C:/Users/Sen/Desktop/MojoSnakeFINAL/MojoSnake/work/planAhead/MojoSnake\planAhead.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:\Users\Sen\Desktop\MojoSnakeFINAL\MojoSnake\work\planAhead\MojoSnake\MojoSnake.ppr}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+open_rtl_design -name rtl_1

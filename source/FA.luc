@@ -1,0 +1,18 @@
+module fa (
+    input a,
+    input b,
+    input cin,
+    output sum,
+    output cout
+  ) {
+
+sig p;  //propagation
+sig g;  //generation
+  
+  always {
+    p = a ^ b;
+    g = a & b;
+    sum = p ^ cin;
+    cout = g | (cin & p);
+  }
+}

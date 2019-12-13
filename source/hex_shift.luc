@@ -1,0 +1,26 @@
+module hex_shift (
+
+    input alufn[6],  // alufn[5:0]
+    input a[16],   // input a[15:0]
+    input b[16],   // number of bits shifted
+    
+    output out[16] //output value
+    
+  ) {
+
+  always {
+    case(alufn[1:0])
+    {
+      b00:
+        out = a << b;            //shift left
+      b01:
+        out = a >> b;            //shift right
+      b10:
+        out = $signed(a) <<< b;  //shift left with signed bit
+      b11:
+        out = $signed(a) >>> b;  //shift right with signed bit
+      default:
+        out = a; //default no change
+    }
+  }
+}

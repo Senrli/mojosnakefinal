@@ -1,0 +1,8 @@
+NET "sound_out<7>" LOC = P134 | IOSTANDARD = LVTTL;
+NET "sound_out<6>" LOC = P133 | IOSTANDARD = LVTTL;
+NET "sound_out<5>" LOC = P132 | IOSTANDARD = LVTTL;
+NET "sound_out<4>" LOC = P131 | IOSTANDARD = LVTTL;
+NET "sound_out<3 >" LOC = P127 | IOSTANDARD = LVTTL;
+NET "sound_out<2>" LOC = P126 | IOSTANDARD = LVTTL;
+NET "sound_out<1>" LOC = P124 | IOSTANDARD = LVTTL;
+NET "sound_out<0>" LOC = P123 | IOSTANDARD = LVTTL;

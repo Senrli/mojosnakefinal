@@ -1,0 +1,36 @@
+module direction_lut (
+    input dir_state[8],
+    output travel_dir[4]
+  ) {
+
+  always {
+    case(dir_state){
+      8b10001000: travel_dir = 4b1000; // LL: L
+      8b10000100: travel_dir = 4b1000; // LR: L 
+      8b10000010: travel_dir = 4b0010; // LU: U 
+      8b10000001: travel_dir = 4b0001; // LD: D 
+      
+      8b01001000: travel_dir = 4b0100; // RL: R 
+      8b01000100: travel_dir = 4b0100; // RR: R 
+      8b01000010: travel_dir = 4b0010; // RU: U 
+      8b01000001: travel_dir = 4b0001; // RD: D
+      
+      8b00101000: travel_dir = 4b1000; // UL: L 
+      8b00100100: travel_dir = 4b0100; // UR: R 
+      8b00100010: travel_dir = 4b0010; // UU: U 
+      8b00100001: travel_dir = 4b0010; // UD: U
+      
+      8b00011000: travel_dir = 4b1000; // DL: L 
+      8b00010100: travel_dir = 4b0100; // DR: R 
+      8b00010010: travel_dir = 4b0001; // DU: D 
+      8b00010001: travel_dir = 4b0001; // DD: D
+      
+      //8b10000000: travel_dir = 4b1000; // LX: L 
+      //8b01000000: travel_dir = 4b0100; // RX: R 
+      //8b00100000: travel_dir = 4b0010; // UX: U 
+      //8b00010000: travel_dir = 4b0001; // DX: D
+    
+      default: travel_dir = dir_state[7:4];      
+    }
+  }
+}

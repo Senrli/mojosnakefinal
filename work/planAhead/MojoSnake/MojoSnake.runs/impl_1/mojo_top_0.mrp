@@ -1,0 +1,605 @@
+Release 14.7 Map P.20131013 (nt64)
+Xilinx Mapping Report File for Design 'mojo_top_0'
+
+Design Information
+------------------
+Command Line   : map -intstyle pa -w -pr b -mt on mojo_top_0.ngd 
+Target Device  : xc6slx9
+Target Package : tqg144
+Target Speed   : -2
+Mapper Version : spartan6 -- $Revision: 1.55 $
+Mapped Date    : Fri Dec 06 01:27:52 2019
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:    7
+Slice Logic Utilization:
+  Number of Slice Registers:                 1,306 out of  11,440   11%
+    Number used as Flip Flops:               1,047
+    Number used as Latches:                    246
+    Number used as Latch-thrus:                  0
+    Number used as AND/OR logics:               13
+  Number of Slice LUTs:                      4,681 out of   5,720   81%
+    Number used as logic:                    4,624 out of   5,720   80%
+      Number using O6 output only:           3,203
+      Number using O5 output only:             248
+      Number using O5 and O6:                1,173
+      Number used as ROM:                        0
+    Number used as Memory:                       5 out of   1,440    1%
+      Number used as Dual Port RAM:              0
+      Number used as Single Port RAM:            0
+      Number used as Shift Register:             5
+        Number using O6 output only:             5
+        Number using O5 output only:             0
+        Number using O5 and O6:                  0
+    Number used exclusively as route-thrus:     52
+      Number with same-slice register load:     38
+      Number with same-slice carry load:        14
+      Number with other load:                    0
+
+Slice Logic Distribution:
+  Number of occupied Slices:                 1,379 out of   1,430   96%
+  Number of MUXCYs used:                     1,860 out of   2,860   65%
+  Number of LUT Flip Flop pairs used:        4,745
+    Number with an unused Flip Flop:         3,570 out of   4,745   75%
+    Number with an unused LUT:                  64 out of   4,745    1%
+    Number of fully used LUT-FF pairs:       1,111 out of   4,745   23%
+    Number of unique control sets:              53
+    Number of slice register sites lost
+      to control set restrictions:             206 out of  11,440    1%
+
+  A LUT Flip Flop pair for this architecture represents one LUT paired with
+  one Flip Flop within a slice.  A control set is a unique combination of
+  clock, reset, set, and enable signals for a registered element.
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+IO Utilization:
+  Number of bonded IOBs:                        78 out of     102   76%
+    Number of LOCed IOBs:                       69 out of      78   88%
+    IOB Flip Flops:                             13
+
+Specific Feature Utilization:
+  Number of RAMB16BWERs:                         5 out of      32   15%
+  Number of RAMB8BWERs:                          0 out of      64    0%
+  Number of BUFIO2/BUFIO2_2CLKs:                 1 out of      32    3%
+    Number used as BUFIO2s:                      1
+    Number used as BUFIO2_2CLKs:                 0
+  Number of BUFIO2FB/BUFIO2FB_2CLKs:             1 out of      32    3%
+    Number used as BUFIO2FBs:                    1
+    Number used as BUFIO2FB_2CLKs:               0
+  Number of BUFG/BUFGMUXs:                       3 out of      16   18%
+    Number used as BUFGs:                        3
+    Number used as BUFGMUX:                      0
+  Number of DCM/DCM_CLKGENs:                     1 out of       4   25%
+    Number used as DCMs:                         1
+    Number used as DCM_CLKGENs:                  0
+  Number of ILOGIC2/ISERDES2s:                   5 out of     200    2%
+    Number used as ILOGIC2s:                     5
+    Number used as ISERDES2s:                    0
+  Number of IODELAY2/IODRP2/IODRP2_MCBs:         0 out of     200    0%
+  Number of OLOGIC2/OSERDES2s:                   8 out of     200    4%
+    Number used as OLOGIC2s:                     8
+    Number used as OSERDES2s:                    0
+  Number of BSCANs:                              0 out of       4    0%
+  Number of BUFHs:                               0 out of     128    0%
+  Number of BUFPLLs:                             0 out of       8    0%
+  Number of BUFPLL_MCBs:                         0 out of       4    0%
+  Number of DSP48A1s:                            4 out of      16   25%
+  Number of ICAPs:                               0 out of       1    0%
+  Number of MCBs:                                0 out of       2    0%
+  Number of PCILOGICSEs:                         0 out of       2    0%
+  Number of PLL_ADVs:                            0 out of       2    0%
+  Number of PMVs:                                0 out of       1    0%
+  Number of STARTUPs:                            0 out of       1    0%
+  Number of SUSPEND_SYNCs:                       0 out of       1    0%
+
+Average Fanout of Non-Clock Nets:                4.68
+
+Peak Memory Usage:  4645 MB
+Total REAL time to MAP completion:  52 secs 
+Total CPU time to MAP completion (all processors):   54 secs 
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Timing Report
+Section 11 - Configuration String Information
+Section 12 - Control Set Information
+Section 13 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+WARNING:Security:42 - Your software subscription period has lapsed. Your current
+version of Xilinx tools will continue to function, but you no longer qualify for
+Xilinx software updates or new releases.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   snake/debug_en_M_state_q[4]_OR_570_o is sourced by a combinatorial pin. This
+   is not good design practice. Use the CE pin to control the loading of data
+   into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   snake/M_state_q[4]_debug_wr_en_MUX_7678_o is sourced by a combinatorial pin.
+   This is not good design practice. Use the CE pin to control the loading of
+   data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net snake/_n6832 is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net snake/_n6621 is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net snake/_n6820 is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vga/M_h_count_q[9]_GND_297_o_OR_660_o is sourced by a combinatorial pin. This
+   is not good design practice. Use the CE pin to control the loading of data
+   into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   snake/debug_en_M_state_q[4]_OR_568_o is sourced by a combinatorial pin. This
+   is not good design practice. Use the CE pin to control the loading of data
+   into the flip-flop.
+
+Section 3 - Informational
+-------------------------
+INFO:Map:284 - Map is running with the multi-threading option on. Map currently
+   supports the use of up to 2 processors. Based on the the user options and
+   machine load, Map will use 2 processors during this run.
+INFO:Security:54 - 'xc6slx9' is a WebPack part.
+INFO:LIT:243 - Logical network b_right_b_IBUF has no load.
+INFO:LIT:395 - The above info message is repeated 22 more times for the
+   following (max. 5 shown):
+   b_up_b_IBUF,
+   spi_mosi_IBUF,
+   b_left_b_IBUF,
+   b_down_b_IBUF,
+   snake/divider/fractional[5]
+   To see the details of these info messages, please use the -detail switch.
+INFO:MapLib:562 - No environment variables are currently set.
+INFO:LIT:244 - All of the single ended outputs in this design are using slew
+   rate limited output drivers. The delay on speed critical single ended outputs
+   can be dramatically reduced by designating them as fast outputs.
+INFO:Pack:1716 - Initializing temperature to 85.000 Celsius. (default - Range:
+   0.000 to 85.000 Celsius)
+INFO:Pack:1720 - Initializing voltage to 1.140 Volts. (default - Range: 1.140 to
+   1.260 Volts)
+INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
+   (.mrp).
+INFO:Place:834 - Only a subset of IOs are locked. Out of 78 IOs, 69 are locked
+   and 9 are not locked. If you would like to print the names of these IOs,
+   please set the environment variable XIL_PAR_DESIGN_CHECK_VERBOSE to 1. 
+INFO:Pack:1650 - Map created a placed design.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+  75 block(s) removed
+  46 block(s) optimized away
+  74 signal(s) removed
+
+Section 5 - Removed Logic
+-------------------------
+
+The trimmed logic report below shows the logic removed from your design due to
+sourceless or loadless signals, and VCC or ground connections.  If the removal
+of a signal or symbol results in the subsequent removal of an additional signal
+or symbol, the message explaining that second removal will be indented.  This
+indentation will be repeated as a chain of related logic is removed.
+
+To quickly locate the original cause for the removal of a chain of logic, look
+above the place where that logic is listed in the trimming report, then locate
+the lines that are least indented (begin at the leftmost edge).
+
+Loadless block "clkgen/clkout3_buf" (CKBUF) removed.
+ The signal "clkgen/clkfx" is loadless and has been removed.
+Loadless block "snake/Madd_M_r1_q[15]_GND_31_o_add_1304_OUT15" (ROM) removed.
+The signal "snake/divider/fractional[5]" is sourceless and has been removed.
+The signal "snake/divider/fractional[4]" is sourceless and has been removed.
+The signal "snake/divider/fractional[3]" is sourceless and has been removed.
+The signal "snake/divider/fractional[2]" is sourceless and has been removed.
+The signal "snake/divider/fractional[1]" is sourceless and has been removed.
+The signal "snake/divider/fractional[0]" is sourceless and has been removed.
+The signal "snake/divider/blk00000003/sig00000146" is sourceless and has been
+removed.
+ Sourceless block "snake/divider/blk00000003/blk00000101" (FF) removed.
+  The signal "snake/divider/blk00000003/sig00000150" is sourceless and has been
+removed.
+The signal "snake/divider/blk00000003/sig00000163" is sourceless and has been
+removed.
+ Sourceless block "snake/divider/blk00000003/blk00000117" (FF) removed.
+  The signal "snake/divider/blk00000003/sig0000016d" is sourceless and has been
+removed.
+The signal "snake/divider/blk00000003/sig00000180" is sourceless and has been
+removed.
+ Sourceless block "snake/divider/blk00000003/blk0000012d" (FF) removed.
+  The signal "snake/divider/blk00000003/sig0000018a" is sourceless and has been
+removed.
+The signal "snake/divider/blk00000003/sig0000019d" is sourceless and has been
+removed.
+ Sourceless block "snake/divider/blk00000003/blk00000143" (FF) removed.
+  The signal "snake/divider/blk00000003/sig000001a8" is sourceless and has been
+removed.
+The signal "snake/divider/blk00000003/sig000000a6" is sourceless and has been
+removed.
+ Sourceless block "snake/divider/blk00000003/blk000001a6" (AND) removed.
+  The signal "snake/divider/blk00000003/sig00000218" is sourceless and has been
+removed.
+   Sourceless block "snake/divider/blk00000003/blk0000019f" (MUX) removed.
+    The signal "snake/divider/blk00000003/sig0000020f" is sourceless and has been
+removed.
+     Sourceless block "snake/divider/blk00000003/blk0000019a" (XOR) removed.
+      The signal "snake/divider/blk00000003/sig00000211" is sourceless and has been
+removed.
+       Sourceless block "snake/divider/blk00000003/blk000001a8" (FF) removed.
+     Sourceless block "snake/divider/blk00000003/blk0000019b" (MUX) removed.
+      The signal "snake/divider/blk00000003/sig0000020b" is sourceless and has been
+removed.
+       Sourceless block "snake/divider/blk00000003/blk00000198" (XOR) removed.
+        The signal "snake/divider/blk00000003/sig0000020d" is sourceless and has been
+removed.
+         Sourceless block "snake/divider/blk00000003/blk000001a9" (FF) removed.
+       Sourceless block "snake/divider/blk00000003/blk00000199" (MUX) removed.
+        The signal "snake/divider/blk00000003/sig00000207" is sourceless and has been
+removed.
+         Sourceless block "snake/divider/blk00000003/blk00000196" (XOR) removed.
+          The signal "snake/divider/blk00000003/sig00000209" is sourceless and has been
+removed.
+           Sourceless block "snake/divider/blk00000003/blk000001aa" (FF) removed.
+         Sourceless block "snake/divider/blk00000003/blk00000197" (MUX) removed.
+          The signal "snake/divider/blk00000003/sig00000203" is sourceless and has been
+removed.
+           Sourceless block "snake/divider/blk00000003/blk00000194" (XOR) removed.
+            The signal "snake/divider/blk00000003/sig00000205" is sourceless and has been
+removed.
+             Sourceless block "snake/divider/blk00000003/blk000001ab" (FF) removed.
+           Sourceless block "snake/divider/blk00000003/blk00000195" (MUX) removed.
+            The signal "snake/divider/blk00000003/sig000001fe" is sourceless and has been
+removed.
+             Sourceless block "snake/divider/blk00000003/blk00000192" (XOR) removed.
+              The signal "snake/divider/blk00000003/sig00000200" is sourceless and has been
+removed.
+               Sourceless block "snake/divider/blk00000003/blk000001ac" (FF) removed.
+             Sourceless block "snake/divider/blk00000003/blk00000193" (MUX) removed.
+              The signal "snake/divider/blk00000003/sig00000202" is sourceless and has been
+removed.
+               Sourceless block "snake/divider/blk00000003/blk0000019c" (MUX) removed.
+                The signal "snake/divider/blk00000003/sig00000214" is sourceless and has been
+removed.
+                 Sourceless block "snake/divider/blk00000003/blk000001ae" (FF) removed.
+                  The signal "snake/divider/blk00000003/sig0000021a" is sourceless and has been
+removed.
+               Sourceless block "snake/divider/blk00000003/blk0000019d" (XOR) removed.
+                The signal "snake/divider/blk00000003/sig00000215" is sourceless and has been
+removed.
+                 Sourceless block "snake/divider/blk00000003/blk000001ad" (FF) removed.
+                  The signal "snake/divider/blk00000003/sig00000219" is sourceless and has been
+removed.
+ Sourceless block "snake/divider/blk00000003/blk000001f0" (ROM) removed.
+  The signal "snake/divider/blk00000003/sig00000216" is sourceless and has been
+removed.
+   Sourceless block "snake/divider/blk00000003/blk0000019e" (XOR) removed.
+    The signal "snake/divider/blk00000003/sig00000217" is sourceless and has been
+removed.
+     Sourceless block "snake/divider/blk00000003/blk000001a7" (FF) removed.
+The signal "snake/divider/blk00000003/sig000000a7" is sourceless and has been
+removed.
+ Sourceless block "snake/divider/blk00000003/blk000001a5" (AND) removed.
+  The signal "snake/divider/blk00000003/sig00000212" is sourceless and has been
+removed.
+ Sourceless block "snake/divider/blk00000003/blk000001f1" (ROM) removed.
+  The signal "snake/divider/blk00000003/sig00000210" is sourceless and has been
+removed.
+The signal "snake/divider/blk00000003/sig000000a8" is sourceless and has been
+removed.
+ Sourceless block "snake/divider/blk00000003/blk000001a4" (AND) removed.
+  The signal "snake/divider/blk00000003/sig0000020e" is sourceless and has been
+removed.
+ Sourceless block "snake/divider/blk00000003/blk000001f2" (ROM) removed.
+  The signal "snake/divider/blk00000003/sig0000020c" is sourceless and has been
+removed.
+The signal "snake/divider/blk00000003/sig000000a9" is sourceless and has been
+removed.
+ Sourceless block "snake/divider/blk00000003/blk000001a3" (AND) removed.
+  The signal "snake/divider/blk00000003/sig0000020a" is sourceless and has been
+removed.
+ Sourceless block "snake/divider/blk00000003/blk000001f3" (ROM) removed.
+  The signal "snake/divider/blk00000003/sig00000208" is sourceless and has been
+removed.
+The signal "snake/divider/blk00000003/sig000000aa" is sourceless and has been
+removed.
+ Sourceless block "snake/divider/blk00000003/blk000001a2" (AND) removed.
+  The signal "snake/divider/blk00000003/sig00000206" is sourceless and has been
+removed.
+ Sourceless block "snake/divider/blk00000003/blk000001f4" (ROM) removed.
+  The signal "snake/divider/blk00000003/sig00000204" is sourceless and has been
+removed.
+The signal "snake/divider/blk00000003/sig000000ab" is sourceless and has been
+removed.
+ Sourceless block "snake/divider/blk00000003/blk000001a1" (AND) removed.
+  The signal "snake/divider/blk00000003/sig00000201" is sourceless and has been
+removed.
+ Sourceless block "snake/divider/blk00000003/blk000001f5" (ROM) removed.
+  The signal "snake/divider/blk00000003/sig000001ff" is sourceless and has been
+removed.
+The signal "snake/divider/blk00000003/sig000001bb" is sourceless and has been
+removed.
+ Sourceless block "snake/divider/blk00000003/blk00000159" (FF) removed.
+  The signal "snake/divider/blk00000003/sig000001c6" is sourceless and has been
+removed.
+The signal "snake/divider/blk00000003/sig000001d9" is sourceless and has been
+removed.
+ Sourceless block "snake/divider/blk00000003/blk0000016f" (FF) removed.
+  The signal "snake/divider/blk00000003/sig000001e4" is sourceless and has been
+removed.
+The signal "snake/divider/blk00000003/sig000001dc" is sourceless and has been
+removed.
+ Sourceless block "snake/divider/blk00000003/blk00000168" (FF) removed.
+  The signal "snake/divider/blk00000003/sig000001dd" is sourceless and has been
+removed.
+The signal "snake/divider/blk00000003/sig000001d8" is sourceless and has been
+removed.
+ Sourceless block "snake/divider/blk00000003/blk00000169" (FF) removed.
+  The signal "snake/divider/blk00000003/sig000001de" is sourceless and has been
+removed.
+The signal "snake/divider/blk00000003/sig000000d1" is sourceless and has been
+removed.
+ Sourceless block "snake/divider/blk00000003/blk000000a9" (FF) removed.
+  The signal "snake/divider/blk00000003/sig000000da" is sourceless and has been
+removed.
+The signal "snake/divider/blk00000003/sig000001cc" is sourceless and has been
+removed.
+ Sourceless block "snake/divider/blk00000003/blk0000016d" (FF) removed.
+  The signal "snake/divider/blk00000003/sig000001e2" is sourceless and has been
+removed.
+The signal "snake/divider/blk00000003/sig000001cf" is sourceless and has been
+removed.
+ Sourceless block "snake/divider/blk00000003/blk0000016c" (FF) removed.
+  The signal "snake/divider/blk00000003/sig000001e1" is sourceless and has been
+removed.
+The signal "snake/divider/blk00000003/sig000001d2" is sourceless and has been
+removed.
+ Sourceless block "snake/divider/blk00000003/blk0000016b" (FF) removed.
+  The signal "snake/divider/blk00000003/sig000001e0" is sourceless and has been
+removed.
+The signal "snake/divider/blk00000003/sig000001d5" is sourceless and has been
+removed.
+ Sourceless block "snake/divider/blk00000003/blk0000016a" (FF) removed.
+  The signal "snake/divider/blk00000003/sig000001df" is sourceless and has been
+removed.
+The signal "snake/divider/blk00000003/sig00000213" is sourceless and has been
+removed.
+The signal "snake/divider/blk00000003/sig000000ed" is sourceless and has been
+removed.
+ Sourceless block "snake/divider/blk00000003/blk000000bf" (FF) removed.
+  The signal "snake/divider/blk00000003/sig000000f8" is sourceless and has been
+removed.
+The signal "snake/divider/blk00000003/sig0000010b" is sourceless and has been
+removed.
+ Sourceless block "snake/divider/blk00000003/blk000000d5" (FF) removed.
+  The signal "snake/divider/blk00000003/sig00000116" is sourceless and has been
+removed.
+The signal "snake/divider/blk00000003/sig00000129" is sourceless and has been
+removed.
+ Sourceless block "snake/divider/blk00000003/blk000000eb" (FF) removed.
+  The signal "snake/divider/blk00000003/sig00000133" is sourceless and has been
+removed.
+Unused block "snake/divider/blk00000003/blk0000007a" (FF) removed.
+Unused block "snake/divider/blk00000003/blk0000007b" (FF) removed.
+Unused block "snake/divider/blk00000003/blk0000007c" (FF) removed.
+Unused block "snake/divider/blk00000003/blk0000007d" (FF) removed.
+Unused block "snake/divider/blk00000003/blk0000007e" (FF) removed.
+Unused block "snake/divider/blk00000003/blk0000007f" (FF) removed.
+Unused block "snake/divider/blk00000003/blk0000009f" (MUX) removed.
+Unused block "snake/divider/blk00000003/blk000000b5" (MUX) removed.
+Unused block "snake/divider/blk00000003/blk000000cb" (MUX) removed.
+Unused block "snake/divider/blk00000003/blk000000e1" (MUX) removed.
+Unused block "snake/divider/blk00000003/blk000000f7" (MUX) removed.
+Unused block "snake/divider/blk00000003/blk0000010d" (MUX) removed.
+Unused block "snake/divider/blk00000003/blk00000123" (MUX) removed.
+Unused block "snake/divider/blk00000003/blk00000139" (MUX) removed.
+Unused block "snake/divider/blk00000003/blk0000014f" (MUX) removed.
+Unused block "snake/divider/blk00000003/blk0000015b" (XOR) removed.
+Unused block "snake/divider/blk00000003/blk0000015c" (XOR) removed.
+Unused block "snake/divider/blk00000003/blk0000015d" (XOR) removed.
+Unused block "snake/divider/blk00000003/blk0000015e" (XOR) removed.
+Unused block "snake/divider/blk00000003/blk0000015f" (XOR) removed.
+Unused block "snake/divider/blk00000003/blk00000165" (MUX) removed.
+Unused block "snake/divider/blk00000003/blk00000166" (XOR) removed.
+Unused block "snake/divider/blk00000003/blk000001a0" (AND) removed.
+
+Optimized Block(s):
+TYPE 		BLOCK
+GND 		XST_GND
+VCC 		XST_VCC
+GND 		avr/GND
+VCC 		avr/VCC
+GND 		avr/cclk_detector/XST_GND
+VCC 		avr/cclk_detector/XST_VCC
+GND 		b_down_a_button/XST_GND
+VCC 		b_down_a_button/XST_VCC
+GND 		b_down_a_button/sync/XST_GND
+VCC 		b_down_a_button/sync/XST_VCC
+GND 		b_left_a_button/XST_GND
+VCC 		b_left_a_button/XST_VCC
+GND 		b_left_a_button/sync/XST_GND
+VCC 		b_left_a_button/sync/XST_VCC
+GND 		b_right_a_button/XST_GND
+VCC 		b_right_a_button/XST_VCC
+GND 		b_right_a_button/sync/XST_GND
+VCC 		b_right_a_button/sync/XST_VCC
+GND 		b_up_a_button/XST_GND
+VCC 		b_up_a_button/XST_VCC
+GND 		b_up_a_button/sync/XST_GND
+VCC 		b_up_a_button/sync/XST_VCC
+GND 		clkgen/XST_GND
+GND 		register/XST_GND
+VCC 		register/XST_VCC
+GND 		reset_cond/XST_GND
+VCC 		snake/C
+GND 		snake/D
+GND 		snake/alu/add/XST_GND
+VCC 		snake/alu/add/XST_VCC
+GND 		snake/disp_game_mem/XST_GND
+VCC 		snake/disp_game_mem/XST_VCC
+GND 		snake/divider/blk00000003/blk00000004
+VCC 		snake/divider/blk00000003/blk00000005
+GND 		snake/highscore_decoder/XST_GND
+VCC 		snake/highscore_decoder/XST_VCC
+VCC 		snake/multiplier/blk00000001/blk00000002
+GND 		snake/multiplier/blk00000001/blk00000003
+GND 		snake/score_decoder/XST_GND
+VCC 		snake/score_decoder/XST_VCC
+GND 		snake/sound_gen/XST_GND
+VCC 		snake/sound_gen/XST_VCC
+GND 		vga/GND
+VCC 		vga/VCC
+GND 		vga/vram/disp_vram/XST_GND
+VCC 		vga/vram/disp_vram/XST_VCC
+
+To enable printing of redundant blocks removed and signals merged, set the
+detailed map report option and rerun map.
+
+Section 6 - IOB Properties
+--------------------------
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew | Reg (s)      | Resistor | IOB      |
+|                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| avr_rx                             | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW | OFF          |          |          |
+| avr_rx_busy                        | IOB              | INPUT     | LVTTL                |       |          |      |              |          |          |
+| avr_tx                             | IOB              | INPUT     | LVTTL                |       |          |      | IFF          |          |          |
+| b_down_a                           | IOB              | INPUT     | LVTTL                |       |          |      |              | PULLDOWN |          |
+| b_down_b                           | IOB              | INPUT     | LVTTL                |       |          |      |              | PULLDOWN |          |
+| b_left_a                           | IOB              | INPUT     | LVTTL                |       |          |      |              | PULLDOWN |          |
+| b_left_b                           | IOB              | INPUT     | LVTTL                |       |          |      |              | PULLDOWN |          |
+| b_right_a                          | IOB              | INPUT     | LVTTL                |       |          |      |              | PULLDOWN |          |
+| b_right_b                          | IOB              | INPUT     | LVTTL                |       |          |      |              | PULLDOWN |          |
+| b_up_a                             | IOB              | INPUT     | LVTTL                |       |          |      |              | PULLDOWN |          |
+| b_up_b                             | IOB              | INPUT     | LVTTL                |       |          |      |              | PULLDOWN |          |
+| cclk                               | IOB              | INPUT     | LVTTL                |       |          |      |              |          |          |
+| clk                                | IOB              | INPUT     | LVTTL                |       |          |      |              |          |          |
+| led[0]                             | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW | OFF          |          |          |
+| led[1]                             | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW | OFF          |          |          |
+| led[2]                             | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW | OFF          |          |          |
+| led[3]                             | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW | OFF          |          |          |
+| led[4]                             | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
+| led[5]                             | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
+| led[6]                             | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
+| led[7]                             | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
+| led_key[0]                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
+| led_key[1]                         | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW | OFF          |          |          |
+| led_key[2]                         | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
+| led_key[3]                         | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
+| led_key[4]                         | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
+| led_key[5]                         | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
+| led_key[6]                         | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
+| led_key[7]                         | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
+| ps2_user1_clk                      | IOB              | INPUT     | LVTTL                |       |          |      | IFF          |          |          |
+| ps2_user1_data                     | IOB              | INPUT     | LVTTL                |       |          |      |              |          |          |
+| ps2_user2_clk                      | IOB              | INPUT     | LVTTL                |       |          |      | IFF          |          |          |
+| ps2_user2_data                     | IOB              | INPUT     | LVTTL                |       |          |      |              |          |          |
+| rst_n                              | IOB              | INPUT     | LVTTL                |       |          |      |              |          |          |
+| sound_out[0]                       | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
+| sound_out[1]                       | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
+| sound_out[2]                       | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
+| sound_out[3]                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sound_out[4]                       | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
+| sound_out[5]                       | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
+| sound_out[6]                       | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
+| sound_out[7]                       | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
+| spi_channel[0]                     | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
+| spi_channel[1]                     | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
+| spi_channel[2]                     | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
+| spi_channel[3]                     | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
+| spi_miso                           | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
+| spi_mosi                           | IOB              | INPUT     | LVTTL                |       |          |      |              |          |          |
+| spi_sck                            | IOB              | INPUT     | LVTTL                |       |          |      | IFF          |          |          |
+| spi_ss                             | IOB              | INPUT     | LVTTL                |       |          |      | IFF          |          |          |
+| vga_b[0]                           | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
+| vga_b[1]                           | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
+| vga_b[2]                           | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
+| vga_b[3]                           | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
+| vga_b[4]                           | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
+| vga_b[5]                           | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
+| vga_b[6]                           | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
+| vga_b[7]                           | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
+| vga_blk                            | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
+| vga_clk                            | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW | ODDR         |          |          |
+| vga_g[0]                           | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
+| vga_g[1]                           | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
+| vga_g[2]                           | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
+| vga_g[3]                           | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
+| vga_g[4]                           | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
+| vga_g[5]                           | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
+| vga_g[6]                           | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
+| vga_g[7]                           | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
+| vga_hsync                          | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
+| vga_r[0]                           | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
+| vga_r[1]                           | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
+| vga_r[2]                           | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
+| vga_r[3]                           | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
+| vga_r[4]                           | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
+| vga_r[5]                           | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
+| vga_r[6]                           | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
+| vga_r[7]                           | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
+| vga_vsync                          | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Timing Report
+--------------------------
+A logic-level (pre-route) timing report can be generated by using Xilinx static
+timing analysis tools, Timing Analyzer (GUI) or TRCE (command line), with the
+mapped NCD and PCF files. Please note that this timing report will be generated
+using estimated delay information. For accurate numbers, please generate a
+timing report with the post Place and Route NCD file.
+
+For more information about the Timing Analyzer, consult the Xilinx Timing
+Analyzer Reference Manual; for more information about TRCE, consult the Xilinx
+Command Line Tools User Guide "TRACE" chapter.
+
+Section 11 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings
+
+Section 12 - Control Set Information
+------------------------------------
+Use the "-detail" map option to print out Control Set Information.
+
+Section 13 - Utilization by Hierarchy
+-------------------------------------
+Use the "-detail" map option to print out the Utilization by Hierarchy section.

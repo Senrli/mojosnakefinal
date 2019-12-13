@@ -1,0 +1,79 @@
+module cga_color_lut (
+    input r,  
+    input g,
+    input b,
+    input bright,
+    output r_cga_out[8],
+    output g_cga_out[8],
+    output b_cga_out[8]
+  ) {
+
+  always {
+    case(c{r,g,b,bright}){
+      4b0000:
+        r_cga_out = 8d0;
+        g_cga_out = 8d0;
+        b_cga_out = 8d0;
+      4b0010:
+        r_cga_out = 8d0;
+        g_cga_out = 8d0;
+        b_cga_out = 8d170;
+      4b0100:
+        r_cga_out = 8d0;
+        g_cga_out = 8d170;
+        b_cga_out = 8d0;
+      4b0110:
+        r_cga_out = 8d0;
+        g_cga_out = 8d170;
+        b_cga_out = 8d170;
+      4b1000:
+        r_cga_out = 8d170;
+        g_cga_out = 8d0;
+        b_cga_out = 8d0;
+      4b1010:
+        r_cga_out = 8d170;
+        g_cga_out = 8d0;
+        b_cga_out = 8d170;
+      4b0100:
+        r_cga_out = 8d170;
+        g_cga_out = 8d85;
+        b_cga_out = 8d0;
+      4b1110:
+        r_cga_out = 8d170;
+        g_cga_out = 8d170;
+        b_cga_out = 8d170;
+      4b0001:
+        r_cga_out = 8d85;
+        g_cga_out = 8d85;
+        b_cga_out = 8d85;
+      4b0011:
+        r_cga_out = 8d85;
+        g_cga_out = 8d85;
+        b_cga_out = 8d255;
+      4b0101:
+        r_cga_out = 8d85;
+        g_cga_out = 8d255;
+        b_cga_out = 8d85;
+      4b0111:
+        r_cga_out = 8d85;
+        g_cga_out = 8d255;
+        b_cga_out = 8d255;
+      4b1001:
+        r_cga_out = 8d255;
+        g_cga_out = 8d85;
+        b_cga_out = 8d85;
+      4b1101:
+        r_cga_out = 8d255;
+        g_cga_out = 8d255;
+        b_cga_out = 8d85;
+      4b1111:
+        r_cga_out = 8d255;
+        g_cga_out = 8d255;
+        b_cga_out = 8d255;
+      default:
+        r_cga_out = 8d170;
+        g_cga_out = 8d170;
+        b_cga_out = 8d0;
+    }
+  }
+}
