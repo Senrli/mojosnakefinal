@@ -1,50 +1,30 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Fri Dec 06 01:28:43 2019
+// Written by: Map P.20131013 on Fri Dec 13 18:44:52 2019
 //! **************************************************************************
 
 SCHEMATIC START;
 CONFIG VCCAUX = "3.3";
-COMP "ps2_user1_clk" LOCATE = SITE "P27" LEVEL 1;
-COMP "ps2_user2_clk" LOCATE = SITE "P24" LEVEL 1;
 COMP "clk" LOCATE = SITE "P56" LEVEL 1;
 COMP "b_right_a" LOCATE = SITE "P33" LEVEL 1;
-COMP "b_right_b" LOCATE = SITE "P32" LEVEL 1;
-COMP "ps2_user1_data" LOCATE = SITE "P26" LEVEL 1;
-COMP "ps2_user2_data" LOCATE = SITE "P23" LEVEL 1;
 COMP "cclk" LOCATE = SITE "P70" LEVEL 1;
-COMP "sound_out[0]" LOCATE = SITE "P123" LEVEL 1;
-COMP "sound_out[1]" LOCATE = SITE "P124" LEVEL 1;
-COMP "sound_out[2]" LOCATE = SITE "P126" LEVEL 1;
-COMP "sound_out[4]" LOCATE = SITE "P131" LEVEL 1;
-COMP "sound_out[5]" LOCATE = SITE "P132" LEVEL 1;
-COMP "sound_out[6]" LOCATE = SITE "P133" LEVEL 1;
-COMP "sound_out[7]" LOCATE = SITE "P134" LEVEL 1;
 COMP "rst_n" LOCATE = SITE "P38" LEVEL 1;
 COMP "vga_blk" LOCATE = SITE "P87" LEVEL 1;
 COMP "vga_clk" LOCATE = SITE "P57" LEVEL 1;
 COMP "spi_sck" LOCATE = SITE "P43" LEVEL 1;
 COMP "avr_rx_busy" LOCATE = SITE "P39" LEVEL 1;
-COMP "spi_channel[0]" LOCATE = SITE "P46" LEVEL 1;
-COMP "spi_channel[1]" LOCATE = SITE "P61" LEVEL 1;
-COMP "spi_channel[2]" LOCATE = SITE "P62" LEVEL 1;
-COMP "spi_channel[3]" LOCATE = SITE "P65" LEVEL 1;
 COMP "b_left_a" LOCATE = SITE "P35" LEVEL 1;
-COMP "b_left_b" LOCATE = SITE "P34" LEVEL 1;
 COMP "b_down_a" LOCATE = SITE "P41" LEVEL 1;
-COMP "b_down_b" LOCATE = SITE "P40" LEVEL 1;
 COMP "vga_hsync" LOCATE = SITE "P117" LEVEL 1;
 COMP "vga_vsync" LOCATE = SITE "P116" LEVEL 1;
 COMP "b_up_a" LOCATE = SITE "P51" LEVEL 1;
-COMP "b_up_b" LOCATE = SITE "P50" LEVEL 1;
+COMP "led[0]" LOCATE = SITE "P134" LEVEL 1;
+COMP "led[1]" LOCATE = SITE "P133" LEVEL 1;
+COMP "led[2]" LOCATE = SITE "P132" LEVEL 1;
+COMP "led[3]" LOCATE = SITE "P131" LEVEL 1;
 COMP "led[4]" LOCATE = SITE "P127" LEVEL 1;
-COMP "led_key[1]" LOCATE = SITE "P137" LEVEL 1;
-COMP "led_key[2]" LOCATE = SITE "P138" LEVEL 1;
-COMP "led_key[3]" LOCATE = SITE "P139" LEVEL 1;
-COMP "led_key[4]" LOCATE = SITE "P140" LEVEL 1;
-COMP "led_key[5]" LOCATE = SITE "P141" LEVEL 1;
-COMP "led_key[6]" LOCATE = SITE "P142" LEVEL 1;
-COMP "led_key[7]" LOCATE = SITE "P143" LEVEL 1;
-COMP "avr_rx" LOCATE = SITE "P59" LEVEL 1;
+COMP "led[5]" LOCATE = SITE "P126" LEVEL 1;
+COMP "led[6]" LOCATE = SITE "P124" LEVEL 1;
+COMP "led[7]" LOCATE = SITE "P123" LEVEL 1;
 COMP "avr_tx" LOCATE = SITE "P55" LEVEL 1;
 COMP "spi_ss" LOCATE = SITE "P48" LEVEL 1;
 COMP "vga_b[0]" LOCATE = SITE "P67" LEVEL 1;
@@ -71,7 +51,6 @@ COMP "vga_r[4]" LOCATE = SITE "P104" LEVEL 1;
 COMP "vga_r[5]" LOCATE = SITE "P105" LEVEL 1;
 COMP "vga_r[6]" LOCATE = SITE "P101" LEVEL 1;
 COMP "vga_r[7]" LOCATE = SITE "P102" LEVEL 1;
-COMP "spi_miso" LOCATE = SITE "P45" LEVEL 1;
 COMP "spi_mosi" LOCATE = SITE "P44" LEVEL 1;
 PIN vga/vram/disp_vram/Mram_mem4_pins<24> = BEL "vga/vram/disp_vram/Mram_mem4"
         PINNAME CLKA;
@@ -89,10 +68,10 @@ PIN vga/vram/disp_vram/Mram_mem2_pins<24> = BEL "vga/vram/disp_vram/Mram_mem2"
         PINNAME CLKA;
 PIN vga/vram/disp_vram/Mram_mem2_pins<25> = BEL "vga/vram/disp_vram/Mram_mem2"
         PINNAME CLKB;
-PIN snake/Maddsub_n4198_pins<92> = BEL "snake/Maddsub_n4198" PINNAME CLK;
-PIN snake/Maddsub_n3786_pins<92> = BEL "snake/Maddsub_n3786" PINNAME CLK;
+PIN snake/Maddsub_n3610_pins<92> = BEL "snake/Maddsub_n3610" PINNAME CLK;
 PIN snake/multiplier/blk00000001/blk00000004_pins<92> = BEL
         "snake/multiplier/blk00000001/blk00000004" PINNAME CLK;
+PIN snake/Maddsub_n3983_pins<92> = BEL "snake/Maddsub_n3983" PINNAME CLK;
 PIN snake/disp_game_mem/Mram_ram_pins<10> = BEL "snake/disp_game_mem/Mram_ram"
         PINNAME CLKA;
 PIN vga/oddr_pins<1> = BEL "vga/oddr" PINNAME CK0;
@@ -112,123 +91,23 @@ TIMEGRP clkgen_clkdv = BEL "vga/M_h_count_q_0" BEL "vga/M_h_count_q_1" BEL
         "vga/vram/disp_vram/Mram_mem1_pins<24>" PIN
         "vga/vram/disp_vram/Mram_mem1_pins<25>" PIN
         "vga/vram/disp_vram/Mram_mem2_pins<24>" PIN
-        "vga/vram/disp_vram/Mram_mem2_pins<25>" BEL "register/M_timeout_q_0"
-        BEL "register/M_inc_q" BEL "register/M_timeout_q_1" BEL
-        "register/M_timeout_q_2" BEL "register/M_data_q_0" BEL
-        "register/M_data_q_1" BEL "register/M_timeout_q_3" BEL
-        "register/M_timeout_q_4" BEL "register/M_data_q_2" BEL
-        "register/M_timeout_q_5" BEL "register/M_data_q_3" BEL
-        "register/M_timeout_q_6" BEL "register/M_data_q_4" BEL
-        "register/M_timeout_q_7" BEL "register/M_data_q_5" BEL
-        "register/M_data_q_6" BEL "register/M_timeout_q_8" BEL
-        "register/M_timeout_q_9" BEL "register/M_data_q_7" BEL
-        "register/M_data_q_8" BEL "register/M_data_q_9" BEL
-        "register/M_state_q_FSM_FFd1" BEL "register/M_state_q_FSM_FFd2" BEL
-        "register/M_state_q_FSM_FFd3" BEL "register/M_addr_q_10" BEL
-        "register/M_addr_q_11" BEL "register/M_addr_q_12" BEL
-        "register/M_timeout_q_10" BEL "register/M_timeout_q_11" BEL
-        "register/M_addr_q_13" BEL "register/M_timeout_q_12" BEL
-        "register/M_addr_q_14" BEL "register/M_timeout_q_13" BEL
-        "register/M_addr_q_15" BEL "register/M_addr_q_20" BEL
-        "register/M_addr_q_16" BEL "register/M_addr_q_21" BEL
-        "register/M_timeout_q_14" BEL "register/M_addr_q_17" BEL
-        "register/M_addr_q_22" BEL "register/M_timeout_q_15" BEL
-        "register/M_timeout_q_20" BEL "register/M_timeout_q_21" BEL
-        "register/M_addr_q_18" BEL "register/M_addr_q_23" BEL
-        "register/M_timeout_q_16" BEL "register/M_timeout_q_22" BEL
-        "register/M_addr_q_19" BEL "register/M_addr_q_24" BEL
-        "register/M_timeout_q_17" BEL "register/M_timeout_q_23" BEL
-        "register/M_addr_q_25" BEL "register/M_addr_q_30" BEL
-        "register/M_timeout_q_18" BEL "register/M_addr_q_26" BEL
-        "register/M_addr_q_31" BEL "register/M_timeout_q_19" BEL
-        "register/M_addr_q_27" BEL "register/M_addr_q_28" BEL
-        "register/M_addr_q_29" BEL "register/M_addr_ct_q_0" BEL
-        "register/M_addr_ct_q_1" BEL "register/M_addr_ct_q_2" BEL
-        "register/M_addr_ct_q_3" BEL "register/M_addr_ct_q_4" BEL
-        "register/M_addr_ct_q_5" BEL "register/M_data_q_10" BEL
-        "register/M_data_q_11" BEL "register/M_data_q_12" BEL
-        "register/M_byte_ct_q_0" BEL "register/M_data_q_13" BEL
-        "register/M_byte_ct_q_1" BEL "register/M_data_q_14" BEL
-        "register/M_data_q_20" BEL "register/M_data_q_15" BEL
-        "register/M_data_q_21" BEL "register/M_data_q_16" BEL
-        "register/M_data_q_22" BEL "register/M_data_q_17" BEL
-        "register/M_data_q_23" BEL "register/M_data_q_18" BEL
-        "register/M_data_q_24" BEL "register/M_data_q_19" BEL
-        "register/M_data_q_30" BEL "register/M_data_q_25" BEL
-        "register/M_data_q_31" BEL "register/M_data_q_26" BEL
-        "register/M_data_q_27" BEL "register/M_data_q_28" BEL
-        "register/M_data_q_29" BEL "register/M_wr_q" BEL "register/M_addr_q_0"
-        BEL "register/M_addr_q_1" BEL "register/M_addr_q_2" BEL
-        "register/M_addr_q_3" BEL "register/M_addr_q_4" BEL
-        "register/M_addr_q_5" BEL "register/M_addr_q_6" BEL
-        "register/M_addr_q_7" BEL "register/M_addr_q_8" BEL
-        "register/M_addr_q_9" BEL "b_up_a_edge/M_last_q" BEL
+        "vga/vram/disp_vram/Mram_mem2_pins<25>" BEL "b_up_a_edge/M_last_q" BEL
         "reset_cond/M_stage_q_3" BEL "reset_cond/M_stage_q_2" BEL
         "reset_cond/M_stage_q_1" BEL "reset_cond/M_stage_q_0" BEL
-        "ps2_user1/temp_data_7" BEL "ps2_user1/temp_data_6" BEL
-        "ps2_user1/temp_data_5" BEL "ps2_user1/temp_data_4" BEL
-        "ps2_user1/temp_data_3" BEL "ps2_user1/temp_data_2" BEL
-        "ps2_user1/temp_data_1" BEL "ps2_user1/temp_data_0" BEL
-        "ps2_user1/num_3" BEL "ps2_user1/num_2" BEL "ps2_user1/num_1" BEL
-        "ps2_user1/num_0" BEL "ps2_user1/ps2k_clk_r2" BEL
-        "ps2_user1/ps2k_clk_r1" BEL "ps2_user1/key_f0" BEL
-        "ps2_user1/ps2_state_r" BEL "ps2_user1/ps2k_clk_r0" BEL
-        "ps2_user2/temp_data_7" BEL "ps2_user2/temp_data_6" BEL
-        "ps2_user2/temp_data_5" BEL "ps2_user2/temp_data_4" BEL
-        "ps2_user2/temp_data_3" BEL "ps2_user2/temp_data_2" BEL
-        "ps2_user2/temp_data_1" BEL "ps2_user2/temp_data_0" BEL
-        "ps2_user2/num_3" BEL "ps2_user2/num_2" BEL "ps2_user2/num_1" BEL
-        "ps2_user2/num_0" BEL "ps2_user2/ps2k_clk_r2" BEL
-        "ps2_user2/ps2k_clk_r1" BEL "ps2_user2/key_f0" BEL
-        "ps2_user2/ps2_state_r" BEL "ps2_user2/ps2k_clk_r0" BEL
         "b_left_a_edge/M_last_q" BEL "clkgen/clkout2_buf" BEL
         "b_down_a_edge/M_last_q" BEL "b_right_a_edge/M_last_q" BEL
-        "avr/M_block_q_3" BEL "avr/M_busy_q" BEL "avr/M_block_q_2" BEL
-        "avr/spi_slave/M_ss_reg_q" BEL "avr/spi_slave/M_sck_reg_q_1" BEL
-        "avr/spi_slave/M_sck_reg_q_0" BEL "avr/spi_slave/M_bit_ct_q_2" BEL
-        "avr/spi_slave/M_bit_ct_q_1" BEL "avr/spi_slave/M_bit_ct_q_0" BEL
-        "avr/spi_slave/M_miso_reg_q" BEL "avr/spi_slave/M_data_q_0" BEL
-        "avr/cclk_detector/M_ctr_q_13" BEL "avr/cclk_detector/M_ctr_q_12" BEL
-        "avr/cclk_detector/M_ctr_q_11" BEL "avr/cclk_detector/M_ctr_q_10" BEL
-        "avr/cclk_detector/M_ctr_q_9" BEL "avr/cclk_detector/M_ctr_q_8" BEL
-        "avr/cclk_detector/M_ctr_q_7" BEL "avr/cclk_detector/M_ctr_q_6" BEL
-        "avr/cclk_detector/M_ctr_q_5" BEL "avr/cclk_detector/M_ctr_q_4" BEL
-        "avr/cclk_detector/M_ctr_q_3" BEL "avr/cclk_detector/M_ctr_q_2" BEL
-        "avr/cclk_detector/M_ctr_q_1" BEL "avr/cclk_detector/M_ctr_q_0" BEL
-        "avr/uart_rx/M_bitCtr_q_2" BEL "avr/uart_rx/M_bitCtr_q_1" BEL
-        "avr/uart_rx/M_bitCtr_q_0" BEL "avr/uart_rx/M_state_q_FSM_FFd1" BEL
-        "avr/uart_rx/M_state_q_FSM_FFd2" BEL "avr/uart_rx/M_ctr_q_6" BEL
-        "avr/uart_rx/M_ctr_q_5" BEL "avr/uart_rx/M_ctr_q_4" BEL
-        "avr/uart_rx/M_ctr_q_3" BEL "avr/uart_rx/M_ctr_q_2" BEL
-        "avr/uart_rx/M_ctr_q_1" BEL "avr/uart_rx/M_ctr_q_0" BEL
-        "avr/uart_rx/M_savedData_q_7" BEL "avr/uart_rx/M_savedData_q_6" BEL
-        "avr/uart_rx/M_savedData_q_5" BEL "avr/uart_rx/M_savedData_q_4" BEL
-        "avr/uart_rx/M_savedData_q_3" BEL "avr/uart_rx/M_savedData_q_2" BEL
-        "avr/uart_rx/M_savedData_q_1" BEL "avr/uart_rx/M_savedData_q_0" BEL
-        "avr/uart_rx/M_newData_q" BEL "avr/uart_rx/M_rxd_q" BEL
-        "avr/uart_tx/M_state_q_FSM_FFd1" BEL "avr/uart_tx/M_state_q_FSM_FFd2"
-        BEL "avr/uart_tx/M_bitCtr_q_2" BEL "avr/uart_tx/M_bitCtr_q_1" BEL
-        "avr/uart_tx/M_bitCtr_q_0" BEL "avr/uart_tx/M_ctr_q_6" BEL
-        "avr/uart_tx/M_ctr_q_5" BEL "avr/uart_tx/M_ctr_q_4" BEL
-        "avr/uart_tx/M_ctr_q_3" BEL "avr/uart_tx/M_ctr_q_2" BEL
-        "avr/uart_tx/M_ctr_q_1" BEL "avr/uart_tx/M_ctr_q_0" BEL
-        "avr/uart_tx/M_txReg_q" BEL "avr/uart_tx/M_savedData_q_7" BEL
-        "avr/uart_tx/M_savedData_q_6" BEL "avr/uart_tx/M_savedData_q_5" BEL
-        "avr/uart_tx/M_savedData_q_4" BEL "avr/uart_tx/M_savedData_q_3" BEL
-        "avr/uart_tx/M_savedData_q_2" BEL "avr/uart_tx/M_savedData_q_1" BEL
-        "avr/uart_tx/M_savedData_q_0" BEL "avr/uart_tx/M_blockFlag_q" BEL
-        "avr/Mshreg_M_block_q_2" BEL "b_right_a_button/M_ctr_q_0" BEL
-        "b_right_a_button/M_ctr_q_1" BEL "b_right_a_button/M_ctr_q_2" BEL
-        "b_right_a_button/M_ctr_q_3" BEL "b_right_a_button/M_ctr_q_4" BEL
-        "b_right_a_button/M_ctr_q_5" BEL "b_right_a_button/M_ctr_q_6" BEL
-        "b_right_a_button/M_ctr_q_7" BEL "b_right_a_button/M_ctr_q_8" BEL
-        "b_right_a_button/M_ctr_q_9" BEL "b_right_a_button/M_ctr_q_10" BEL
-        "b_right_a_button/M_ctr_q_11" BEL "b_right_a_button/M_ctr_q_12" BEL
-        "b_right_a_button/M_ctr_q_13" BEL "b_right_a_button/M_ctr_q_14" BEL
-        "b_right_a_button/M_ctr_q_15" BEL "b_right_a_button/M_ctr_q_16" BEL
-        "b_right_a_button/M_ctr_q_17" BEL "b_right_a_button/M_ctr_q_18" BEL
-        "b_right_a_button/M_ctr_q_19" BEL "b_right_a_button/sync/M_pipe_q_1"
-        BEL "b_right_a_button/sync/Mshreg_M_pipe_q_1" BEL
+        "b_right_a_button/M_ctr_q_0" BEL "b_right_a_button/M_ctr_q_1" BEL
+        "b_right_a_button/M_ctr_q_2" BEL "b_right_a_button/M_ctr_q_3" BEL
+        "b_right_a_button/M_ctr_q_4" BEL "b_right_a_button/M_ctr_q_5" BEL
+        "b_right_a_button/M_ctr_q_6" BEL "b_right_a_button/M_ctr_q_7" BEL
+        "b_right_a_button/M_ctr_q_8" BEL "b_right_a_button/M_ctr_q_9" BEL
+        "b_right_a_button/M_ctr_q_10" BEL "b_right_a_button/M_ctr_q_11" BEL
+        "b_right_a_button/M_ctr_q_12" BEL "b_right_a_button/M_ctr_q_13" BEL
+        "b_right_a_button/M_ctr_q_14" BEL "b_right_a_button/M_ctr_q_15" BEL
+        "b_right_a_button/M_ctr_q_16" BEL "b_right_a_button/M_ctr_q_17" BEL
+        "b_right_a_button/M_ctr_q_18" BEL "b_right_a_button/M_ctr_q_19" BEL
+        "b_right_a_button/sync/M_pipe_q_1" BEL
+        "b_right_a_button/sync/Mshreg_M_pipe_q_1" BEL
         "b_up_a_button/M_ctr_q_0" BEL "b_up_a_button/M_ctr_q_1" BEL
         "b_up_a_button/M_ctr_q_2" BEL "b_up_a_button/M_ctr_q_3" BEL
         "b_up_a_button/M_ctr_q_4" BEL "b_up_a_button/M_ctr_q_5" BEL
@@ -313,9 +192,9 @@ TIMEGRP clkgen_clkdv = BEL "vga/M_h_count_q_0" BEL "vga/M_h_count_q_1" BEL
         "snake/M_input_counter_q_10" BEL "snake/M_input_counter_q_11" BEL
         "snake/M_input_counter_q_12" BEL "snake/M_input_counter_q_13" BEL
         "snake/M_input_counter_q_14" BEL "snake/M_input_counter_q_20" BEL
-        "snake/M_input_counter_q_15" BEL "snake/M_input_counter_q_16" BEL
-        "snake/M_input_counter_q_21" BEL "snake/M_input_counter_q_17" BEL
-        "snake/M_input_counter_q_22" BEL "snake/M_input_counter_q_18" BEL
+        "snake/M_input_counter_q_15" BEL "snake/M_input_counter_q_21" BEL
+        "snake/M_input_counter_q_16" BEL "snake/M_input_counter_q_22" BEL
+        "snake/M_input_counter_q_17" BEL "snake/M_input_counter_q_18" BEL
         "snake/M_input_counter_q_23" BEL "snake/M_input_counter_q_19" BEL
         "snake/M_input_counter_q_24" BEL "snake/M_head_address_q_10" BEL
         "snake/M_head_address_q_11" BEL "snake/M_head_address_q_12" BEL
@@ -354,14 +233,11 @@ TIMEGRP clkgen_clkdv = BEL "vga/M_h_count_q_0" BEL "vga/M_h_count_q_1" BEL
         "snake/divider/blk00000003/blk00000034" BEL
         "snake/divider/blk00000003/blk0000000c" BEL
         "snake/divider/blk00000003/blk00000035" BEL
-        "snake/divider/blk00000003/blk00000040" BEL
         "snake/divider/blk00000003/blk0000000d" BEL
         "snake/divider/blk00000003/blk00000036" BEL
-        "snake/divider/blk00000003/blk00000041" BEL
         "snake/divider/blk00000003/blk0000000e" BEL
         "snake/divider/blk00000003/blk0000001a" BEL
         "snake/divider/blk00000003/blk00000037" BEL
-        "snake/divider/blk00000003/blk00000042" BEL
         "snake/divider/blk00000003/blk0000000f" BEL
         "snake/divider/blk00000003/blk00000038" BEL
         "snake/divider/blk00000003/blk00000043" BEL
@@ -373,21 +249,14 @@ TIMEGRP clkgen_clkdv = BEL "vga/M_h_count_q_0" BEL "vga/M_h_count_q_1" BEL
         "snake/divider/blk00000003/blk00000050" BEL
         "snake/divider/blk00000003/blk00000100" BEL
         "snake/divider/blk00000003/blk0000001d" BEL
-        "snake/divider/blk00000003/blk00000046" BEL
         "snake/divider/blk00000003/blk00000051" BEL
         "snake/divider/blk00000003/blk0000001e" BEL
         "snake/divider/blk00000003/blk0000002a" BEL
-        "snake/divider/blk00000003/blk00000047" BEL
-        "snake/divider/blk00000003/blk00000052" BEL
         "snake/divider/blk00000003/blk0000001f" BEL
-        "snake/divider/blk00000003/blk00000048" BEL
-        "snake/divider/blk00000003/blk00000053" BEL
         "snake/divider/blk00000003/blk0000002b" BEL
         "snake/divider/blk00000003/blk00000049" BEL
-        "snake/divider/blk00000003/blk00000054" BEL
         "snake/divider/blk00000003/blk0000002c" BEL
         "snake/divider/blk00000003/blk00000055" BEL
-        "snake/divider/blk00000003/blk00000060" BEL
         "snake/divider/blk00000003/blk00000110" BEL
         "snake/divider/blk00000003/blk0000002d" BEL
         "snake/divider/blk00000003/blk00000056" BEL
@@ -399,45 +268,30 @@ TIMEGRP clkgen_clkdv = BEL "vga/M_h_count_q_0" BEL "vga/M_h_count_q_1" BEL
         "snake/divider/blk00000003/blk00000062" BEL
         "snake/divider/blk00000003/blk00000112" BEL
         "snake/divider/blk00000003/blk0000002f" BEL
-        "snake/divider/blk00000003/blk00000058" BEL
         "snake/divider/blk00000003/blk00000063" BEL
         "snake/divider/blk00000003/blk00000113" BEL
         "snake/divider/blk00000003/blk0000003b" BEL
-        "snake/divider/blk00000003/blk00000059" BEL
-        "snake/divider/blk00000003/blk00000064" BEL
         "snake/divider/blk00000003/blk00000114" BEL
         "snake/divider/blk00000003/blk0000003c" BEL
-        "snake/divider/blk00000003/blk00000065" BEL
-        "snake/divider/blk00000003/blk00000070" BEL
         "snake/divider/blk00000003/blk00000115" BEL
         "snake/divider/blk00000003/blk0000003d" BEL
-        "snake/divider/blk00000003/blk00000066" BEL
-        "snake/divider/blk00000003/blk00000071" BEL
         "snake/divider/blk00000003/blk00000116" BEL
         "snake/divider/blk00000003/blk0000003e" BEL
         "snake/divider/blk00000003/blk0000004a" BEL
         "snake/divider/blk00000003/blk00000067" BEL
-        "snake/divider/blk00000003/blk00000072" BEL
         "snake/divider/blk00000003/blk0000003f" BEL
         "snake/divider/blk00000003/blk00000068" BEL
         "snake/divider/blk00000003/blk00000073" BEL
         "snake/divider/blk00000003/blk0000004b" BEL
         "snake/divider/blk00000003/blk00000069" BEL
         "snake/divider/blk00000003/blk00000074" BEL
-        "snake/divider/blk00000003/blk0000004c" BEL
         "snake/divider/blk00000003/blk00000075" BEL
         "snake/divider/blk00000003/blk00000080" BEL
-        "snake/divider/blk00000003/blk0000004d" BEL
-        "snake/divider/blk00000003/blk00000076" BEL
         "snake/divider/blk00000003/blk00000081" BEL
         "snake/divider/blk00000003/blk00000126" BEL
-        "snake/divider/blk00000003/blk0000004e" BEL
-        "snake/divider/blk00000003/blk0000005a" BEL
-        "snake/divider/blk00000003/blk00000077" BEL
         "snake/divider/blk00000003/blk00000082" BEL
         "snake/divider/blk00000003/blk00000127" BEL
         "snake/divider/blk00000003/blk0000004f" BEL
-        "snake/divider/blk00000003/blk00000078" BEL
         "snake/divider/blk00000003/blk00000083" BEL
         "snake/divider/blk00000003/blk00000128" BEL
         "snake/divider/blk00000003/blk0000005b" BEL
@@ -452,17 +306,12 @@ TIMEGRP clkgen_clkdv = BEL "vga/M_h_count_q_0" BEL "vga/M_h_count_q_1" BEL
         "snake/divider/blk00000003/blk00000086" BEL
         "snake/divider/blk00000003/blk00000091" BEL
         "snake/divider/blk00000003/blk00000141" BEL
-        "snake/divider/blk00000003/blk0000005e" BEL
-        "snake/divider/blk00000003/blk0000006a" BEL
         "snake/divider/blk00000003/blk00000087" BEL
         "snake/divider/blk00000003/blk00000092" BEL
         "snake/divider/blk00000003/blk00000142" BEL
-        "snake/divider/blk00000003/blk0000005f" BEL
         "snake/divider/blk00000003/blk00000088" BEL
         "snake/divider/blk00000003/blk00000093" BEL
-        "snake/divider/blk00000003/blk0000006b" BEL
         "snake/divider/blk00000003/blk00000089" BEL
-        "snake/divider/blk00000003/blk0000006c" BEL
         "snake/divider/blk00000003/blk0000006d" BEL
         "snake/divider/blk00000003/blk0000006e" BEL
         "snake/divider/blk00000003/blk0000012a" BEL
@@ -632,99 +481,35 @@ TIMEGRP clkgen_clkdv = BEL "vga/M_h_count_q_0" BEL "vga/M_h_count_q_1" BEL
         "snake/M_state_q_FSM_FFd8" BEL "snake/M_state_q_FSM_FFd9" BEL
         "snake/M_score_q_10" BEL "snake/M_score_q_11" BEL "snake/M_score_q_12"
         BEL "snake/M_score_q_13" BEL "snake/M_score_q_14" BEL
-        "snake/M_score_q_15" BEL "snake/M_score_q_20" BEL "snake/M_score_q_16"
-        BEL "snake/M_score_q_21" BEL "snake/M_score_q_17" BEL
-        "snake/M_score_q_22" BEL "snake/M_score_q_18" BEL "snake/M_score_q_23"
-        BEL "snake/M_score_q_19" BEL "snake/M_score_q_24" BEL
+        "snake/M_score_q_20" BEL "snake/M_score_q_15" BEL "snake/M_score_q_21"
+        BEL "snake/M_score_q_16" BEL "snake/M_score_q_22" BEL
+        "snake/M_score_q_17" BEL "snake/M_score_q_23" BEL "snake/M_score_q_18"
+        BEL "snake/M_score_q_24" BEL "snake/M_score_q_19" BEL
         "snake/M_score_q_25" BEL "snake/M_score_q_30" BEL "snake/M_score_q_26"
         BEL "snake/M_score_q_31" BEL "snake/M_score_q_27" BEL
-        "snake/M_score_q_28" BEL "snake/M_score_q_29" BEL "snake/M_r4_q_0" BEL
-        "snake/M_r4_q_1" BEL "snake/M_r4_q_2" BEL "snake/M_r4_q_3" BEL
-        "snake/M_r4_q_4" BEL "snake/M_r4_q_5" BEL "snake/M_r4_q_6" BEL
-        "snake/M_r4_q_7" BEL "snake/M_r4_q_8" BEL "snake/M_r4_q_9" BEL
+        "snake/M_score_q_28" BEL "snake/M_score_q_29" BEL "snake/M_r4_q_4" BEL
+        "snake/M_r4_q_5" BEL "snake/M_r4_q_7" BEL "snake/M_r4_q_8" BEL
         "snake/M_debugreg_q_0" BEL "snake/M_debugreg_q_1" BEL
         "snake/M_debugreg_q_2" BEL "snake/M_debugreg_q_3" BEL
         "snake/M_debugreg_q_4" BEL "snake/M_debugreg_q_5" BEL
-        "snake/sound_gen/M_counter_q_0" BEL "snake/sound_gen/M_counter_q_1"
-        BEL "snake/sound_gen/M_counter_q_2" BEL
-        "snake/sound_gen/M_counter_q_3" BEL "snake/sound_gen/M_counter_q_4"
-        BEL "snake/sound_gen/M_counter_q_5" BEL
-        "snake/sound_gen/M_counter_q_6" BEL "snake/sound_gen/M_counter_q_7"
-        BEL "snake/sound_gen/M_counter_q_8" BEL
-        "snake/sound_gen/M_counter_q_9" BEL "snake/sound_gen/M_time_delay_q_0"
-        BEL "snake/sound_gen/M_time_delay_q_1" BEL
-        "snake/sound_gen/M_time_delay_q_2" BEL
-        "snake/sound_gen/M_time_delay_q_3" BEL
-        "snake/sound_gen/M_time_delay_q_4" BEL
-        "snake/sound_gen/M_time_delay_q_5" BEL
-        "snake/sound_gen/M_time_delay_q_6" BEL
-        "snake/sound_gen/M_time_delay_q_7" BEL
-        "snake/sound_gen/M_time_delay_q_8" BEL
-        "snake/sound_gen/M_time_delay_q_9" BEL
-        "snake/sound_gen/M_sound_type_reg_q_0" BEL
-        "snake/sound_gen/M_sound_type_reg_q_2" BEL
-        "snake/sound_gen/M_sound_counter_q_10" BEL
-        "snake/sound_gen/M_sound_counter_q_11" BEL
-        "snake/sound_gen/M_sound_counter_q_12" BEL
-        "snake/sound_gen/M_sound_counter_q_13" BEL
-        "snake/sound_gen/M_sound_counter_q_14" BEL
-        "snake/sound_gen/M_sound_counter_q_20" BEL
-        "snake/sound_gen/M_sound_counter_q_15" BEL
-        "snake/sound_gen/M_sound_counter_q_16" BEL
-        "snake/sound_gen/M_sound_counter_q_21" BEL
-        "snake/sound_gen/M_sound_counter_q_17" BEL
-        "snake/sound_gen/M_sound_counter_q_22" BEL
-        "snake/sound_gen/M_sound_counter_q_23" BEL
-        "snake/sound_gen/M_sound_counter_q_18" BEL
-        "snake/sound_gen/M_sound_counter_q_24" BEL
-        "snake/sound_gen/M_sound_counter_q_19" BEL
-        "snake/sound_gen/M_sound_counter_q_0" BEL
-        "snake/sound_gen/M_sound_counter_q_1" BEL
-        "snake/sound_gen/M_sound_counter_q_2" BEL
-        "snake/sound_gen/M_sound_counter_q_3" BEL
-        "snake/sound_gen/M_sound_counter_q_4" BEL
-        "snake/sound_gen/M_sound_counter_q_5" BEL
-        "snake/sound_gen/M_sound_counter_q_6" BEL
-        "snake/sound_gen/M_sound_counter_q_7" BEL
-        "snake/sound_gen/M_sound_counter_q_8" BEL
-        "snake/sound_gen/M_sound_counter_q_9" BEL
-        "snake/sound_gen/M_counter_q_10" BEL "snake/sound_gen/M_counter_q_11"
-        BEL "snake/sound_gen/M_counter_q_12" BEL
-        "snake/sound_gen/M_counter_q_13" BEL "snake/sound_gen/M_counter_q_14"
-        BEL "snake/sound_gen/M_counter_q_20" BEL
-        "snake/sound_gen/M_counter_q_15" BEL "snake/sound_gen/M_counter_q_21"
-        BEL "snake/sound_gen/M_counter_q_16" BEL
-        "snake/sound_gen/M_counter_q_22" BEL "snake/sound_gen/M_counter_q_17"
-        BEL "snake/sound_gen/M_counter_q_23" BEL
-        "snake/sound_gen/M_counter_q_18" BEL "snake/sound_gen/M_counter_q_19"
-        BEL "snake/sound_gen/M_time_delay_q_10" BEL
-        "snake/sound_gen/M_time_delay_q_11" BEL
-        "snake/sound_gen/M_time_delay_q_12" BEL
-        "snake/sound_gen/M_time_delay_q_13" BEL
-        "snake/sound_gen/M_time_delay_q_14" BEL
-        "snake/sound_gen/M_time_delay_q_15" BEL
-        "snake/sound_gen/M_time_delay_q_16" BEL
-        "snake/sound_gen/M_time_delay_q_17" BEL
-        "snake/sound_gen/M_time_delay_q_18" BEL
-        "snake/sound_gen/M_time_delay_q_19" BEL "snake/M_highscore_q_1" BEL
-        "snake/M_highscore_q_2" BEL "snake/M_highscore_q_3" BEL
-        "snake/M_highscore_q_4" BEL "snake/M_highscore_q_5" BEL
-        "snake/M_highscore_q_6" BEL "snake/M_highscore_q_7" BEL
-        "snake/M_highscore_q_8" BEL "snake/M_highscore_q_9" BEL
-        "snake/M_highscore_q_10" BEL "snake/M_highscore_q_11" BEL
-        "snake/M_highscore_q_12" BEL "snake/M_highscore_q_13" BEL
-        "snake/M_highscore_q_14" BEL "snake/M_highscore_q_20" BEL
-        "snake/M_highscore_q_15" BEL "snake/M_highscore_q_16" BEL
-        "snake/M_highscore_q_21" BEL "snake/M_highscore_q_22" BEL
-        "snake/M_highscore_q_17" BEL "snake/M_highscore_q_23" BEL
-        "snake/M_highscore_q_18" BEL "snake/M_highscore_q_24" BEL
-        "snake/M_highscore_q_19" BEL "snake/M_highscore_q_30" BEL
-        "snake/M_highscore_q_25" BEL "snake/M_highscore_q_26" BEL
-        "snake/M_highscore_q_31" BEL "snake/M_highscore_q_27" BEL
-        "snake/M_highscore_q_28" BEL "snake/M_highscore_q_29" BEL
-        "snake/M_debug_read_ctr_q" PIN "snake/Maddsub_n4198_pins<92>" PIN
-        "snake/Maddsub_n3786_pins<92>" PIN
+        "snake/M_highscore_q_1" BEL "snake/M_highscore_q_2" BEL
+        "snake/M_highscore_q_3" BEL "snake/M_highscore_q_4" BEL
+        "snake/M_highscore_q_5" BEL "snake/M_highscore_q_6" BEL
+        "snake/M_highscore_q_7" BEL "snake/M_highscore_q_8" BEL
+        "snake/M_highscore_q_9" BEL "snake/M_highscore_q_10" BEL
+        "snake/M_highscore_q_11" BEL "snake/M_highscore_q_12" BEL
+        "snake/M_highscore_q_13" BEL "snake/M_highscore_q_14" BEL
+        "snake/M_highscore_q_20" BEL "snake/M_highscore_q_15" BEL
+        "snake/M_highscore_q_16" BEL "snake/M_highscore_q_21" BEL
+        "snake/M_highscore_q_17" BEL "snake/M_highscore_q_22" BEL
+        "snake/M_highscore_q_23" BEL "snake/M_highscore_q_18" BEL
+        "snake/M_highscore_q_19" BEL "snake/M_highscore_q_24" BEL
+        "snake/M_highscore_q_30" BEL "snake/M_highscore_q_25" BEL
+        "snake/M_highscore_q_26" BEL "snake/M_highscore_q_31" BEL
+        "snake/M_highscore_q_27" BEL "snake/M_highscore_q_28" BEL
+        "snake/M_highscore_q_29" PIN "snake/Maddsub_n3610_pins<92>" PIN
         "snake/multiplier/blk00000001/blk00000004_pins<92>" PIN
+        "snake/Maddsub_n3983_pins<92>" PIN
         "snake/disp_game_mem/Mram_ram_pins<10>" BEL "snake/M_ram_clear_q" BEL
         "snake/M_r1_q_10" BEL "snake/M_r1_q_11" BEL "snake/M_r1_q_12" BEL
         "snake/M_r1_q_13" BEL "snake/M_r1_q_14" BEL "snake/M_r1_q_15" BEL
@@ -733,38 +518,36 @@ TIMEGRP clkgen_clkdv = BEL "vga/M_h_count_q_0" BEL "vga/M_h_count_q_1" BEL
         "snake/M_r2_q_15" BEL "snake/M_vram_refresh_ctr_q_10" BEL
         "snake/M_vram_refresh_ctr_q_11" BEL "snake/M_r3_q_10" BEL
         "snake/M_r3_q_11" BEL "snake/M_r3_q_12" BEL "snake/M_r3_q_13" BEL
-        "snake/M_r3_q_14" BEL "snake/M_r3_q_15" BEL "snake/M_r4_q_10" BEL
-        "snake/M_r4_q_11" BEL "snake/M_r4_q_12" BEL "snake/M_r4_q_13" BEL
-        "snake/M_r4_q_14" BEL "snake/M_r4_q_20" BEL "snake/M_r4_q_15" BEL
-        "snake/M_r4_q_21" BEL "snake/M_r4_q_17" BEL "snake/M_r4_q_19" BEL
-        "snake/M_ram_write_q" BEL "snake/M_vram_refresh_ctr_q_0" BEL
-        "snake/M_vram_refresh_ctr_q_1" BEL "snake/M_vram_refresh_ctr_q_2" BEL
-        "snake/M_vram_refresh_ctr_q_3" BEL "snake/M_vram_refresh_ctr_q_4" BEL
-        "snake/M_vram_refresh_ctr_q_5" BEL "snake/M_vram_refresh_ctr_q_6" BEL
-        "snake/M_vram_refresh_ctr_q_7" BEL "snake/M_vram_refresh_ctr_q_8" BEL
-        "snake/M_vram_refresh_ctr_q_9" BEL "snake/M_vram_temp_reg_q_130" BEL
-        "snake/M_vram_temp_reg_q_131" BEL "snake/M_vram_temp_reg_q_132" BEL
-        "snake/M_vram_temp_reg_q_133" BEL "snake/M_vram_temp_reg_q_128" BEL
-        "snake/M_vram_temp_reg_q_134" BEL "snake/M_vram_temp_reg_q_129" BEL
-        "snake/M_vram_temp_reg_q_135" BEL "snake/M_vram_temp_reg_q_136" BEL
-        "snake/M_vram_temp_reg_q_142" BEL "snake/M_vram_temp_reg_q_137" BEL
-        "snake/M_r1_q_0" BEL "snake/M_r1_q_1" BEL "snake/M_r1_q_2" BEL
-        "snake/M_r1_q_3" BEL "snake/M_r1_q_4" BEL "snake/M_r1_q_5" BEL
-        "snake/M_r1_q_6" BEL "snake/M_r1_q_7" BEL "snake/M_r1_q_8" BEL
-        "snake/M_r1_q_9" BEL "snake/M_head_address_q_0" BEL
-        "snake/M_head_address_q_1" BEL "snake/M_head_address_q_2" BEL
-        "snake/M_head_address_q_3" BEL "snake/M_head_address_q_4" BEL
-        "snake/M_head_address_q_5" BEL "snake/M_head_address_q_6" BEL
-        "snake/M_head_address_q_7" BEL "snake/M_head_address_q_8" BEL
-        "snake/M_head_address_q_9" BEL "snake/M_score_q_1" BEL
-        "snake/M_score_q_2" BEL "snake/M_score_q_3" BEL "snake/M_score_q_4"
-        BEL "snake/M_score_q_5" BEL "snake/M_score_q_6" BEL
-        "snake/M_score_q_7" BEL "snake/M_score_q_8" BEL "snake/M_score_q_9"
-        BEL "snake/M_vram_refresh_q" BEL "snake/M_r2_q_0" BEL "snake/M_r2_q_1"
-        BEL "snake/M_r2_q_2" BEL "snake/M_r2_q_3" BEL "snake/M_r2_q_4" BEL
-        "snake/M_r2_q_5" BEL "snake/M_r2_q_6" BEL "snake/M_r2_q_7" BEL
-        "snake/M_r2_q_8" BEL "snake/M_r2_q_9" BEL "snake/M_state_q_FSM_FFd10"
-        BEL "snake/M_state_q_FSM_FFd11" BEL "snake/M_state_q_FSM_FFd12" BEL
+        "snake/M_r3_q_14" BEL "snake/M_r3_q_15" BEL "snake/M_r4_q_11" BEL
+        "snake/M_r4_q_16" BEL "snake/M_ram_write_q" BEL
+        "snake/M_vram_refresh_ctr_q_0" BEL "snake/M_vram_refresh_ctr_q_1" BEL
+        "snake/M_vram_refresh_ctr_q_2" BEL "snake/M_vram_refresh_ctr_q_3" BEL
+        "snake/M_vram_refresh_ctr_q_4" BEL "snake/M_vram_refresh_ctr_q_5" BEL
+        "snake/M_vram_refresh_ctr_q_6" BEL "snake/M_vram_refresh_ctr_q_7" BEL
+        "snake/M_vram_refresh_ctr_q_8" BEL "snake/M_vram_refresh_ctr_q_9" BEL
+        "snake/M_vram_temp_reg_q_130" BEL "snake/M_vram_temp_reg_q_131" BEL
+        "snake/M_vram_temp_reg_q_132" BEL "snake/M_vram_temp_reg_q_133" BEL
+        "snake/M_vram_temp_reg_q_128" BEL "snake/M_vram_temp_reg_q_134" BEL
+        "snake/M_vram_temp_reg_q_129" BEL "snake/M_vram_temp_reg_q_135" BEL
+        "snake/M_vram_temp_reg_q_136" BEL "snake/M_vram_temp_reg_q_137" BEL
+        "snake/M_vram_temp_reg_q_142" BEL "snake/M_r1_q_0" BEL
+        "snake/M_r1_q_1" BEL "snake/M_r1_q_2" BEL "snake/M_r1_q_3" BEL
+        "snake/M_r1_q_4" BEL "snake/M_r1_q_5" BEL "snake/M_r1_q_6" BEL
+        "snake/M_r1_q_7" BEL "snake/M_r1_q_8" BEL "snake/M_r1_q_9" BEL
+        "snake/M_head_address_q_0" BEL "snake/M_head_address_q_1" BEL
+        "snake/M_head_address_q_2" BEL "snake/M_head_address_q_3" BEL
+        "snake/M_head_address_q_4" BEL "snake/M_head_address_q_5" BEL
+        "snake/M_head_address_q_6" BEL "snake/M_head_address_q_7" BEL
+        "snake/M_head_address_q_8" BEL "snake/M_head_address_q_9" BEL
+        "snake/M_score_q_1" BEL "snake/M_score_q_2" BEL "snake/M_score_q_3"
+        BEL "snake/M_score_q_4" BEL "snake/M_score_q_5" BEL
+        "snake/M_score_q_6" BEL "snake/M_score_q_7" BEL "snake/M_score_q_8"
+        BEL "snake/M_score_q_9" BEL "snake/M_vram_refresh_q" BEL
+        "snake/M_r2_q_0" BEL "snake/M_r2_q_1" BEL "snake/M_r2_q_2" BEL
+        "snake/M_r2_q_3" BEL "snake/M_r2_q_4" BEL "snake/M_r2_q_5" BEL
+        "snake/M_r2_q_6" BEL "snake/M_r2_q_7" BEL "snake/M_r2_q_8" BEL
+        "snake/M_r2_q_9" BEL "snake/M_state_q_FSM_FFd10" BEL
+        "snake/M_state_q_FSM_FFd11" BEL "snake/M_state_q_FSM_FFd12" BEL
         "snake/M_state_q_FSM_FFd13" BEL "snake/M_state_q_FSM_FFd14" BEL
         "snake/M_previous_head_q_0" BEL "snake/M_previous_head_q_1" BEL
         "snake/M_previous_head_q_2" BEL "snake/M_previous_head_q_3" BEL

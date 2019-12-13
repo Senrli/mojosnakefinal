@@ -6,35 +6,16 @@ module snake_fsm (
     input up_button,
     input down_button,
 
-    input left_button_b,      //player b control buttons
-    input right_button_b,
-    input up_button_b,
-    input down_button_b,
-
     output vram_wr_en,          //output to vga vram module for write enable
     output vram_wr_addr[12],    //output to vga vram module for write address
     output vram_wr_data[16],      //output to vga vram module for write data
     
-    input debug_en,
-    input debug_wr_en,
-    input debug_addr[10],
-    output debug_read_data[16],
-    input debug_write_data[16],
-    output debug_read_ready,
-    output debugled[8],
-
-    input user1_newinput,
-    input user1_inputdata[8],
-    input user2_newinput,
-    input user2_inputdata[8],
-
-    output sound_out
-
+    output debugled[8]
   ) {
 
   .clk(clk){
   .rst(0){
-      dff highscore[32];       // register to store highest score
+      dff highscore[32];       // register to store highest score, never clears if not powered off
       }
     }
   
@@ -104,11 +85,9 @@ module snake_fsm (
   sig score_decoder_input[27]; 
   sig highscore_decoder_input[27];
 
-  sig sound_en;
-  sig sound_type[3];
 
   const START_POS = 10d460;             //starting position for the snake's head
-  //const START_POS = 10d950;
+
   const TOTAL_BLOCKS = d952;              //total number of blocks for the snake
 
   const DIE_POS = 1190;                   //position of the die string
@@ -167,18 +146,13 @@ module snake_fsm (
     .seed(32h0)      //not used
   );
   
-  //decoder decoder(
-  //  #WIDTH(4),
- //   .in(random.num[31:28])
-  //);
+
   
   
   div_gen_v3_0 divider(
     .clk(clk),
-      .dividend(dividend),
-  //output [9 : 0] quotient;
-  .divisor(divisor)
-  //output [5 : 0] fractional;
+    .dividend(dividend),
+    .divisor(divisor)
     );
   
   multiplier multiplier(
@@ -199,82 +173,27 @@ module snake_fsm (
     .value(highscore_decoder_input)  
   );  
 
-  sound_gen sound_gen(
-    .clk(clk),
-    .rst(rst),
-    .sound_type(sound_type),
-    .sound_en(sound_en)
-  );  
+
 
   direction_lut direction_lut; //look-up-table to determine direction of snake travel
   alu_simple alu;              //alu
   
   always {
-    sound_en = 0;
-    sound_type = 0;
-    sound_out = sound_gen.sound_out;
+
 
     debugled = debugreg.q;
 
-    //if(user1_newinput){
-    //  vram_wr_en = 1;
-    //  vram_wr_addr = 0;
-    //  vram_wr_data = c{8b00001111, user1_inputdata[7:0]};
-    //  //led_key = user1_inputdata;
-    //}
-
-    //else if(user2_newinput){
-    //  vram_wr_en = 1;
-    //  vram_wr_addr = 1;
-    //  vram_wr_data = c{8b00001111, user2_inputdata[7:0]};
-    //  //led_key = user2_inputdata;
-    //}
 
 
-  if (debug_en){
-      dividend = 10bz;
-      divisor = 6bz;
-      mul_a = 10bz;
-      mul_b = 6bz;
-      direction_lut.dir_state = b0;
-      alu.a = b0;
-      alu.b = b0;
-      alu.alufn = bz;
-      
-      if(debug_wr_en){
-        ram_wr_en = 1;
-        ram_addr = debug_addr;
-        ram_wr_data = debug_write_data;
-      }
-      else{
-        ram_wr_en = 0;
-        case(debug_read_ctr.q){
-          0:
-            ram_addr = debug_addr;
-            debug_read_ctr.d = 1;
-            debug_read_ready = 0;
-            debug_read_data = 0;
-          1:
-            ram_addr = debug_addr;
-            debug_read_data = disp_game_mem.read_data;
-            debug_read_ready = 1;
 
-          default:
-            debug_read_ready = 0;
-            debug_read_data = 10b0; 
-          }  
-      }
-    }
-    else{
+
+
     
       
       alu.a = 16bz;
       alu.b = 16bz;
       alu.alufn = 6bz;
       
-      debug_read_ready = 0;
-      debug_read_data = 10b0;    
-      debug_read_ctr.d = 0;
       
       score_decoder_input = score.q;
       
@@ -294,8 +213,6 @@ module snake_fsm (
           head_address.d = START_POS;
 
           if(left_button || right_button || up_button || down_button){      //go to next state
-            sound_en = 1;
-            sound_type = 1; //saw tooth wave
             vram_wr_en = 0;
             ram_wr_en = 0;
             ram_write_counter.d = 0;
@@ -477,7 +394,7 @@ module snake_fsm (
                   //r4.d = disp_game_mem.read_data;
                   //if (r4.q[15] != 0 && r4.q[14] != 0){
                   if (disp_game_mem.read_data[15:14] == 0){
-                    vram_wr_en = 0;=-0123984567
+                    vram_wr_en = 0;
                     ram_wr_en = 1;
                     ram_wr_data = c{2b01,14b0};
                     vram_temp_reg_8.d = c{6b010001,ram_addr};
@@ -873,9 +790,6 @@ module snake_fsm (
                 user_input.d = c{left_button, right_button, up_button, down_button};
             }
 
-            if(left_button_b && ){
-
-            }
 
             if(input_counter.q == r4.q){
                 //user_input.d = c{12h0, left_button, right_button, up_button, down_button};
@@ -1017,8 +931,6 @@ module snake_fsm (
             //random.next=0;
         
         state.KEEP_LENGTH:
-          sound_en = 0;
-          sound_type = 0;
           direction_lut.dir_state = 16bz;
           alu.a = 16bz;
           alu.b = 16bz;
@@ -1067,8 +979,6 @@ module snake_fsm (
             //random.next=0;
         
         state.GROW:
-          sound_en = 1;
-          sound_type = 4; 
           direction_lut.dir_state = 16bz;
           alu.a = 16bz;
           alu.b = 16bz;
@@ -1110,8 +1020,6 @@ module snake_fsm (
             //random.next=0;
         
         state.GAMEOVER:
-          sound_en = 1;
-          sound_type = 5; 
           direction_lut.dir_state = 16bz;
           alu.a = 16bz;
           alu.b = 16bz;
@@ -1133,8 +1041,6 @@ module snake_fsm (
             }
 
             if (left_button||right_button||up_button||down_button){
-              sound_en = 1;
-              sound_type = 1; //saw tooth wave
                 state.d = state.START_SCREEN;
                 vram_refresh.d = 0;
                 ram_clear.d = 0;
@@ -1152,10 +1058,8 @@ module snake_fsm (
             alu.a = 16h0;
             alu.b = 16h0;
             alu.alufn = 6h0;   
-
-    }
   
-  }
+
           
       }
     

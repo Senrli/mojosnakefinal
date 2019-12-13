@@ -5,76 +5,6 @@
 
 
 ####################################################################################
-# Constraints from file : 'sound.ucf'
-####################################################################################
-
-NET "sound_out[7]" LOC = P134;
-NET "sound_out[7]" IOSTANDARD = LVTTL;
-NET "sound_out[6]" LOC = P133;
-NET "sound_out[6]" IOSTANDARD = LVTTL;
-NET "sound_out[5]" LOC = P132;
-NET "sound_out[5]" IOSTANDARD = LVTTL;
-NET "sound_out[4]" LOC = P131;
-NET "sound_out[4]" IOSTANDARD = LVTTL;
-NET "sound_out[2]" LOC = P126;
-NET "sound_out[2]" IOSTANDARD = LVTTL;
-NET "sound_out[1]" LOC = P124;
-NET "sound_out[1]" IOSTANDARD = LVTTL;
-NET "sound_out[0]" LOC = P123;
-NET "sound_out[0]" IOSTANDARD = LVTTL;
-
-####################################################################################
-# Constraints from file : 'mojo.ucf'
-####################################################################################
-
-CONFIG VCCAUX  = 3.3;
-
-NET "clk" TNM_NET = "clk";
-TIMESPEC TS_clk = PERIOD "clk" 50 MHz HIGH 50 %;
-
-NET "clk" LOC = P56;
-NET "clk" IOSTANDARD = LVTTL;
-NET "rst_n" LOC = P38;
-NET "rst_n" IOSTANDARD = LVTTL;
-
-NET "cclk" LOC = P70;
-NET "cclk" IOSTANDARD = LVTTL;
-
-NET "led[0]" IOSTANDARD = LVTTL;
-NET "led[1]" IOSTANDARD = LVTTL;
-NET "led[2]" IOSTANDARD = LVTTL;
-NET "led[3]" IOSTANDARD = LVTTL;
-NET "led[4]" LOC = P127;
-NET "led[4]" IOSTANDARD = LVTTL;
-NET "led[5]" IOSTANDARD = LVTTL;
-NET "led[6]" IOSTANDARD = LVTTL;
-NET "led[7]" IOSTANDARD = LVTTL;
-
-NET "spi_mosi" LOC = P44;
-NET "spi_mosi" IOSTANDARD = LVTTL;
-NET "spi_miso" LOC = P45;
-NET "spi_miso" IOSTANDARD = LVTTL;
-NET "spi_ss" LOC = P48;
-NET "spi_ss" IOSTANDARD = LVTTL;
-NET "spi_sck" LOC = P43;
-NET "spi_sck" IOSTANDARD = LVTTL;
-NET "spi_channel[0]" LOC = P46;
-NET "spi_channel[0]" IOSTANDARD = LVTTL;
-NET "spi_channel[1]" LOC = P61;
-NET "spi_channel[1]" IOSTANDARD = LVTTL;
-NET "spi_channel[2]" LOC = P62;
-NET "spi_channel[2]" IOSTANDARD = LVTTL;
-NET "spi_channel[3]" LOC = P65;
-NET "spi_channel[3]" IOSTANDARD = LVTTL;
-
-NET "avr_tx" LOC = P55;
-NET "avr_tx" IOSTANDARD = LVTTL;
-NET "avr_rx" LOC = P59;
-NET "avr_rx" IOSTANDARD = LVTTL;
-NET "avr_rx_busy" LOC = P39;
-NET "avr_rx_busy" IOSTANDARD = LVTTL;
-
-####################################################################################
 # Constraints from file : 'clk_divider.ucf'
 ####################################################################################
 
@@ -136,59 +66,6 @@ NET "avr_rx_busy" IOSTANDARD = LVTTL;
 
 
 ####################################################################################
-# Constraints from file : 'keys.ucf'
-####################################################################################
-
-NET "b_up_a" LOC = P51;
-NET "b_up_a" IOSTANDARD = LVTTL;
-NET "b_up_a" PULLDOWN;
-NET "b_up_b" LOC = P50;
-NET "b_up_b" IOSTANDARD = LVTTL;
-NET "b_up_b" PULLDOWN;
-NET "b_down_a" LOC = P41;
-NET "b_down_a" IOSTANDARD = LVTTL;
-NET "b_down_a" PULLDOWN;
-NET "b_down_b" LOC = P40;
-NET "b_down_b" IOSTANDARD = LVTTL;
-NET "b_down_b" PULLDOWN;
-NET "b_left_a" LOC = P35;
-NET "b_left_a" IOSTANDARD = LVTTL;
-NET "b_left_a" PULLDOWN;
-NET "b_left_b" LOC = P34;
-NET "b_left_b" IOSTANDARD = LVTTL;
-NET "b_left_b" PULLDOWN;
-NET "b_right_a" LOC = P33;
-NET "b_right_a" IOSTANDARD = LVTTL;
-NET "b_right_a" PULLDOWN;
-NET "b_right_b" LOC = P32;
-NET "b_right_b" IOSTANDARD = LVTTL;
-NET "b_right_b" PULLDOWN;
-
-NET "ps2_user1_clk" LOC = P27;
-NET "ps2_user1_clk" IOSTANDARD = LVTTL;
-NET "ps2_user1_data" LOC = P26;
-NET "ps2_user1_data" IOSTANDARD = LVTTL;
-NET "ps2_user2_clk" LOC = P24;
-NET "ps2_user2_clk" IOSTANDARD = LVTTL;
-NET "ps2_user2_data" LOC = P23;
-NET "ps2_user2_data" IOSTANDARD = LVTTL;
-
-NET "led_key[7]" LOC = P143;
-NET "led_key[7]" IOSTANDARD = LVTTL;
-NET "led_key[6]" LOC = P142;
-NET "led_key[6]" IOSTANDARD = LVTTL;
-NET "led_key[5]" LOC = P141;
-NET "led_key[5]" IOSTANDARD = LVTTL;
-NET "led_key[4]" LOC = P140;
-NET "led_key[4]" IOSTANDARD = LVTTL;
-NET "led_key[3]" LOC = P139;
-NET "led_key[3]" IOSTANDARD = LVTTL;
-NET "led_key[2]" LOC = P138;
-NET "led_key[2]" IOSTANDARD = LVTTL;
-NET "led_key[1]" LOC = P137;
-NET "led_key[1]" IOSTANDARD = LVTTL;
-
-####################################################################################
 # Constraints from file : 'VGA.ucf'
 ####################################################################################
 
@@ -248,3 +125,80 @@ NET "vga_blk" LOC = P87;
 NET "vga_blk" IOSTANDARD = LVTTL;
 NET "vga_clk" LOC = P57;
 NET "vga_clk" IOSTANDARD = LVTTL;
+
+####################################################################################
+# Constraints from file : 'keys.ucf'
+####################################################################################
+
+NET "b_up_a" LOC = P51;
+NET "b_up_a" IOSTANDARD = LVTTL;
+NET "b_up_a" PULLDOWN;
+NET "b_down_a" LOC = P41;
+NET "b_down_a" IOSTANDARD = LVTTL;
+NET "b_down_a" PULLDOWN;
+NET "b_left_a" LOC = P35;
+NET "b_left_a" IOSTANDARD = LVTTL;
+NET "b_left_a" PULLDOWN;
+NET "b_right_a" LOC = P33;
+NET "b_right_a" IOSTANDARD = LVTTL;
+NET "b_right_a" PULLDOWN;
+
+
+
+####################################################################################
+# Constraints from file : 'mojo.ucf'
+####################################################################################
+
+CONFIG VCCAUX  = 3.3;
+
+NET "clk" TNM_NET = "clk";
+TIMESPEC TS_clk = PERIOD "clk" 50 MHz HIGH 50 %;
+
+NET "clk" LOC = P56;
+NET "clk" IOSTANDARD = LVTTL;
+NET "rst_n" LOC = P38;
+NET "rst_n" IOSTANDARD = LVTTL;
+
+NET "cclk" LOC = P70;
+NET "cclk" IOSTANDARD = LVTTL;
+
+NET "led[0]" LOC = P134;
+NET "led[0]" IOSTANDARD = LVTTL;
+NET "led[1]" LOC = P133;
+NET "led[1]" IOSTANDARD = LVTTL;
+NET "led[2]" LOC = P132;
+NET "led[2]" IOSTANDARD = LVTTL;
+NET "led[3]" LOC = P131;
+NET "led[3]" IOSTANDARD = LVTTL;
+NET "led[4]" LOC = P127;
+NET "led[4]" IOSTANDARD = LVTTL;
+NET "led[5]" LOC = P126;
+NET "led[5]" IOSTANDARD = LVTTL;
+NET "led[6]" LOC = P124;
+NET "led[6]" IOSTANDARD = LVTTL;
+NET "led[7]" LOC = P123;
+NET "led[7]" IOSTANDARD = LVTTL;
+
+NET "spi_mosi" LOC = P44;
+NET "spi_mosi" IOSTANDARD = LVTTL;
+NET "spi_miso" LOC = P45;
+NET "spi_miso" IOSTANDARD = LVTTL;
+NET "spi_ss" LOC = P48;
+NET "spi_ss" IOSTANDARD = LVTTL;
+NET "spi_sck" LOC = P43;
+NET "spi_sck" IOSTANDARD = LVTTL;
+NET "spi_channel[0]" LOC = P46;
+NET "spi_channel[0]" IOSTANDARD = LVTTL;
+NET "spi_channel[1]" LOC = P61;
+NET "spi_channel[1]" IOSTANDARD = LVTTL;
+NET "spi_channel[2]" LOC = P62;
+NET "spi_channel[2]" IOSTANDARD = LVTTL;
+NET "spi_channel[3]" LOC = P65;
+NET "spi_channel[3]" IOSTANDARD = LVTTL;
+
+NET "avr_tx" LOC = P55;
+NET "avr_tx" IOSTANDARD = LVTTL;
+NET "avr_rx" LOC = P59;
+NET "avr_rx" IOSTANDARD = LVTTL;
+NET "avr_rx_busy" LOC = P39;
+NET "avr_rx_busy" IOSTANDARD = LVTTL;

@@ -1,10 +1,10 @@
 #-----------------------------------------------------------
 # PlanAhead v14.7 (64-bit)
 # Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
-# Start of session at: Fri Dec 13 17:43:36 2019
-# Process ID: 226848
-# Log file: C:/Users/Sen/Desktop/MojoSnakeFINAL/MojoSnake/work/planAhead/MojoSnake/planAhead.log
-# Journal file: C:/Users/Sen/Desktop/MojoSnakeFINAL/MojoSnake/work/planAhead/MojoSnake\planAhead.jou
+# Start of session at: Fri Dec 13 18:46:55 2019
+# Process ID: 92384
+# Log file: D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/planAhead.log
+# Journal file: D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake\planAhead.jou
 #-----------------------------------------------------------
 INFO: [Common 17-78] Attempting to get a license: PlanAhead
 INFO: [Common 17-290] Got license for PlanAhead
@@ -13,50 +13,44 @@ INFO: [Device 21-36] Loading parts and site information from D:/Xilinx/14.7/ISE_
 Parsing RTL primitives file [D:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
 Finished parsing RTL primitives file [D:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
 start_gui
-open_project {C:\Users\Sen\Desktop\MojoSnakeFINAL\MojoSnake\work\planAhead\MojoSnake\MojoSnake.ppr}
+open_project {D:\Sen\Documents\Projects\mojosnakefinal\work\planAhead\MojoSnake\MojoSnake.ppr}
 Scanning sources...
 Finished scanning sources
 Qt: Untested Windows version 6.2 detected!
-open_project: Time (s): elapsed = 00:00:09 . Memory (MB): peak = 443.500 ; gain = 87.543
 update_compile_order -fileset sources_1
 update_compile_order -fileset sim_1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user repositories specified
+INFO: [IP_Flow 19-816] Loaded Xilinx IP repository 'D:/Xilinx/14.7/ISE_DS/ISE/'
 open_rtl_design -name rtl_1
 Design is defaulting to project part: xc6slx9tqg144-2
 Using Verific elaboration
 Parsing VHDL file "D:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
-Analyzing Verilog file "C:/Users/Sen/Desktop/MojoSnakeFINAL/MojoSnake/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/verilog/vga_0816_rom_80ff_29.v" into library work
-Analyzing Verilog file "C:/Users/Sen/Desktop/MojoSnakeFINAL/MojoSnake/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/verilog/vga_0816_rom_007f_28.v" into library work
-Analyzing Verilog file "C:/Users/Sen/Desktop/MojoSnakeFINAL/MojoSnake/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/verilog/simple_dual_ram_27.v" into library work
-Analyzing Verilog file "C:/Users/Sen/Desktop/MojoSnakeFINAL/MojoSnake/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/verilog/hex_shift_26.v" into library work
-Analyzing Verilog file "C:/Users/Sen/Desktop/MojoSnakeFINAL/MojoSnake/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/verilog/hex_cmp_23.v" into library work
-Analyzing Verilog file "C:/Users/Sen/Desktop/MojoSnakeFINAL/MojoSnake/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/verilog/hex_boole_25.v" into library work
-Analyzing Verilog file "C:/Users/Sen/Desktop/MojoSnakeFINAL/MojoSnake/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/verilog/hex_add_24.v" into library work
-Analyzing Verilog file "C:/Users/Sen/Desktop/MojoSnakeFINAL/MojoSnake/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/verilog/vram_cga_20.v" into library work
-Analyzing Verilog file "C:/Users/Sen/Desktop/MojoSnakeFINAL/MojoSnake/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/verilog/vga_0816_rom_21.v" into library work
-Analyzing Verilog file "C:/Users/Sen/Desktop/MojoSnakeFINAL/MojoSnake/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/verilog/uart_tx_13.v" into library work
-Analyzing Verilog file "C:/Users/Sen/Desktop/MojoSnakeFINAL/MojoSnake/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/verilog/uart_rx_12.v" into library work
-Analyzing Verilog file "C:/Users/Sen/Desktop/MojoSnakeFINAL/MojoSnake/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/verilog/spi_slave_11.v" into library work
-Analyzing Verilog file "C:/Users/Sen/Desktop/MojoSnakeFINAL/MojoSnake/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/verilog/sound_gen_17.v" into library work
-Analyzing Verilog file "C:/Users/Sen/Desktop/MojoSnakeFINAL/MojoSnake/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/verilog/simple_ram_14.v" into library work
-Analyzing Verilog file "C:/Users/Sen/Desktop/MojoSnakeFINAL/MojoSnake/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/verilog/pn_gen_15.v" into library work
-Analyzing Verilog file "C:/Users/Sen/Desktop/MojoSnakeFINAL/MojoSnake/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/verilog/pipeline_9.v" into library work
-Analyzing Verilog file "C:/Users/Sen/Desktop/MojoSnakeFINAL/MojoSnake/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/verilog/direction_lut_18.v" into library work
-Analyzing Verilog file "C:/Users/Sen/Desktop/MojoSnakeFINAL/MojoSnake/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/verilog/cga_color_lut_22.v" into library work
-Analyzing Verilog file "C:/Users/Sen/Desktop/MojoSnakeFINAL/MojoSnake/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/verilog/cclk_detector_10.v" into library work
-Analyzing Verilog file "C:/Users/Sen/Desktop/MojoSnakeFINAL/MojoSnake/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/verilog/bin_to_dec_16.v" into library work
-Analyzing Verilog file "C:/Users/Sen/Desktop/MojoSnakeFINAL/MojoSnake/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/verilog/alu_simple_19.v" into library work
-Analyzing Verilog file "C:/Users/Sen/Desktop/MojoSnakeFINAL/MojoSnake/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/cores/multiplier.v" into library work
-Analyzing Verilog file "C:/Users/Sen/Desktop/MojoSnakeFINAL/MojoSnake/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/cores/div_gen_v3_0.v" into library work
-Analyzing Verilog file "C:/Users/Sen/Desktop/MojoSnakeFINAL/MojoSnake/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/verilog/vga_cga_8.v" into library work
-Analyzing Verilog file "C:/Users/Sen/Desktop/MojoSnakeFINAL/MojoSnake/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/verilog/verilog_keyboard_6.v" into library work
-Analyzing Verilog file "C:/Users/Sen/Desktop/MojoSnakeFINAL/MojoSnake/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/verilog/snake_fsm_7.v" into library work
-Analyzing Verilog file "C:/Users/Sen/Desktop/MojoSnakeFINAL/MojoSnake/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/verilog/reset_conditioner_1.v" into library work
-Analyzing Verilog file "C:/Users/Sen/Desktop/MojoSnakeFINAL/MojoSnake/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/verilog/reg_interface_5.v" into library work
-Analyzing Verilog file "C:/Users/Sen/Desktop/MojoSnakeFINAL/MojoSnake/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/verilog/edge_detector_3.v" into library work
-Analyzing Verilog file "C:/Users/Sen/Desktop/MojoSnakeFINAL/MojoSnake/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/verilog/button_conditioner_2.v" into library work
-Analyzing Verilog file "C:/Users/Sen/Desktop/MojoSnakeFINAL/MojoSnake/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/verilog/avr_interface_4.v" into library work
-Analyzing Verilog file "C:/Users/Sen/Desktop/MojoSnakeFINAL/MojoSnake/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/cores/clk_divider.v" into library work
-Analyzing Verilog file "C:/Users/Sen/Desktop/MojoSnakeFINAL/MojoSnake/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/verilog/mojo_top_0.v" into library work
+Analyzing Verilog file "D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/verilog/vga_0816_rom_80ff_21.v" into library work
+Analyzing Verilog file "D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/verilog/vga_0816_rom_007f_20.v" into library work
+Analyzing Verilog file "D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/verilog/simple_dual_ram_19.v" into library work
+Analyzing Verilog file "D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/verilog/hex_shift_18.v" into library work
+Analyzing Verilog file "D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/verilog/hex_cmp_15.v" into library work
+Analyzing Verilog file "D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/verilog/hex_boole_17.v" into library work
+Analyzing Verilog file "D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/verilog/hex_add_16.v" into library work
+Analyzing Verilog file "D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/verilog/vram_cga_12.v" into library work
+Analyzing Verilog file "D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/verilog/vga_0816_rom_13.v" into library work
+Analyzing Verilog file "D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/verilog/simple_ram_7.v" into library work
+Analyzing Verilog file "D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/verilog/pn_gen_8.v" into library work
+Analyzing Verilog file "D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/verilog/pipeline_6.v" into library work
+Analyzing Verilog file "D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/verilog/direction_lut_10.v" into library work
+Analyzing Verilog file "D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/verilog/cga_color_lut_14.v" into library work
+Analyzing Verilog file "D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/verilog/bin_to_dec_9.v" into library work
+Analyzing Verilog file "D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/verilog/alu_simple_11.v" into library work
+Analyzing Verilog file "D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/cores/multiplier.v" into library work
+Analyzing Verilog file "D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/cores/div_gen_v3_0.v" into library work
+Analyzing Verilog file "D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/verilog/vga_cga_5.v" into library work
+Analyzing Verilog file "D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/verilog/snake_fsm_4.v" into library work
+Analyzing Verilog file "D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/verilog/reset_conditioner_1.v" into library work
+Analyzing Verilog file "D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/verilog/edge_detector_3.v" into library work
+Analyzing Verilog file "D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/verilog/button_conditioner_2.v" into library work
+Analyzing Verilog file "D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/cores/clk_divider.v" into library work
+Analyzing Verilog file "D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/verilog/mojo_top_0.v" into library work
 Release 14.7 - ngc2edif P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 Reading design div_gen_v3_0.ngc ...
@@ -68,9 +62,9 @@ Processing design ...
 Writing EDIF netlist file div_gen_v3_0.edif ...
 ngc2edif: Total memory usage is 4318188 kilobytes
 
-Reading core file 'C:/Users/Sen/Desktop/MojoSnakeFINAL/MojoSnake/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/cores/div_gen_v3_0.ngc' for (cell view 'div_gen_v3_0', library 'work', file 'div_gen_v3_0.v')
-Parsing EDIF File [./.Xil/PlanAhead-226848-IBM-PCjr/ngc2edif/div_gen_v3_0.edif]
-Finished Parsing EDIF File [./.Xil/PlanAhead-226848-IBM-PCjr/ngc2edif/div_gen_v3_0.edif]
+Reading core file 'D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/cores/div_gen_v3_0.ngc' for (cell view 'div_gen_v3_0', library 'work', file 'div_gen_v3_0.v')
+Parsing EDIF File [./.Xil/PlanAhead-92384-IBM-PCjr/ngc2edif/div_gen_v3_0.edif]
+Finished Parsing EDIF File [./.Xil/PlanAhead-92384-IBM-PCjr/ngc2edif/div_gen_v3_0.edif]
 Release 14.7 - ngc2edif P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 Reading design multiplier.ngc ...
@@ -82,9 +76,9 @@ Processing design ...
 Writing EDIF netlist file multiplier.edif ...
 ngc2edif: Total memory usage is 4318188 kilobytes
 
-Reading core file 'C:/Users/Sen/Desktop/MojoSnakeFINAL/MojoSnake/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/cores/multiplier.ngc' for (cell view 'multiplier', library 'work', file 'multiplier.v')
-Parsing EDIF File [./.Xil/PlanAhead-226848-IBM-PCjr/ngc2edif/multiplier.edif]
-Finished Parsing EDIF File [./.Xil/PlanAhead-226848-IBM-PCjr/ngc2edif/multiplier.edif]
+Reading core file 'D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/cores/multiplier.ngc' for (cell view 'multiplier', library 'work', file 'multiplier.v')
+Parsing EDIF File [./.Xil/PlanAhead-92384-IBM-PCjr/ngc2edif/multiplier.edif]
+Finished Parsing EDIF File [./.Xil/PlanAhead-92384-IBM-PCjr/ngc2edif/multiplier.edif]
 Loading clock regions from D:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx9/ClockRegion.xml
 Loading clock buffers from D:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx9/ClockBuffers.xml
 Loading package pin functions from D:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/PinFunctions.xml...
@@ -92,34 +86,55 @@ Loading package from D:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/
 Loading io standards from D:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/IOStandards.xml
 Loading device configuration modes from D:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/ConfigModes.xml
 Loading list of drcs for the architecture : D:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/drc.xml
-Parsing UCF File [C:/Users/Sen/Desktop/MojoSnakeFINAL/MojoSnake/work/planAhead/MojoSnake/MojoSnake.srcs/constrs_1/imports/Desktop/MojoSnake/constraint/sound.ucf]
-CRITICAL WARNING: [Designutils 20-31] Unrecognized symbol >" [C:/Users/Sen/Desktop/MojoSnakeFINAL/MojoSnake/work/planAhead/MojoSnake/MojoSnake.srcs/constrs_1/imports/Desktop/MojoSnake/constraint/sound.ucf:5]
-Finished Parsing UCF File [C:/Users/Sen/Desktop/MojoSnakeFINAL/MojoSnake/work/planAhead/MojoSnake/MojoSnake.srcs/constrs_1/imports/Desktop/MojoSnake/constraint/sound.ucf]
-Parsing UCF File [C:/Users/Sen/Desktop/MojoSnakeFINAL/MojoSnake/work/planAhead/MojoSnake/MojoSnake.srcs/constrs_1/imports/Desktop/alchitry-labs-1.1.5/library/components/mojo.ucf]
-CRITICAL WARNING: [Constraints 18-5] Cannot loc terminal 'led[0]' at site P134, Terminal led[0] cannot be placed on P134 (PAD21) because the pad is already occupied by terminal sound_out[7] [C:/Users/Sen/Desktop/MojoSnakeFINAL/MojoSnake/work/planAhead/MojoSnake/MojoSnake.srcs/constrs_1/imports/Desktop/alchitry-labs-1.1.5/library/components/mojo.ucf:11]
-CRITICAL WARNING: [Constraints 18-5] Cannot loc terminal 'led[1]' at site P133, Terminal led[1] cannot be placed on P133 (PAD22) because the pad is already occupied by terminal sound_out[6] [C:/Users/Sen/Desktop/MojoSnakeFINAL/MojoSnake/work/planAhead/MojoSnake/MojoSnake.srcs/constrs_1/imports/Desktop/alchitry-labs-1.1.5/library/components/mojo.ucf:12]
-CRITICAL WARNING: [Constraints 18-5] Cannot loc terminal 'led[2]' at site P132, Terminal led[2] cannot be placed on P132 (PAD23) because the pad is already occupied by terminal sound_out[5] [C:/Users/Sen/Desktop/MojoSnakeFINAL/MojoSnake/work/planAhead/MojoSnake/MojoSnake.srcs/constrs_1/imports/Desktop/alchitry-labs-1.1.5/library/components/mojo.ucf:13]
-CRITICAL WARNING: [Constraints 18-5] Cannot loc terminal 'led[3]' at site P131, Terminal led[3] cannot be placed on P131 (PAD24) because the pad is already occupied by terminal sound_out[4] [C:/Users/Sen/Desktop/MojoSnakeFINAL/MojoSnake/work/planAhead/MojoSnake/MojoSnake.srcs/constrs_1/imports/Desktop/alchitry-labs-1.1.5/library/components/mojo.ucf:14]
-CRITICAL WARNING: [Constraints 18-5] Cannot loc terminal 'led[5]' at site P126, Terminal led[5] cannot be placed on P126 (PAD26) because the pad is already occupied by terminal sound_out[2] [C:/Users/Sen/Desktop/MojoSnakeFINAL/MojoSnake/work/planAhead/MojoSnake/MojoSnake.srcs/constrs_1/imports/Desktop/alchitry-labs-1.1.5/library/components/mojo.ucf:16]
-CRITICAL WARNING: [Constraints 18-5] Cannot loc terminal 'led[6]' at site P124, Terminal led[6] cannot be placed on P124 (PAD27) because the pad is already occupied by terminal sound_out[1] [C:/Users/Sen/Desktop/MojoSnakeFINAL/MojoSnake/work/planAhead/MojoSnake/MojoSnake.srcs/constrs_1/imports/Desktop/alchitry-labs-1.1.5/library/components/mojo.ucf:17]
-CRITICAL WARNING: [Constraints 18-5] Cannot loc terminal 'led[7]' at site P123, Terminal led[7] cannot be placed on P123 (PAD28) because the pad is already occupied by terminal sound_out[0] [C:/Users/Sen/Desktop/MojoSnakeFINAL/MojoSnake/work/planAhead/MojoSnake/MojoSnake.srcs/constrs_1/imports/Desktop/alchitry-labs-1.1.5/library/components/mojo.ucf:18]
-Finished Parsing UCF File [C:/Users/Sen/Desktop/MojoSnakeFINAL/MojoSnake/work/planAhead/MojoSnake/MojoSnake.srcs/constrs_1/imports/Desktop/alchitry-labs-1.1.5/library/components/mojo.ucf]
-Parsing UCF File [C:/Users/Sen/Desktop/MojoSnakeFINAL/MojoSnake/work/planAhead/MojoSnake/MojoSnake.srcs/constrs_1/imports/Desktop/MojoSnake/constraint/clk_divider.ucf]
-CRITICAL WARNING: [Constraints 18-11] Could not find net 'CLK_IN1' [C:/Users/Sen/Desktop/MojoSnakeFINAL/MojoSnake/work/planAhead/MojoSnake/MojoSnake.srcs/constrs_1/imports/Desktop/MojoSnake/constraint/clk_divider.ucf:53]
-Finished Parsing UCF File [C:/Users/Sen/Desktop/MojoSnakeFINAL/MojoSnake/work/planAhead/MojoSnake/MojoSnake.srcs/constrs_1/imports/Desktop/MojoSnake/constraint/clk_divider.ucf]
-Parsing UCF File [C:/Users/Sen/Desktop/MojoSnakeFINAL/MojoSnake/work/planAhead/MojoSnake/MojoSnake.srcs/constrs_1/imports/Desktop/MojoSnake/constraint/keys.ucf]
-CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'led_key<8>' [C:/Users/Sen/Desktop/MojoSnakeFINAL/MojoSnake/work/planAhead/MojoSnake/MojoSnake.srcs/constrs_1/imports/Desktop/MojoSnake/constraint/keys.ucf:15]
-CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'led_key<8>' [C:/Users/Sen/Desktop/MojoSnakeFINAL/MojoSnake/work/planAhead/MojoSnake/MojoSnake.srcs/constrs_1/imports/Desktop/MojoSnake/constraint/keys.ucf:15]
-Finished Parsing UCF File [C:/Users/Sen/Desktop/MojoSnakeFINAL/MojoSnake/work/planAhead/MojoSnake/MojoSnake.srcs/constrs_1/imports/Desktop/MojoSnake/constraint/keys.ucf]
-Parsing UCF File [C:/Users/Sen/Desktop/MojoSnakeFINAL/MojoSnake/work/planAhead/MojoSnake/MojoSnake.srcs/constrs_1/imports/Desktop/MojoSnake/constraint/VGA.ucf]
-Finished Parsing UCF File [C:/Users/Sen/Desktop/MojoSnakeFINAL/MojoSnake/work/planAhead/MojoSnake/MojoSnake.srcs/constrs_1/imports/Desktop/MojoSnake/constraint/VGA.ucf]
-CRITICAL WARNING: [Constraints 18-329] No definition for group 'CLK_IN1', timing constraint is ignored [C:/Users/Sen/Desktop/MojoSnakeFINAL/MojoSnake/work/planAhead/MojoSnake/MojoSnake.srcs/constrs_1/imports/Desktop/MojoSnake/constraint/clk_divider.ucf:54]
+Parsing UCF File [D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/constrs_1/imports/constraint/clk_divider.ucf]
+CRITICAL WARNING: [Constraints 18-11] Could not find net 'CLK_IN1' [D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/constrs_1/imports/constraint/clk_divider.ucf:53]
+Finished Parsing UCF File [D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/constrs_1/imports/constraint/clk_divider.ucf]
+Parsing UCF File [D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/constrs_1/imports/constraint/VGA.ucf]
+Finished Parsing UCF File [D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/constrs_1/imports/constraint/VGA.ucf]
+Parsing UCF File [D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/constrs_1/imports/constraint/keys.ucf]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'b_up_b' [D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/constrs_1/imports/constraint/keys.ucf:2]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'b_up_b' [D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/constrs_1/imports/constraint/keys.ucf:2]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'b_up_b' [D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/constrs_1/imports/constraint/keys.ucf:2]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'b_down_b' [D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/constrs_1/imports/constraint/keys.ucf:4]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'b_down_b' [D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/constrs_1/imports/constraint/keys.ucf:4]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'b_down_b' [D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/constrs_1/imports/constraint/keys.ucf:4]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'b_left_b' [D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/constrs_1/imports/constraint/keys.ucf:6]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'b_left_b' [D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/constrs_1/imports/constraint/keys.ucf:6]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'b_left_b' [D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/constrs_1/imports/constraint/keys.ucf:6]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'b_right_b' [D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/constrs_1/imports/constraint/keys.ucf:8]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'b_right_b' [D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/constrs_1/imports/constraint/keys.ucf:8]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'b_right_b' [D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/constrs_1/imports/constraint/keys.ucf:8]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'ps2_user1_clk' [D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/constrs_1/imports/constraint/keys.ucf:10]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'ps2_user1_clk' [D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/constrs_1/imports/constraint/keys.ucf:10]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'ps2_user1_data' [D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/constrs_1/imports/constraint/keys.ucf:11]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'ps2_user1_data' [D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/constrs_1/imports/constraint/keys.ucf:11]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'ps2_user2_clk' [D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/constrs_1/imports/constraint/keys.ucf:12]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'ps2_user2_clk' [D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/constrs_1/imports/constraint/keys.ucf:12]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'ps2_user2_data' [D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/constrs_1/imports/constraint/keys.ucf:13]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'ps2_user2_data' [D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/constrs_1/imports/constraint/keys.ucf:13]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'led_key<8>' [D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/constrs_1/imports/constraint/keys.ucf:15]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'led_key<8>' [D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/constrs_1/imports/constraint/keys.ucf:15]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'led_key<7>' [D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/constrs_1/imports/constraint/keys.ucf:16]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'led_key<7>' [D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/constrs_1/imports/constraint/keys.ucf:16]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'led_key<6>' [D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/constrs_1/imports/constraint/keys.ucf:17]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'led_key<6>' [D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/constrs_1/imports/constraint/keys.ucf:17]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'led_key<5>' [D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/constrs_1/imports/constraint/keys.ucf:18]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'led_key<5>' [D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/constrs_1/imports/constraint/keys.ucf:18]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'led_key<4>' [D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/constrs_1/imports/constraint/keys.ucf:19]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'led_key<4>' [D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/constrs_1/imports/constraint/keys.ucf:19]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'led_key<3>' [D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/constrs_1/imports/constraint/keys.ucf:20]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'led_key<3>' [D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/constrs_1/imports/constraint/keys.ucf:20]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'led_key<2>' [D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/constrs_1/imports/constraint/keys.ucf:21]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'led_key<2>' [D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/constrs_1/imports/constraint/keys.ucf:21]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'led_key<1>' [D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/constrs_1/imports/constraint/keys.ucf:22]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'led_key<1>' [D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/constrs_1/imports/constraint/keys.ucf:22]
+Finished Parsing UCF File [D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/constrs_1/imports/constraint/keys.ucf]
+Parsing UCF File [D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/constrs_1/imports/components/mojo.ucf]
+Finished Parsing UCF File [D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/constrs_1/imports/components/mojo.ucf]
+CRITICAL WARNING: [Constraints 18-329] No definition for group 'CLK_IN1', timing constraint is ignored [D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/constrs_1/imports/constraint/clk_divider.ucf:54]
 INFO: [Designutils 20-20] Invalid constraints found, use command 'write_ucf -constraints invalid <file>' to save all the invalid constraints to a file
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Phase 0 | Netlist Checksum: 5b82d3f2
-open_rtl_design: Time (s): elapsed = 00:00:24 . Memory (MB): peak = 1018.012 ; gain = 504.250
-exit
-INFO: [Common 17-206] Exiting PlanAhead at Fri Dec 13 17:47:54 2019...
-INFO: [Common 17-83] Releasing license: PlanAhead
+Phase 0 | Netlist Checksum: 39b882a3
+open_rtl_design: Time (s): elapsed = 00:00:16 . Memory (MB): peak = 1025.281 ; gain = 516.258

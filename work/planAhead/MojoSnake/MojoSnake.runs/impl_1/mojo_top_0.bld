@@ -1,15 +1,15 @@
 Release 14.7 ngdbuild P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Command Line: F:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe
+Command Line: D:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe
 -intstyle ise -p xc6slx9tqg144-2 -dd _ngo -uc mojo_top_0.ucf mojo_top_0.edf
 
 Executing edif2ngd -quiet "mojo_top_0.edf" "_ngo\mojo_top_0.ngo"
 Release 14.7 - edif2ngd P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 Reading NGO file
-"C:/Users/Bobswangzi/Desktop/MojoSnake/work/planAhead/MojoSnake/MojoSnake.runs/i
-mpl_1/_ngo/mojo_top_0.ngo" ...
+"D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.run
+s/impl_1/_ngo/mojo_top_0.ngo" ...
 Executing edif2ngd -noa "mult_gen_v11_2_xst.edn" "_ngo\mult_gen_v11_2_xst.ngo"
 Release 14.7 - edif2ngd P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
@@ -17,8 +17,8 @@ INFO:NgdBuild - Release 14.7 edif2ngd P.20131013 (nt64)
 INFO:NgdBuild - Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 Writing module to "_ngo/mult_gen_v11_2_xst.ngo"...
 Loading design module
-"C:\Users\Bobswangzi\Desktop\MojoSnake\work\planAhead\MojoSnake\MojoSnake.runs\i
-mpl_1\_ngo\mult_gen_v11_2_xst.ngo"...
+"D:\Sen\Documents\Projects\mojosnakefinal\work\planAhead\MojoSnake\MojoSnake.run
+s\impl_1\_ngo\mult_gen_v11_2_xst.ngo"...
 Gathering constraint information from source properties...
 Done.
 
@@ -48,10 +48,10 @@ NGDBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:   1
 
-Total memory usage is 4454032 kilobytes
+Total memory usage is 4454252 kilobytes
 
 Writing NGD file "mojo_top_0.ngd" ...
-Total REAL time to NGDBUILD completion:  14 sec
-Total CPU time to NGDBUILD completion:   4 sec
+Total REAL time to NGDBUILD completion:  23 sec
+Total CPU time to NGDBUILD completion:   6 sec
 
 Writing NGDBUILD log file "mojo_top_0.bld"...

@@ -11,11 +11,7 @@ module mojo_top (
     input avr_tx,           // AVR TX (FPGA RX)
     output avr_rx,          // AVR RX (FPGA TX)
     input avr_rx_busy,      // AVR RX buffer full
-    //output io_led [3][8],   // LEDs on IO Shield
-    //output io_seg [8],      // 7-segment LEDs on IO Shield
-    //output io_sel [4],      // Digit select on IO Shield
-    //input io_button [5],    // 5 buttons on IO Shield
-    //input io_dip [3][8],     // DIP switches on IO Shield
+
     output vga_r[8],          //input for the VGA R channel
     output vga_g[8],          //input for the VGA G channel
     output vga_b[8],          //input for the VGA B spi_channel
@@ -25,22 +21,11 @@ module mojo_top (
     output vga_clk,
     
     input b_up_a,
-    input b_up_b,
     input b_down_a,
-    input b_down_b,
     input b_left_a,
-    input b_left_b,
-    input b_right_a,
-    input b_right_b,
+    input b_right_a
     
-    output sound_out[8],
-
-    input ps2_user1_clk,
-    input ps2_user1_data,
-    input ps2_user2_clk,
-    input ps2_user2_data,
-    
-    output led_key[8]
+  
   ) {
   
   sig rst;                  // reset signal
@@ -49,14 +34,8 @@ module mojo_top (
     .clk_in(clk)
     );
   
-  //sig wr_en;
-  //sig wr_addr[12];
-  //sig wr_data[8];
-  
-  sig debug_en;
-  sig debug_wr_en;
-  sig debug_addr[10];
-  sig debug_write_data[16];
+
+
   
 
   
@@ -66,85 +45,21 @@ module mojo_top (
     reset_conditioner reset_cond;
     
     button_conditioner b_up_a_button(.in(b_up_a));
-    button_conditioner b_up_b_button(.in(b_up_b));
-    button_conditioner b_down_a_button(.in(b_down_a));
-    button_conditioner b_down_b_button(.in(b_down_b));
+    button_conditioner b_down_a_button(.in(b_down_a));  
     button_conditioner b_left_a_button(.in(b_left_a));
-    button_conditioner b_left_b_button(.in(b_left_b));
     button_conditioner b_right_a_button(.in(b_right_a));
-    button_conditioner b_right_b_button(.in(b_right_b));
+
 
     edge_detector b_up_a_edge(#RISE(1), #FALL(0),.in(b_up_a_button.out));
-    edge_detector b_up_b_edge(#RISE(1), #FALL(0),.in(b_up_b_button.out));
     edge_detector b_down_a_edge(#RISE(1), #FALL(0),.in(b_down_a_button.out));
-    edge_detector b_down_b_edge(#RISE(1), #FALL(0),.in(b_down_b_button.out));
     edge_detector b_left_a_edge(#RISE(1), #FALL(0),.in(b_left_a_button.out));
-    edge_detector b_left_b_edge(#RISE(1), #FALL(0),.in(b_left_b_button.out));
     edge_detector b_right_a_edge(#RISE(1), #FALL(0),.in(b_right_a_button.out));
-    edge_detector b_right_b_edge(#RISE(1), #FALL(0),.in(b_right_b_button.out));
+
     
     .rst(rst){
-      avr_interface avr;
-      reg_interface register;
 
     }
   }
-  
-
-  //serial_to_vga serial_print(
-  //  .clk(clkgen.clk_50),
-  //  .rst(rst),
-  //  .new_rx(avr.new_rx_data),
-  //  .rx_data(avr.rx_data),
-  //  .tx_busy(avr.tx_busy)
-  //  );
-  
-    //vga vga (
-   //   .rst(rst),
-   //   .clk(clkgen.clk_25)
-   //   //.wr_en(serial_print.out_vram_write_en),
-   //   //.wr_addr(serial_print.out_vram_addr),
-   //   //.wr_data(serial_print.out_vram_data)      
-  //  );
-  
-
-  
-
-  //vga vga (
-  //    .rst(rst),
-  //    .clk(clkgen.clk_25),
-  //    .wr_en(snake.vram_wr_en),
-  //    .wr_addr(snake.vram_wr_addr),
-  //    .wr_data(snake.vram_wr_data)      
-  //  );
-
-  verilog_keyboard ps2_user1(
-    .clk(clkgen.clk_25),
-    .rst_n(rst),
-    .ps2k_clk(ps2_user1_clk),
-    .ps2k_data(ps2_user1_data)
-  );
-
-  verilog_keyboard ps2_user2(
-    .clk(clkgen.clk_25),
-    .rst_n(rst),
-    .ps2k_clk(ps2_user2_clk),
-    .ps2k_data(ps2_user2_data)
-  );
-  
-  //ps2_keyboard ps2_user1(
-  //  .clk(clkgen.clk_25),
-  //  .rst(rst),
-  //  .ps2k_clk(ps2_user1_clk),
-  //  .ps2k_data(ps2_user1_data)
-  //);
-
-  //ps2_keyboard ps2_user2(
-  //  .clk(clkgen.clk_25),
-  //  .rst(rst),
-  //  .ps2k_clk(ps2_user2_clk),
-  //  .ps2k_data(ps2_user2_data)
-  //);
 
   snake_fsm snake(
     .rst(rst),
@@ -152,15 +67,7 @@ module mojo_top (
     .left_button(b_left_a_edge.out),
     .right_button(b_right_a_edge.out),
     .up_button(b_up_a_edge.out),
-    .down_button(b_down_a_edge.out),
-    .debug_en(debug_en),
-    .debug_wr_en(debug_wr_en),
-    .debug_addr(debug_addr),
-    .debug_write_data(debug_write_data),
-    .user1_inputdata(ps2_user1.ps2_byte),
-    .user1_newinput(ps2_user1.ps2_state),
-    .user2_inputdata(ps2_user2.ps2_byte),
-    .user2_newinput(ps2_user2.ps2_state)
+    .down_button(b_down_a_edge.out)
     );
   
   vga_cga vga (
@@ -179,90 +86,7 @@ module mojo_top (
     spi_miso =bz;
     spi_channel = bzzzz;
     avr_rx = bz;
-    
-    
-    // connect inputs of avr
-    avr.cclk = cclk;
-    avr.spi_ss = spi_ss;
-    avr.spi_mosi = spi_mosi;
-    avr.spi_sck = spi_sck;
-    avr.rx = avr_tx;
-    avr.channel = hf;           // ADC is unused so disable
-    avr.tx_block = avr_rx_busy; // block TX when AVR is busy
-    
-    // connect outputs of avr
-    spi_miso = avr.spi_miso;
-    spi_channel = avr.spi_channel;
-    avr_rx = avr.tx;
-    
-    // serial port
-    //avr.tx_data = serial_print.tx_data;  // don't care
-    //avr.new_tx_data = serial_print.new_tx; // no data
-    
 
-    register.rx_data = avr.rx_data;
-    register.new_rx_data = avr.new_rx_data;
-    avr.tx_data = register.tx_data;
-    avr.new_tx_data = register.new_tx_data;
-    register.tx_busy = avr.tx_busy;
- 
-    register.regIn.drdy = 0;    // default to no data
-    register.regIn.data = 32bx; // don't care
-    
-    
-    //io_led = 3x{{8h00}};    // turn LEDs off
-    //io_seg = 8hff;          // turn segments off
-    //io_sel = 4hf;           // select no digits
-    
-    //clk2.d = clk2.q + 1;    //increase clock divider counter val
-    
-    //vga_hsync = v_vga.o_hs;
-    //vga_vsync = v_vga.o_vs;
-    //x = v_vga.o_x;
-    //y = v_vga.o_y;
-    //// Four overlapping squares
-    //
-    //sq_a = ((x > 120) & (y >  40) & (x < 280) & (y < 200)) ? 1 : 0;
-    //sq_b = ((x > 200) & (y > 120) & (x < 360) & (y < 280)) ? 1 : 0;
-    //sq_c = ((x > 280) & (y > 200) & (x < 440) & (y < 360)) ? 1 : 0;
-    //sq_d = ((x > 360) & (y > 280) & (x < 520) & (y < 440)) ? 1 : 0;
-    //
-    //vga_r = 4x{sq_b};         // square b is red
-    //vga_g = 4x{sq_a | sq_d};  // squares a and d are green
-    //vga_b = 4x{sq_c};         // square c is blue
-    
-   //if (register.regOut.new_cmd) {             // new command
-    //  if (register.regOut.write) {             // if write
-    //    vga.wr_en = 1;
-   //     vga.wr_addr = register.regOut.address;
-   //     vga.wr_data = register.regOut.data[7:0];  // write the LEDs
-   //   }else{
-    //    vga.wr_en = 0;
-    //    vga.wr_addr = 0;
-    //    vga.wr_data = 0;
-    //  }
-    //} else {                                 // if read
-   //   vga.wr_en = 0;
-   //   vga.wr_addr = 0;
-//vga.wr_data = 0;
-  //  }
-    
-    if (register.regOut.new_cmd) {             // new command
-      if (register.regOut.write) {             // if write
-        debug_en = 1;
-        debug_wr_en = 1;
-        debug_addr = register.regOut.address[9:0];
-        debug_write_data = register.regOut.data[15:0];  // write the LEDs
-      }else{                                    //if read
-        debug_en = 1;
-        debug_wr_en = 0;
-        register.regIn.data = snake.debug_read_data; // read the LEDs
-        register.regIn.drdy = snake.debug_read_ready; // signal data ready
-      }
-    } else {                                 // if no commands
-      debug_en = 0;
-    }
-    
     vga_r =  vga.r;
     vga_g =  vga.g;
     vga_b =   vga.b;
@@ -273,8 +97,6 @@ module mojo_top (
     
     led = snake.debugled;
     
-    sound_out = snake.sound_out;
     
-    led_key = c{ps2_user1.ps2_state, ps2_user2.ps2_state};
   }
 }

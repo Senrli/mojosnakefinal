@@ -8,46 +8,46 @@ Target Device  : xc6slx9
 Target Package : tqg144
 Target Speed   : -2
 Mapper Version : spartan6 -- $Revision: 1.55 $
-Mapped Date    : Fri Dec 06 01:27:52 2019
+Mapped Date    : Fri Dec 13 18:40:44 2019
 
 Design Summary
 --------------
 Number of errors:      0
-Number of warnings:    7
+Number of warnings:   14
 Slice Logic Utilization:
-  Number of Slice Registers:                 1,306 out of  11,440   11%
-    Number used as Flip Flops:               1,047
-    Number used as Latches:                    246
+  Number of Slice Registers:                   834 out of  11,440    7%
+    Number used as Flip Flops:                 735
+    Number used as Latches:                     86
     Number used as Latch-thrus:                  0
     Number used as AND/OR logics:               13
-  Number of Slice LUTs:                      4,681 out of   5,720   81%
-    Number used as logic:                    4,624 out of   5,720   80%
-      Number using O6 output only:           3,203
-      Number using O5 output only:             248
-      Number using O5 and O6:                1,173
+  Number of Slice LUTs:                      3,715 out of   5,720   64%
+    Number used as logic:                    3,653 out of   5,720   63%
+      Number using O6 output only:           2,493
+      Number using O5 output only:             159
+      Number using O5 and O6:                1,001
       Number used as ROM:                        0
-    Number used as Memory:                       5 out of   1,440    1%
+    Number used as Memory:                       4 out of   1,440    1%
       Number used as Dual Port RAM:              0
       Number used as Single Port RAM:            0
-      Number used as Shift Register:             5
-        Number using O6 output only:             5
+      Number used as Shift Register:             4
+        Number using O6 output only:             4
         Number using O5 output only:             0
         Number using O5 and O6:                  0
-    Number used exclusively as route-thrus:     52
-      Number with same-slice register load:     38
-      Number with same-slice carry load:        14
+    Number used exclusively as route-thrus:     58
+      Number with same-slice register load:     48
+      Number with same-slice carry load:        10
       Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                 1,379 out of   1,430   96%
-  Number of MUXCYs used:                     1,860 out of   2,860   65%
-  Number of LUT Flip Flop pairs used:        4,745
-    Number with an unused Flip Flop:         3,570 out of   4,745   75%
-    Number with an unused LUT:                  64 out of   4,745    1%
-    Number of fully used LUT-FF pairs:       1,111 out of   4,745   23%
-    Number of unique control sets:              53
+  Number of occupied Slices:                 1,201 out of   1,430   83%
+  Number of MUXCYs used:                     1,392 out of   2,860   48%
+  Number of LUT Flip Flop pairs used:        3,757
+    Number with an unused Flip Flop:         3,018 out of   3,757   80%
+    Number with an unused LUT:                  42 out of   3,757    1%
+    Number of fully used LUT-FF pairs:         697 out of   3,757   18%
+    Number of unique control sets:              25
     Number of slice register sites lost
-      to control set restrictions:             206 out of  11,440    1%
+      to control set restrictions:             111 out of  11,440    1%
 
   A LUT Flip Flop pair for this architecture represents one LUT paired with
   one Flip Flop within a slice.  A control set is a unique combination of
@@ -56,9 +56,9 @@ Slice Logic Distribution:
   over-mapped for a non-slice resource or if Placement fails.
 
 IO Utilization:
-  Number of bonded IOBs:                        78 out of     102   76%
-    Number of LOCed IOBs:                       69 out of      78   88%
-    IOB Flip Flops:                             13
+  Number of bonded IOBs:                        48 out of     102   47%
+    Number of LOCed IOBs:                       48 out of      48  100%
+    IOB Flip Flops:                              5
 
 Specific Feature Utilization:
   Number of RAMB16BWERs:                         5 out of      32   15%
@@ -75,12 +75,10 @@ Specific Feature Utilization:
   Number of DCM/DCM_CLKGENs:                     1 out of       4   25%
     Number used as DCMs:                         1
     Number used as DCM_CLKGENs:                  0
-  Number of ILOGIC2/ISERDES2s:                   5 out of     200    2%
-    Number used as ILOGIC2s:                     5
-    Number used as ISERDES2s:                    0
+  Number of ILOGIC2/ISERDES2s:                   0 out of     200    0%
   Number of IODELAY2/IODRP2/IODRP2_MCBs:         0 out of     200    0%
-  Number of OLOGIC2/OSERDES2s:                   8 out of     200    4%
-    Number used as OLOGIC2s:                     8
+  Number of OLOGIC2/OSERDES2s:                   5 out of     200    2%
+    Number used as OLOGIC2s:                     5
     Number used as OSERDES2s:                    0
   Number of BSCANs:                              0 out of       4    0%
   Number of BUFHs:                               0 out of     128    0%
@@ -95,11 +93,11 @@ Specific Feature Utilization:
   Number of STARTUPs:                            0 out of       1    0%
   Number of SUSPEND_SYNCs:                       0 out of       1    0%
 
-Average Fanout of Non-Clock Nets:                4.68
+Average Fanout of Non-Clock Nets:                4.85
 
-Peak Memory Usage:  4645 MB
-Total REAL time to MAP completion:  52 secs 
-Total CPU time to MAP completion (all processors):   54 secs 
+Peak Memory Usage:  4625 MB
+Total REAL time to MAP completion:  4 mins 10 secs 
+Total CPU time to MAP completion (all processors):   4 mins 4 secs 
 
 Table of Contents
 -----------------
@@ -125,31 +123,47 @@ Section 2 - Warnings
 WARNING:Security:42 - Your software subscription period has lapsed. Your current
 version of Xilinx tools will continue to function, but you no longer qualify for
 Xilinx software updates or new releases.
+WARNING:MapLib:701 - Signal spi_channel[3] connected to top level port
+   spi_channel(3) has been removed.
+WARNING:MapLib:701 - Signal spi_channel[2] connected to top level port
+   spi_channel(2) has been removed.
+WARNING:MapLib:701 - Signal spi_channel[1] connected to top level port
+   spi_channel(1) has been removed.
+WARNING:MapLib:701 - Signal spi_channel[0] connected to top level port
+   spi_channel(0) has been removed.
+WARNING:MapLib:701 - Signal spi_miso connected to top level port spi_miso has
+   been removed.
+WARNING:MapLib:701 - Signal avr_rx connected to top level port avr_rx has been
+   removed.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   snake/debug_en_M_state_q[4]_OR_570_o is sourced by a combinatorial pin. This
+   vga/M_h_count_q[9]_GND_171_o_OR_421_o is sourced by a combinatorial pin. This
    is not good design practice. Use the CE pin to control the loading of data
    into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   snake/M_state_q[4]_debug_wr_en_MUX_7678_o is sourced by a combinatorial pin.
+   snake/M_state_q[4]_PWR_131_o_Select_2078_o is sourced by a combinatorial pin.
    This is not good design practice. Use the CE pin to control the loading of
    data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net snake/_n6832 is sourced by
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   snake/M_state_q[4]_PWR_139_o_Select_2094_o is sourced by a combinatorial pin.
+   This is not good design practice. Use the CE pin to control the loading of
+   data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net snake/_n6557 is sourced by
    a combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net snake/_n6621 is sourced by
+WARNING:PhysDesignRules:372 - Gated clock. Clock net snake/_n6345 is sourced by
    a combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net snake/_n6820 is sourced by
+WARNING:PhysDesignRules:372 - Gated clock. Clock net snake/_n6352 is sourced by
    a combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   vga/M_h_count_q[9]_GND_297_o_OR_660_o is sourced by a combinatorial pin. This
-   is not good design practice. Use the CE pin to control the loading of data
-   into the flip-flop.
+   snake/M_state_q[4]_PWR_203_o_Select_2222_o is sourced by a combinatorial pin.
+   This is not good design practice. Use the CE pin to control the loading of
+   data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   snake/debug_en_M_state_q[4]_OR_568_o is sourced by a combinatorial pin. This
-   is not good design practice. Use the CE pin to control the loading of data
-   into the flip-flop.
+   snake/M_state_q[4]_PWR_135_o_Select_2086_o is sourced by a combinatorial pin.
+   This is not good design practice. Use the CE pin to control the loading of
+   data into the flip-flop.
 
 Section 3 - Informational
 -------------------------
@@ -157,14 +171,14 @@ INFO:Map:284 - Map is running with the multi-threading option on. Map currently
    supports the use of up to 2 processors. Based on the the user options and
    machine load, Map will use 2 processors during this run.
 INFO:Security:54 - 'xc6slx9' is a WebPack part.
-INFO:LIT:243 - Logical network b_right_b_IBUF has no load.
-INFO:LIT:395 - The above info message is repeated 22 more times for the
+INFO:LIT:243 - Logical network avr_rx_busy_IBUF has no load.
+INFO:LIT:395 - The above info message is repeated 23 more times for the
    following (max. 5 shown):
-   b_up_b_IBUF,
    spi_mosi_IBUF,
-   b_left_b_IBUF,
-   b_down_b_IBUF,
-   snake/divider/fractional[5]
+   spi_ss_IBUF,
+   spi_sck_IBUF,
+   cclk_IBUF,
+   avr_tx_IBUF
    To see the details of these info messages, please use the -detail switch.
 INFO:MapLib:562 - No environment variables are currently set.
 INFO:LIT:244 - All of the single ended outputs in this design are using slew
@@ -176,16 +190,13 @@ INFO:Pack:1720 - Initializing voltage to 1.140 Volts. (default - Range: 1.140 to
    1.260 Volts)
 INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
    (.mrp).
-INFO:Place:834 - Only a subset of IOs are locked. Out of 78 IOs, 69 are locked
-   and 9 are not locked. If you would like to print the names of these IOs,
-   please set the environment variable XIL_PAR_DESIGN_CHECK_VERBOSE to 1. 
 INFO:Pack:1650 - Map created a placed design.
 
 Section 4 - Removed Logic Summary
 ---------------------------------
-  75 block(s) removed
-  46 block(s) optimized away
-  74 signal(s) removed
+  89 block(s) removed
+  69 block(s) optimized away
+  82 signal(s) removed
 
 Section 5 - Removed Logic
 -------------------------
@@ -202,7 +213,7 @@ the lines that are least indented (begin at the leftmost edge).
 
 Loadless block "clkgen/clkout3_buf" (CKBUF) removed.
  The signal "clkgen/clkfx" is loadless and has been removed.
-Loadless block "snake/Madd_M_r1_q[15]_GND_31_o_add_1304_OUT15" (ROM) removed.
+Loadless block "snake/Madd_M_r1_q[15]_GND_10_o_add_1307_OUT15" (ROM) removed.
 The signal "snake/divider/fractional[5]" is sourceless and has been removed.
 The signal "snake/divider/fractional[4]" is sourceless and has been removed.
 The signal "snake/divider/fractional[3]" is sourceless and has been removed.
@@ -393,6 +404,29 @@ removed.
  Sourceless block "snake/divider/blk00000003/blk000000eb" (FF) removed.
   The signal "snake/divider/blk00000003/sig00000133" is sourceless and has been
 removed.
+
+The trimmed logic reported below is either:
+   1. part of a cycle
+   2. part of disabled logic
+   3. a side-effect of other trimmed logic
+
+The signal "spi_miso" is unused and has been removed.
+ Unused block "spi_miso_OBUFT" (TRI) removed.
+  The signal "M_vram_temp_reg_q[102]" is unused and has been removed.
+   Unused block "XST_GND" (ZERO) removed.
+  The signal "N1_inv" is unused and has been removed.
+   Unused block "XST_VCC" (ONE) removed.
+The signal "spi_channel[3]" is unused and has been removed.
+ Unused block "spi_channel_3_OBUFT" (TRI) removed.
+The signal "spi_channel[2]" is unused and has been removed.
+ Unused block "spi_channel_2_OBUFT" (TRI) removed.
+The signal "spi_channel[1]" is unused and has been removed.
+ Unused block "spi_channel_1_OBUFT" (TRI) removed.
+The signal "spi_channel[0]" is unused and has been removed.
+ Unused block "spi_channel_0_OBUFT" (TRI) removed.
+The signal "avr_rx" is unused and has been removed.
+ Unused block "avr_rx_OBUFT" (TRI) removed.
+Unused block "avr_rx" (PAD) removed.
 Unused block "snake/divider/blk00000003/blk0000007a" (FF) removed.
 Unused block "snake/divider/blk00000003/blk0000007b" (FF) removed.
 Unused block "snake/divider/blk00000003/blk0000007c" (FF) removed.
@@ -416,15 +450,14 @@ Unused block "snake/divider/blk00000003/blk0000015f" (XOR) removed.
 Unused block "snake/divider/blk00000003/blk00000165" (MUX) removed.
 Unused block "snake/divider/blk00000003/blk00000166" (XOR) removed.
 Unused block "snake/divider/blk00000003/blk000001a0" (AND) removed.
+Unused block "spi_channel[0]" (PAD) removed.
+Unused block "spi_channel[1]" (PAD) removed.
+Unused block "spi_channel[2]" (PAD) removed.
+Unused block "spi_channel[3]" (PAD) removed.
+Unused block "spi_miso" (PAD) removed.
 
 Optimized Block(s):
 TYPE 		BLOCK
-GND 		XST_GND
-VCC 		XST_VCC
-GND 		avr/GND
-VCC 		avr/VCC
-GND 		avr/cclk_detector/XST_GND
-VCC 		avr/cclk_detector/XST_VCC
 GND 		b_down_a_button/XST_GND
 VCC 		b_down_a_button/XST_VCC
 GND 		b_down_a_button/sync/XST_GND
@@ -442,8 +475,6 @@ VCC 		b_up_a_button/XST_VCC
 GND 		b_up_a_button/sync/XST_GND
 VCC 		b_up_a_button/sync/XST_VCC
 GND 		clkgen/XST_GND
-GND 		register/XST_GND
-VCC 		register/XST_VCC
 GND 		reset_cond/XST_GND
 VCC 		snake/C
 GND 		snake/D
@@ -453,14 +484,78 @@ GND 		snake/disp_game_mem/XST_GND
 VCC 		snake/disp_game_mem/XST_VCC
 GND 		snake/divider/blk00000003/blk00000004
 VCC 		snake/divider/blk00000003/blk00000005
+FD 		snake/divider/blk00000003/blk00000040
+   optimized to 0
+FD 		snake/divider/blk00000003/blk00000041
+   optimized to 0
+FD 		snake/divider/blk00000003/blk00000042
+   optimized to 0
+FD 		snake/divider/blk00000003/blk00000046
+   optimized to 0
+FD 		snake/divider/blk00000003/blk00000047
+   optimized to 0
+FD 		snake/divider/blk00000003/blk00000048
+   optimized to 0
+FD 		snake/divider/blk00000003/blk0000004c
+   optimized to 0
+FD 		snake/divider/blk00000003/blk0000004d
+   optimized to 0
+FD 		snake/divider/blk00000003/blk0000004e
+   optimized to 0
+FD 		snake/divider/blk00000003/blk00000052
+   optimized to 0
+FD 		snake/divider/blk00000003/blk00000053
+   optimized to 0
+FD 		snake/divider/blk00000003/blk00000054
+   optimized to 0
+FD 		snake/divider/blk00000003/blk00000058
+   optimized to 0
+FD 		snake/divider/blk00000003/blk00000059
+   optimized to 0
+FD 		snake/divider/blk00000003/blk0000005a
+   optimized to 0
+FD 		snake/divider/blk00000003/blk0000005e
+   optimized to 0
+FD 		snake/divider/blk00000003/blk0000005f
+   optimized to 0
+FD 		snake/divider/blk00000003/blk00000060
+   optimized to 0
+FD 		snake/divider/blk00000003/blk00000064
+   optimized to 0
+FD 		snake/divider/blk00000003/blk00000065
+   optimized to 0
+FD 		snake/divider/blk00000003/blk00000066
+   optimized to 0
+FD 		snake/divider/blk00000003/blk0000006a
+   optimized to 0
+FD 		snake/divider/blk00000003/blk0000006b
+   optimized to 0
+FD 		snake/divider/blk00000003/blk0000006c
+   optimized to 0
+FD 		snake/divider/blk00000003/blk00000070
+   optimized to 0
+FD 		snake/divider/blk00000003/blk00000071
+   optimized to 0
+FD 		snake/divider/blk00000003/blk00000072
+   optimized to 0
+FD 		snake/divider/blk00000003/blk00000076
+   optimized to 0
+FD 		snake/divider/blk00000003/blk00000077
+   optimized to 0
+FD 		snake/divider/blk00000003/blk00000078
+   optimized to 0
+LUT1 		snake/divider/blk00000003/blk00000209
+   optimized to 1
+LUT1 		snake/divider/blk00000003/blk0000020a
+   optimized to 1
+LUT1 		snake/divider/blk00000003/blk0000020b
+   optimized to 1
 GND 		snake/highscore_decoder/XST_GND
 VCC 		snake/highscore_decoder/XST_VCC
 VCC 		snake/multiplier/blk00000001/blk00000002
 GND 		snake/multiplier/blk00000001/blk00000003
 GND 		snake/score_decoder/XST_GND
 VCC 		snake/score_decoder/XST_VCC
-GND 		snake/sound_gen/XST_GND
-VCC 		snake/sound_gen/XST_VCC
 GND 		vga/GND
 VCC 		vga/VCC
 GND 		vga/vram/disp_vram/XST_GND
@@ -476,17 +571,12 @@ Section 6 - IOB Properties
 | IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew | Reg (s)      | Resistor | IOB      |
 |                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
 +---------------------------------------------------------------------------------------------------------------------------------------------------------+
-| avr_rx                             | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW | OFF          |          |          |
 | avr_rx_busy                        | IOB              | INPUT     | LVTTL                |       |          |      |              |          |          |
-| avr_tx                             | IOB              | INPUT     | LVTTL                |       |          |      | IFF          |          |          |
+| avr_tx                             | IOB              | INPUT     | LVTTL                |       |          |      |              |          |          |
 | b_down_a                           | IOB              | INPUT     | LVTTL                |       |          |      |              | PULLDOWN |          |
-| b_down_b                           | IOB              | INPUT     | LVTTL                |       |          |      |              | PULLDOWN |          |
 | b_left_a                           | IOB              | INPUT     | LVTTL                |       |          |      |              | PULLDOWN |          |
-| b_left_b                           | IOB              | INPUT     | LVTTL                |       |          |      |              | PULLDOWN |          |
 | b_right_a                          | IOB              | INPUT     | LVTTL                |       |          |      |              | PULLDOWN |          |
-| b_right_b                          | IOB              | INPUT     | LVTTL                |       |          |      |              | PULLDOWN |          |
 | b_up_a                             | IOB              | INPUT     | LVTTL                |       |          |      |              | PULLDOWN |          |
-| b_up_b                             | IOB              | INPUT     | LVTTL                |       |          |      |              | PULLDOWN |          |
 | cclk                               | IOB              | INPUT     | LVTTL                |       |          |      |              |          |          |
 | clk                                | IOB              | INPUT     | LVTTL                |       |          |      |              |          |          |
 | led[0]                             | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW | OFF          |          |          |
@@ -497,35 +587,10 @@ Section 6 - IOB Properties
 | led[5]                             | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
 | led[6]                             | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
 | led[7]                             | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
-| led_key[0]                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
-| led_key[1]                         | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW | OFF          |          |          |
-| led_key[2]                         | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
-| led_key[3]                         | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
-| led_key[4]                         | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
-| led_key[5]                         | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
-| led_key[6]                         | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
-| led_key[7]                         | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
-| ps2_user1_clk                      | IOB              | INPUT     | LVTTL                |       |          |      | IFF          |          |          |
-| ps2_user1_data                     | IOB              | INPUT     | LVTTL                |       |          |      |              |          |          |
-| ps2_user2_clk                      | IOB              | INPUT     | LVTTL                |       |          |      | IFF          |          |          |
-| ps2_user2_data                     | IOB              | INPUT     | LVTTL                |       |          |      |              |          |          |
 | rst_n                              | IOB              | INPUT     | LVTTL                |       |          |      |              |          |          |
-| sound_out[0]                       | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
-| sound_out[1]                       | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
-| sound_out[2]                       | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
-| sound_out[3]                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| sound_out[4]                       | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
-| sound_out[5]                       | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
-| sound_out[6]                       | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
-| sound_out[7]                       | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
-| spi_channel[0]                     | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
-| spi_channel[1]                     | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
-| spi_channel[2]                     | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
-| spi_channel[3]                     | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
-| spi_miso                           | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
 | spi_mosi                           | IOB              | INPUT     | LVTTL                |       |          |      |              |          |          |
-| spi_sck                            | IOB              | INPUT     | LVTTL                |       |          |      | IFF          |          |          |
-| spi_ss                             | IOB              | INPUT     | LVTTL                |       |          |      | IFF          |          |          |
+| spi_sck                            | IOB              | INPUT     | LVTTL                |       |          |      |              |          |          |
+| spi_ss                             | IOB              | INPUT     | LVTTL                |       |          |      |              |          |          |
 | vga_b[0]                           | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
 | vga_b[1]                           | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
 | vga_b[2]                           | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |

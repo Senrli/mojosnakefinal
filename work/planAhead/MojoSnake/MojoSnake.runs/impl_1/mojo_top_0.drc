@@ -1,34 +1,38 @@
 Release 14.7 Drc P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Fri Dec 06 01:29:09 2019
+Fri Dec 13 18:45:33 2019
 
 drc -z mojo_top_0_routed.ncd mojo_top_0.pcf
 
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   snake/debug_en_M_state_q[4]_OR_570_o is sourced by a combinatorial pin. This
+   vga/M_h_count_q[9]_GND_171_o_OR_421_o is sourced by a combinatorial pin. This
    is not good design practice. Use the CE pin to control the loading of data
    into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   snake/M_state_q[4]_debug_wr_en_MUX_7678_o is sourced by a combinatorial pin.
+   snake/M_state_q[4]_PWR_131_o_Select_2078_o is sourced by a combinatorial pin.
    This is not good design practice. Use the CE pin to control the loading of
    data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net snake/_n6832 is sourced by
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   snake/M_state_q[4]_PWR_139_o_Select_2094_o is sourced by a combinatorial pin.
+   This is not good design practice. Use the CE pin to control the loading of
+   data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net snake/_n6557 is sourced by
    a combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net snake/_n6621 is sourced by
+WARNING:PhysDesignRules:372 - Gated clock. Clock net snake/_n6345 is sourced by
    a combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net snake/_n6820 is sourced by
+WARNING:PhysDesignRules:372 - Gated clock. Clock net snake/_n6352 is sourced by
    a combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   vga/M_h_count_q[9]_GND_297_o_OR_660_o is sourced by a combinatorial pin. This
-   is not good design practice. Use the CE pin to control the loading of data
-   into the flip-flop.
+   snake/M_state_q[4]_PWR_203_o_Select_2222_o is sourced by a combinatorial pin.
+   This is not good design practice. Use the CE pin to control the loading of
+   data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   snake/debug_en_M_state_q[4]_OR_568_o is sourced by a combinatorial pin. This
-   is not good design practice. Use the CE pin to control the loading of data
-   into the flip-flop.
-DRC detected 0 errors and 7 warnings.  Please see the previously displayed
+   snake/M_state_q[4]_PWR_135_o_Select_2086_o is sourced by a combinatorial pin.
+   This is not good design practice. Use the CE pin to control the loading of
+   data into the flip-flop.
+DRC detected 0 errors and 8 warnings.  Please see the previously displayed
 individual error or warning messages for more details.

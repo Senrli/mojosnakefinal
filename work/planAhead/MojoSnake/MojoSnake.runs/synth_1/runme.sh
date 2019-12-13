@@ -11,9 +11,9 @@ echo "Please update the PATH and LD_LIBRARY_PATH variables below, before executi
 exit
 
 if [ -z "$PATH" ]; then
-  PATH=F:/Xilinx/14.7/ISE_DS/EDK/bin/nt64;F:/Xilinx/14.7/ISE_DS/EDK/lib/nt64;F:/Xilinx/14.7/ISE_DS/ISE/bin/nt64;F:/Xilinx/14.7/ISE_DS/ISE/lib/nt64;F:/Xilinx/14.7/ISE_DS/common/bin/nt64;F:/Xilinx/14.7/ISE_DS/common/lib/nt64:F:/Xilinx/14.7/ISE_DS/PlanAhead/bin
+  PATH=D:/Xilinx/14.7/ISE_DS/EDK/bin/nt64;D:/Xilinx/14.7/ISE_DS/EDK/lib/nt64;D:/Xilinx/14.7/ISE_DS/ISE/bin/nt64;D:/Xilinx/14.7/ISE_DS/ISE/lib/nt64;D:/Xilinx/14.7/ISE_DS/common/bin/nt64;D:/Xilinx/14.7/ISE_DS/common/lib/nt64:D:/Xilinx/14.7/ISE_DS/PlanAhead/bin
 else
-  PATH=F:/Xilinx/14.7/ISE_DS/EDK/bin/nt64;F:/Xilinx/14.7/ISE_DS/EDK/lib/nt64;F:/Xilinx/14.7/ISE_DS/ISE/bin/nt64;F:/Xilinx/14.7/ISE_DS/ISE/lib/nt64;F:/Xilinx/14.7/ISE_DS/common/bin/nt64;F:/Xilinx/14.7/ISE_DS/common/lib/nt64:F:/Xilinx/14.7/ISE_DS/PlanAhead/bin:$PATH
+  PATH=D:/Xilinx/14.7/ISE_DS/EDK/bin/nt64;D:/Xilinx/14.7/ISE_DS/EDK/lib/nt64;D:/Xilinx/14.7/ISE_DS/ISE/bin/nt64;D:/Xilinx/14.7/ISE_DS/ISE/lib/nt64;D:/Xilinx/14.7/ISE_DS/common/bin/nt64;D:/Xilinx/14.7/ISE_DS/common/lib/nt64:D:/Xilinx/14.7/ISE_DS/PlanAhead/bin:$PATH
 fi
 export PATH
 
