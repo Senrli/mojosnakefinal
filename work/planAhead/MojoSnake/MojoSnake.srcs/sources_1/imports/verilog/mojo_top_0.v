@@ -103,8 +103,7 @@ module mojo_top_0 (
   wire [1-1:0] M_snake_vram_wr_en;
   wire [12-1:0] M_snake_vram_wr_addr;
   wire [16-1:0] M_snake_vram_wr_data;
-  wire [8-1:0] M_snake_debugled;
-  snake_fsm_4 snake (
+  snake_main_4 snake (
     .rst(rst),
     .clk(M_clkgen_clk_25),
     .left_button(M_b_left_a_edge_out),
@@ -113,8 +112,7 @@ module mojo_top_0 (
     .down_button(M_b_down_a_edge_out),
     .vram_wr_en(M_snake_vram_wr_en),
     .vram_wr_addr(M_snake_vram_wr_addr),
-    .vram_wr_data(M_snake_vram_wr_data),
-    .debugled(M_snake_debugled)
+    .vram_wr_data(M_snake_vram_wr_data)
   );
   
   wire [8-1:0] M_vga_r;
@@ -153,6 +151,5 @@ module mojo_top_0 (
     vga_vsync = M_vga_o_vs;
     vga_blk = M_vga_o_blk;
     vga_clk = M_vga_o_clk;
-    led = M_snake_debugled;
   end
 endmodule

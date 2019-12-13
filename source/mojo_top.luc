@@ -61,7 +61,7 @@ module mojo_top (
     }
   }
 
-  snake_fsm snake(
+  snake_main snake(
     .rst(rst),
     .clk(clkgen.clk_25),
     .left_button(b_left_a_edge.out),
@@ -95,7 +95,6 @@ module mojo_top (
     vga_blk = vga.o_blk;
     vga_clk = vga.o_clk;
     
-    led = snake.debugled;
     
     
   }

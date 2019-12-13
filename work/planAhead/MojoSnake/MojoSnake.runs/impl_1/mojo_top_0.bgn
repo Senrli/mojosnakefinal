@@ -5,7 +5,7 @@ D:\Xilinx\14.7\ISE_DS\ISE\.
    "mojo_top_0" is an NCD, version 3.2, device xc6slx9, package tqg144, speed -2
 Opened constraints file mojo_top_0.pcf.
 
-Sat Dec 14 00:25:57 2019
+Sat Dec 14 05:36:46 2019
 
 D:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\bitgen.exe -g Binary:Yes -g Compress -w -intstyle pa mojo_top_0_routed.ncd mojo_top_0.bit mojo_top_0.pcf 
 
@@ -130,35 +130,26 @@ There were 1 CONFIG constraint(s) processed from mojo_top_0.pcf.
 
 Running DRC.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   snake/M_state_q[4]_PWR_203_o_Select_1723_o is sourced by a combinatorial pin.
-   This is not good design practice. Use the CE pin to control the loading of
-   data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   snake/M_state_q[4]_PWR_135_o_Select_1587_o is sourced by a combinatorial pin.
-   This is not good design practice. Use the CE pin to control the loading of
-   data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   vga/M_h_count_q[9]_GND_171_o_OR_421_o is sourced by a combinatorial pin. This
+   vga/M_h_count_q[9]_GND_136_o_OR_421_o is sourced by a combinatorial pin. This
    is not good design practice. Use the CE pin to control the loading of data
    into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net snake/_n5102 is sourced by
-   a combinatorial pin. This is not good design practice. Use the CE pin to
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   snake/snake_fsm/M_state_q[4]_PWR_132_o_Select_1430_o is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   snake/M_state_q[4]_PWR_139_o_Select_1595_o is sourced by a combinatorial pin.
-   This is not good design practice. Use the CE pin to control the loading of
-   data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net snake/_n4946 is sourced by
-   a combinatorial pin. This is not good design practice. Use the CE pin to
-   control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net snake/_n5103 is sourced by
-   a combinatorial pin. This is not good design practice. Use the CE pin to
+   snake/snake_fsm/M_state_q[4]_PWR_128_o_Select_1422_o is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   snake/M_state_q[4]_PWR_131_o_Select_1579_o is sourced by a combinatorial pin.
-   This is not good design practice. Use the CE pin to control the loading of
-   data into the flip-flop.
-DRC detected 0 errors and 8 warnings.  Please see the previously displayed
+   snake/snake_fsm/M_state_q[4]_PWR_196_o_Select_1558_o is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   snake/snake_fsm/M_state_q[4]_PWR_124_o_Select_1414_o is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+DRC detected 0 errors and 5 warnings.  Please see the previously displayed
 individual error or warning messages for more details.
 INFO:Security:54 - 'xc6slx9' is a WebPack part.
 WARNING:Security:42 - Your software subscription period has lapsed. Your current
@@ -167,6 +158,6 @@ Xilinx software updates or new releases.
 
 Creating bit map...
 Saving bit stream in "mojo_top_0.bit".
-Bitstream compression saved 197792 bits.
+Bitstream compression saved 177840 bits.
 Saving bit stream in "mojo_top_0.bin".
 Bitstream generation is complete.

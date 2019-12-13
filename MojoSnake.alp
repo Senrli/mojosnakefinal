@@ -28,6 +28,7 @@
     <src>hex_shift.luc</src>
     <component>bin_to_dec.luc</component>
     <component>simple_ram.v</component>
+    <src>snake_main.luc</src>
     <src>vga_0816_rom_80ff.luc</src>
     <src>hex_add.luc</src>
     <component>edge_detector.luc</component>

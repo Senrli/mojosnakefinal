@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Sat Dec 14 00:25:12 2019
+// Written by: Map P.20131013 on Sat Dec 14 05:36:05 2019
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -68,12 +68,14 @@ PIN vga/vram/disp_vram/Mram_mem2_pins<24> = BEL "vga/vram/disp_vram/Mram_mem2"
         PINNAME CLKA;
 PIN vga/vram/disp_vram/Mram_mem2_pins<25> = BEL "vga/vram/disp_vram/Mram_mem2"
         PINNAME CLKB;
-PIN snake/Maddsub_n3023_pins<92> = BEL "snake/Maddsub_n3023" PINNAME CLK;
-PIN snake/Maddsub_n2745_pins<92> = BEL "snake/Maddsub_n2745" PINNAME CLK;
+PIN snake/game_ram/Mram_ram_pins<10> = BEL "snake/game_ram/Mram_ram" PINNAME
+        CLKA;
+PIN snake/snake_fsm/Maddsub_n2392_pins<92> = BEL
+        "snake/snake_fsm/Maddsub_n2392" PINNAME CLK;
+PIN snake/snake_fsm/Maddsub_n2645_pins<92> = BEL
+        "snake/snake_fsm/Maddsub_n2645" PINNAME CLK;
 PIN snake/multiplier/blk00000001/blk00000004_pins<92> = BEL
         "snake/multiplier/blk00000001/blk00000004" PINNAME CLK;
-PIN snake/disp_game_mem/Mram_ram_pins<10> = BEL "snake/disp_game_mem/Mram_ram"
-        PINNAME CLKA;
 PIN vga/oddr_pins<1> = BEL "vga/oddr" PINNAME CK0;
 PIN vga/oddr_pins<2> = BEL "vga/oddr" PINNAME CK1;
 TIMEGRP clkgen_clkdv = BEL "vga/M_h_count_q_0" BEL "vga/M_h_count_q_1" BEL
@@ -142,65 +144,317 @@ TIMEGRP clkgen_clkdv = BEL "vga/M_h_count_q_0" BEL "vga/M_h_count_q_1" BEL
         "b_down_a_button/M_ctr_q_16" BEL "b_down_a_button/M_ctr_q_17" BEL
         "b_down_a_button/M_ctr_q_18" BEL "b_down_a_button/M_ctr_q_19" BEL
         "b_down_a_button/sync/M_pipe_q_1" BEL
-        "b_down_a_button/sync/Mshreg_M_pipe_q_1" BEL
-        "snake/M_state_q_FSM_FFd8_1" BEL "snake/M_state_q_FSM_FFd9_1" BEL
-        "snake/M_ram_write_counter_q_0" BEL "snake/M_ram_write_counter_q_1"
-        BEL "snake/M_ram_write_counter_q_2" BEL
-        "snake/M_ram_write_counter_q_3" BEL "snake/M_ram_write_counter_q_4"
-        BEL "snake/M_ram_write_counter_q_5" BEL
-        "snake/M_ram_write_counter_q_6" BEL "snake/M_ram_write_counter_q_7"
-        BEL "snake/M_direction_q_0" BEL "snake/M_direction_q_1" BEL
-        "snake/M_direction_q_2" BEL "snake/M_direction_q_3" BEL
-        "snake/M_vram_temp_reg_q_0" BEL "snake/M_vram_temp_reg_q_1" BEL
-        "snake/M_vram_temp_reg_q_2" BEL "snake/M_vram_temp_reg_q_3" BEL
-        "snake/M_ram_clear_counter_q_0" BEL "snake/M_vram_temp_reg_q_4" BEL
-        "snake/M_ram_clear_counter_q_1" BEL "snake/M_vram_temp_reg_q_5" BEL
-        "snake/M_ram_clear_counter_q_2" BEL "snake/M_vram_temp_reg_q_6" BEL
-        "snake/M_ram_clear_counter_q_3" BEL "snake/M_vram_temp_reg_q_7" BEL
-        "snake/M_ram_clear_counter_q_4" BEL "snake/M_vram_temp_reg_q_8" BEL
-        "snake/M_ram_clear_counter_q_5" BEL "snake/M_vram_temp_reg_q_9" BEL
-        "snake/M_ram_clear_counter_q_6" BEL "snake/M_vram_temp_reg_q_10" BEL
-        "snake/M_ram_clear_counter_q_7" BEL "snake/M_ram_clear_counter_q_8"
-        BEL "snake/M_ram_clear_counter_q_9" BEL "snake/M_vram_temp_reg_q_14"
-        BEL "snake/M_vram_temp_reg_q_15" BEL "snake/M_vram_temp_reg_q_20" BEL
-        "snake/M_vram_temp_reg_q_16" BEL "snake/M_vram_temp_reg_q_21" BEL
-        "snake/M_vram_temp_reg_q_17" BEL "snake/M_vram_temp_reg_q_22" BEL
-        "snake/M_vram_temp_reg_q_18" BEL "snake/M_vram_temp_reg_q_23" BEL
-        "snake/M_vram_temp_reg_q_19" BEL "snake/M_vram_temp_reg_q_24" BEL
-        "snake/M_vram_temp_reg_q_25" BEL "snake/M_vram_temp_reg_q_26" BEL
-        "snake/M_vram_temp_reg_q_31" BEL "snake/M_vram_temp_reg_q_47" BEL
-        "snake/M_vram_temp_reg_q_63" BEL "snake/M_random_num_q_0" BEL
-        "snake/M_random_num_q_1" BEL "snake/M_random_num_q_2" BEL
-        "snake/M_random_num_q_3" BEL "snake/M_random_num_q_4" BEL
-        "snake/M_random_num_q_5" BEL "snake/M_random_num_q_6" BEL
-        "snake/M_random_num_q_7" BEL "snake/M_random_num_q_8" BEL
-        "snake/M_random_num_q_9" BEL "snake/M_keep_length_counter_q_FSM_FFd1"
-        BEL "snake/M_keep_length_counter_q_FSM_FFd2" BEL
-        "snake/M_keep_length_counter_q_FSM_FFd3" BEL
-        "snake/M_calc_counter_q_FSM_FFd1" BEL
-        "snake/M_calc_counter_q_FSM_FFd2" BEL
-        "snake/M_calc_counter_q_FSM_FFd3" BEL
-        "snake/M_calc_counter_q_FSM_FFd4" BEL
-        "snake/M_calc_counter_q_FSM_FFd5" BEL "snake/M_r3_q_0" BEL
-        "snake/M_r3_q_1" BEL "snake/M_r3_q_2" BEL "snake/M_r3_q_3" BEL
-        "snake/M_r3_q_4" BEL "snake/M_r3_q_5" BEL "snake/M_r3_q_6" BEL
-        "snake/M_r3_q_7" BEL "snake/M_r3_q_8" BEL "snake/M_r3_q_9" BEL
-        "snake/M_input_counter_q_0" BEL "snake/M_input_counter_q_1" BEL
-        "snake/M_input_counter_q_2" BEL "snake/M_input_counter_q_3" BEL
-        "snake/M_input_counter_q_4" BEL "snake/M_input_counter_q_5" BEL
-        "snake/M_input_counter_q_6" BEL "snake/M_input_counter_q_7" BEL
-        "snake/M_input_counter_q_8" BEL "snake/M_input_counter_q_9" BEL
-        "snake/M_input_counter_q_10" BEL "snake/M_input_counter_q_11" BEL
-        "snake/M_input_counter_q_12" BEL "snake/M_input_counter_q_13" BEL
-        "snake/M_input_counter_q_14" BEL "snake/M_input_counter_q_20" BEL
-        "snake/M_input_counter_q_15" BEL "snake/M_input_counter_q_16" BEL
-        "snake/M_input_counter_q_21" BEL "snake/M_input_counter_q_22" BEL
-        "snake/M_input_counter_q_17" BEL "snake/M_input_counter_q_18" BEL
-        "snake/M_input_counter_q_23" BEL "snake/M_input_counter_q_19" BEL
-        "snake/M_input_counter_q_24" BEL "snake/M_head_address_q_10" BEL
-        "snake/M_head_address_q_11" BEL "snake/M_head_address_q_12" BEL
-        "snake/M_head_address_q_13" BEL "snake/M_head_address_q_14" BEL
-        "snake/M_head_address_q_15" BEL
+        "b_down_a_button/sync/Mshreg_M_pipe_q_1" BEL "snake/random/M_y_q_31"
+        BEL "snake/random/M_y_q_29" BEL "snake/random/M_y_q_28" BEL
+        "snake/random/M_y_q_27" BEL "snake/random/M_y_q_26" BEL
+        "snake/random/M_y_q_24" BEL "snake/random/M_y_q_23" BEL
+        "snake/random/M_y_q_22" BEL "snake/random/M_y_q_18" BEL
+        "snake/random/M_y_q_15" BEL "snake/random/M_y_q_12" BEL
+        "snake/random/M_y_q_11" BEL "snake/random/M_y_q_10" BEL
+        "snake/random/M_y_q_8" BEL "snake/random/M_y_q_7" BEL
+        "snake/random/M_y_q_6" BEL "snake/random/M_y_q_4" BEL
+        "snake/random/M_y_q_3" BEL "snake/random/M_y_q_1" BEL
+        "snake/random/M_z_q_31" BEL "snake/random/M_z_q_30" BEL
+        "snake/random/M_z_q_26" BEL "snake/random/M_z_q_24" BEL
+        "snake/random/M_z_q_23" BEL "snake/random/M_z_q_20" BEL
+        "snake/random/M_z_q_19" BEL "snake/random/M_z_q_18" BEL
+        "snake/random/M_z_q_17" BEL "snake/random/M_z_q_15" BEL
+        "snake/random/M_z_q_14" BEL "snake/random/M_z_q_10" BEL
+        "snake/random/M_z_q_9" BEL "snake/random/M_z_q_7" BEL
+        "snake/random/M_z_q_4" BEL "snake/random/M_z_q_3" BEL
+        "snake/random/M_z_q_0" BEL "snake/random/M_w_q_30" BEL
+        "snake/random/M_w_q_29" BEL "snake/random/M_w_q_28" BEL
+        "snake/random/M_w_q_27" BEL "snake/random/M_w_q_25" BEL
+        "snake/random/M_w_q_24" BEL "snake/random/M_w_q_23" BEL
+        "snake/random/M_w_q_22" BEL "snake/random/M_w_q_19" BEL
+        "snake/random/M_w_q_18" BEL "snake/random/M_w_q_16" BEL
+        "snake/random/M_w_q_15" BEL "snake/random/M_w_q_14" BEL
+        "snake/random/M_w_q_11" BEL "snake/random/M_w_q_10" BEL
+        "snake/random/M_w_q_7" BEL "snake/random/M_w_q_5" BEL
+        "snake/random/M_w_q_3" BEL "snake/random/M_w_q_2" BEL
+        "snake/random/M_w_q_0" BEL "snake/random/M_x_q_31" BEL
+        "snake/random/M_x_q_28" BEL "snake/random/M_x_q_27" BEL
+        "snake/random/M_x_q_26" BEL "snake/random/M_x_q_24" BEL
+        "snake/random/M_x_q_23" BEL "snake/random/M_x_q_21" BEL
+        "snake/random/M_x_q_18" BEL "snake/random/M_x_q_17" BEL
+        "snake/random/M_x_q_15" BEL "snake/random/M_x_q_14" BEL
+        "snake/random/M_x_q_12" BEL "snake/random/M_x_q_9" BEL
+        "snake/random/M_x_q_8" BEL "snake/random/M_x_q_7" BEL
+        "snake/random/M_x_q_4" BEL "snake/random/M_x_q_3" BEL
+        "snake/random/M_x_q_2" BEL "snake/random/M_x_q_0" BEL
+        "snake/random/M_y_q_30" BEL "snake/random/M_y_q_25" BEL
+        "snake/random/M_y_q_21" BEL "snake/random/M_y_q_20" BEL
+        "snake/random/M_y_q_19" BEL "snake/random/M_y_q_17" BEL
+        "snake/random/M_y_q_16" BEL "snake/random/M_y_q_14" BEL
+        "snake/random/M_y_q_13" BEL "snake/random/M_y_q_9" BEL
+        "snake/random/M_y_q_5" BEL "snake/random/M_y_q_2" BEL
+        "snake/random/M_y_q_0" BEL "snake/random/M_z_q_29" BEL
+        "snake/random/M_z_q_28" BEL "snake/random/M_z_q_27" BEL
+        "snake/random/M_z_q_25" BEL "snake/random/M_z_q_22" BEL
+        "snake/random/M_z_q_21" BEL "snake/random/M_z_q_16" BEL
+        "snake/random/M_z_q_13" BEL "snake/random/M_z_q_12" BEL
+        "snake/random/M_z_q_11" BEL "snake/random/M_z_q_8" BEL
+        "snake/random/M_z_q_6" BEL "snake/random/M_z_q_5" BEL
+        "snake/random/M_z_q_2" BEL "snake/random/M_z_q_1" BEL
+        "snake/random/M_w_q_31" BEL "snake/random/M_w_q_26" BEL
+        "snake/random/M_w_q_21" BEL "snake/random/M_w_q_20" BEL
+        "snake/random/M_w_q_17" BEL "snake/random/M_w_q_13" BEL
+        "snake/random/M_w_q_12" BEL "snake/random/M_w_q_9" BEL
+        "snake/random/M_w_q_8" BEL "snake/random/M_w_q_6" BEL
+        "snake/random/M_w_q_4" BEL "snake/random/M_w_q_1" BEL
+        "snake/random/M_x_q_30" BEL "snake/random/M_x_q_29" BEL
+        "snake/random/M_x_q_25" BEL "snake/random/M_x_q_22" BEL
+        "snake/random/M_x_q_20" BEL "snake/random/M_x_q_19" BEL
+        "snake/random/M_x_q_16" BEL "snake/random/M_x_q_13" BEL
+        "snake/random/M_x_q_11" BEL "snake/random/M_x_q_10" BEL
+        "snake/random/M_x_q_6" BEL "snake/random/M_x_q_5" BEL
+        "snake/random/M_x_q_1" PIN "snake/game_ram/Mram_ram_pins<10>" BEL
+        "snake/snake_fsm/M_ram_write_counter_q_0" BEL
+        "snake/snake_fsm/M_ram_write_counter_q_1" BEL
+        "snake/snake_fsm/M_ram_write_counter_q_2" BEL
+        "snake/snake_fsm/M_ram_write_counter_q_3" BEL
+        "snake/snake_fsm/M_ram_write_counter_q_4" BEL
+        "snake/snake_fsm/M_ram_write_counter_q_5" BEL
+        "snake/snake_fsm/M_ram_write_counter_q_6" BEL
+        "snake/snake_fsm/M_ram_write_counter_q_7" BEL
+        "snake/snake_fsm/M_direction_q_0" BEL
+        "snake/snake_fsm/M_direction_q_1" BEL
+        "snake/snake_fsm/M_direction_q_2" BEL
+        "snake/snake_fsm/M_direction_q_3" BEL
+        "snake/snake_fsm/M_vram_temp_reg_q_0" BEL
+        "snake/snake_fsm/M_vram_temp_reg_q_1" BEL
+        "snake/snake_fsm/M_vram_temp_reg_q_2" BEL
+        "snake/snake_fsm/M_vram_temp_reg_q_3" BEL
+        "snake/snake_fsm/M_ram_clear_counter_q_0" BEL
+        "snake/snake_fsm/M_vram_temp_reg_q_4" BEL
+        "snake/snake_fsm/M_ram_clear_counter_q_1" BEL
+        "snake/snake_fsm/M_vram_temp_reg_q_5" BEL
+        "snake/snake_fsm/M_ram_clear_counter_q_2" BEL
+        "snake/snake_fsm/M_vram_temp_reg_q_6" BEL
+        "snake/snake_fsm/M_ram_clear_counter_q_3" BEL
+        "snake/snake_fsm/M_vram_temp_reg_q_7" BEL
+        "snake/snake_fsm/M_ram_clear_counter_q_4" BEL
+        "snake/snake_fsm/M_vram_temp_reg_q_8" BEL
+        "snake/snake_fsm/M_ram_clear_counter_q_5" BEL
+        "snake/snake_fsm/M_vram_temp_reg_q_9" BEL
+        "snake/snake_fsm/M_ram_clear_counter_q_6" BEL
+        "snake/snake_fsm/M_vram_temp_reg_q_10" BEL
+        "snake/snake_fsm/M_ram_clear_counter_q_7" BEL
+        "snake/snake_fsm/M_ram_clear_counter_q_8" BEL
+        "snake/snake_fsm/M_ram_clear_counter_q_9" BEL
+        "snake/snake_fsm/M_vram_temp_reg_q_14" BEL
+        "snake/snake_fsm/M_vram_temp_reg_q_15" BEL
+        "snake/snake_fsm/M_vram_temp_reg_q_20" BEL
+        "snake/snake_fsm/M_vram_temp_reg_q_16" BEL
+        "snake/snake_fsm/M_vram_temp_reg_q_21" BEL
+        "snake/snake_fsm/M_vram_temp_reg_q_17" BEL
+        "snake/snake_fsm/M_vram_temp_reg_q_22" BEL
+        "snake/snake_fsm/M_vram_temp_reg_q_18" BEL
+        "snake/snake_fsm/M_vram_temp_reg_q_23" BEL
+        "snake/snake_fsm/M_vram_temp_reg_q_19" BEL
+        "snake/snake_fsm/M_vram_temp_reg_q_24" BEL
+        "snake/snake_fsm/M_vram_temp_reg_q_25" BEL
+        "snake/snake_fsm/M_vram_temp_reg_q_31" BEL
+        "snake/snake_fsm/M_vram_temp_reg_q_26" BEL
+        "snake/snake_fsm/M_vram_temp_reg_q_47" BEL
+        "snake/snake_fsm/M_vram_temp_reg_q_63" BEL
+        "snake/snake_fsm/M_vram_temp_reg_q_80" BEL
+        "snake/snake_fsm/M_vram_temp_reg_q_81" BEL
+        "snake/snake_fsm/M_vram_temp_reg_q_82" BEL
+        "snake/snake_fsm/M_vram_temp_reg_q_83" BEL
+        "snake/snake_fsm/M_vram_temp_reg_q_84" BEL
+        "snake/snake_fsm/M_vram_temp_reg_q_85" BEL
+        "snake/snake_fsm/M_vram_temp_reg_q_86" BEL
+        "snake/snake_fsm/M_vram_temp_reg_q_87" BEL
+        "snake/snake_fsm/M_vram_temp_reg_q_88" BEL
+        "snake/snake_fsm/M_vram_temp_reg_q_94" BEL
+        "snake/snake_fsm/M_vram_temp_reg_q_89" BEL
+        "snake/snake_fsm/M_random_num_q_0" BEL
+        "snake/snake_fsm/M_random_num_q_1" BEL
+        "snake/snake_fsm/M_random_num_q_2" BEL
+        "snake/snake_fsm/M_random_num_q_3" BEL
+        "snake/snake_fsm/M_random_num_q_4" BEL
+        "snake/snake_fsm/M_random_num_q_5" BEL
+        "snake/snake_fsm/M_random_num_q_6" BEL
+        "snake/snake_fsm/M_random_num_q_7" BEL
+        "snake/snake_fsm/M_random_num_q_8" BEL
+        "snake/snake_fsm/M_random_num_q_9" BEL
+        "snake/snake_fsm/M_keep_length_counter_q_FSM_FFd1" BEL
+        "snake/snake_fsm/M_keep_length_counter_q_FSM_FFd2" BEL
+        "snake/snake_fsm/M_keep_length_counter_q_FSM_FFd3" BEL
+        "snake/snake_fsm/M_calc_counter_q_FSM_FFd1" BEL
+        "snake/snake_fsm/M_calc_counter_q_FSM_FFd2" BEL
+        "snake/snake_fsm/M_calc_counter_q_FSM_FFd3" BEL
+        "snake/snake_fsm/M_calc_counter_q_FSM_FFd4" BEL
+        "snake/snake_fsm/M_calc_counter_q_FSM_FFd5" BEL
+        "snake/snake_fsm/M_r3_q_0" BEL "snake/snake_fsm/M_r3_q_1" BEL
+        "snake/snake_fsm/M_r3_q_2" BEL "snake/snake_fsm/M_r3_q_3" BEL
+        "snake/snake_fsm/M_r3_q_4" BEL "snake/snake_fsm/M_r3_q_5" BEL
+        "snake/snake_fsm/M_r3_q_6" BEL "snake/snake_fsm/M_r3_q_7" BEL
+        "snake/snake_fsm/M_r3_q_8" BEL "snake/snake_fsm/M_r3_q_9" BEL
+        "snake/snake_fsm/M_input_counter_q_0" BEL
+        "snake/snake_fsm/M_input_counter_q_1" BEL
+        "snake/snake_fsm/M_input_counter_q_2" BEL
+        "snake/snake_fsm/M_input_counter_q_3" BEL
+        "snake/snake_fsm/M_input_counter_q_4" BEL
+        "snake/snake_fsm/M_input_counter_q_5" BEL
+        "snake/snake_fsm/M_input_counter_q_6" BEL
+        "snake/snake_fsm/M_input_counter_q_7" BEL
+        "snake/snake_fsm/M_input_counter_q_8" BEL
+        "snake/snake_fsm/M_input_counter_q_9" BEL
+        "snake/snake_fsm/M_input_counter_q_10" BEL
+        "snake/snake_fsm/M_input_counter_q_11" BEL
+        "snake/snake_fsm/M_input_counter_q_12" BEL
+        "snake/snake_fsm/M_input_counter_q_13" BEL
+        "snake/snake_fsm/M_input_counter_q_14" BEL
+        "snake/snake_fsm/M_input_counter_q_20" BEL
+        "snake/snake_fsm/M_input_counter_q_15" BEL
+        "snake/snake_fsm/M_input_counter_q_21" BEL
+        "snake/snake_fsm/M_input_counter_q_16" BEL
+        "snake/snake_fsm/M_input_counter_q_22" BEL
+        "snake/snake_fsm/M_input_counter_q_17" BEL
+        "snake/snake_fsm/M_input_counter_q_18" BEL
+        "snake/snake_fsm/M_input_counter_q_23" BEL
+        "snake/snake_fsm/M_input_counter_q_19" BEL
+        "snake/snake_fsm/M_input_counter_q_24" BEL
+        "snake/snake_fsm/M_head_address_q_10" BEL
+        "snake/snake_fsm/M_head_address_q_11" BEL
+        "snake/snake_fsm/M_head_address_q_12" BEL
+        "snake/snake_fsm/M_head_address_q_13" BEL
+        "snake/snake_fsm/M_head_address_q_14" BEL
+        "snake/snake_fsm/M_head_address_q_15" BEL
+        "snake/snake_fsm/M_user_input_q_0" BEL
+        "snake/snake_fsm/M_user_input_q_1" BEL
+        "snake/snake_fsm/M_user_input_q_2" BEL
+        "snake/snake_fsm/M_user_input_q_3" BEL
+        "snake/snake_fsm/M_tail_address_q_0" BEL
+        "snake/snake_fsm/M_tail_address_q_1" BEL
+        "snake/snake_fsm/M_tail_address_q_2" BEL
+        "snake/snake_fsm/M_tail_address_q_3" BEL
+        "snake/snake_fsm/M_tail_address_q_4" BEL
+        "snake/snake_fsm/M_tail_address_q_5" BEL
+        "snake/snake_fsm/M_tail_address_q_6" BEL
+        "snake/snake_fsm/M_tail_address_q_7" BEL
+        "snake/snake_fsm/M_tail_address_q_8" BEL
+        "snake/snake_fsm/M_tail_address_q_9" BEL
+        "snake/snake_fsm/M_state_q_FSM_FFd1" BEL
+        "snake/snake_fsm/M_state_q_FSM_FFd2" BEL
+        "snake/snake_fsm/M_state_q_FSM_FFd3" BEL
+        "snake/snake_fsm/M_state_q_FSM_FFd4" BEL
+        "snake/snake_fsm/M_state_q_FSM_FFd5" BEL
+        "snake/snake_fsm/M_state_q_FSM_FFd6" BEL
+        "snake/snake_fsm/M_state_q_FSM_FFd7" BEL
+        "snake/snake_fsm/M_state_q_FSM_FFd8" BEL
+        "snake/snake_fsm/M_state_q_FSM_FFd9" BEL
+        "snake/snake_fsm/M_score_q_10" BEL "snake/snake_fsm/M_score_q_11" BEL
+        "snake/snake_fsm/M_score_q_12" BEL "snake/snake_fsm/M_score_q_13" BEL
+        "snake/snake_fsm/M_score_q_14" BEL "snake/snake_fsm/M_score_q_20" BEL
+        "snake/snake_fsm/M_score_q_15" BEL "snake/snake_fsm/M_score_q_16" BEL
+        "snake/snake_fsm/M_score_q_21" BEL "snake/snake_fsm/M_score_q_22" BEL
+        "snake/snake_fsm/M_score_q_17" BEL "snake/snake_fsm/M_score_q_23" BEL
+        "snake/snake_fsm/M_score_q_18" BEL "snake/snake_fsm/M_score_q_24" BEL
+        "snake/snake_fsm/M_score_q_19" BEL "snake/snake_fsm/M_score_q_30" BEL
+        "snake/snake_fsm/M_score_q_25" BEL "snake/snake_fsm/M_score_q_31" BEL
+        "snake/snake_fsm/M_score_q_26" BEL "snake/snake_fsm/M_score_q_27" BEL
+        "snake/snake_fsm/M_score_q_28" BEL "snake/snake_fsm/M_score_q_29" BEL
+        "snake/snake_fsm/M_r4_q_4" BEL "snake/snake_fsm/M_r4_q_5" BEL
+        "snake/snake_fsm/M_r4_q_7" BEL "snake/snake_fsm/M_r4_q_8" BEL
+        "snake/snake_fsm/M_highscore_q_1" BEL
+        "snake/snake_fsm/M_highscore_q_2" BEL
+        "snake/snake_fsm/M_highscore_q_3" BEL
+        "snake/snake_fsm/M_highscore_q_4" BEL
+        "snake/snake_fsm/M_highscore_q_5" BEL
+        "snake/snake_fsm/M_highscore_q_6" BEL
+        "snake/snake_fsm/M_highscore_q_7" BEL
+        "snake/snake_fsm/M_highscore_q_8" BEL
+        "snake/snake_fsm/M_highscore_q_9" BEL
+        "snake/snake_fsm/M_highscore_q_10" BEL
+        "snake/snake_fsm/M_highscore_q_11" BEL
+        "snake/snake_fsm/M_highscore_q_12" BEL
+        "snake/snake_fsm/M_highscore_q_13" BEL
+        "snake/snake_fsm/M_highscore_q_14" BEL
+        "snake/snake_fsm/M_highscore_q_15" BEL
+        "snake/snake_fsm/M_highscore_q_20" BEL
+        "snake/snake_fsm/M_highscore_q_16" BEL
+        "snake/snake_fsm/M_highscore_q_21" BEL
+        "snake/snake_fsm/M_highscore_q_17" BEL
+        "snake/snake_fsm/M_highscore_q_22" BEL
+        "snake/snake_fsm/M_highscore_q_23" BEL
+        "snake/snake_fsm/M_highscore_q_18" BEL
+        "snake/snake_fsm/M_highscore_q_19" BEL
+        "snake/snake_fsm/M_highscore_q_24" BEL
+        "snake/snake_fsm/M_highscore_q_25" BEL
+        "snake/snake_fsm/M_highscore_q_30" BEL
+        "snake/snake_fsm/M_highscore_q_26" BEL
+        "snake/snake_fsm/M_highscore_q_31" BEL
+        "snake/snake_fsm/M_highscore_q_27" BEL
+        "snake/snake_fsm/M_highscore_q_28" BEL
+        "snake/snake_fsm/M_highscore_q_29" PIN
+        "snake/snake_fsm/Maddsub_n2392_pins<92>" PIN
+        "snake/snake_fsm/Maddsub_n2645_pins<92>" BEL
+        "snake/snake_fsm/M_ram_clear_q" BEL "snake/snake_fsm/M_r1_q_10" BEL
+        "snake/snake_fsm/M_r1_q_11" BEL "snake/snake_fsm/M_r1_q_12" BEL
+        "snake/snake_fsm/M_r1_q_13" BEL "snake/snake_fsm/M_r1_q_14" BEL
+        "snake/snake_fsm/M_r1_q_15" BEL "snake/snake_fsm/M_r2_q_10" BEL
+        "snake/snake_fsm/M_r2_q_11" BEL "snake/snake_fsm/M_r2_q_12" BEL
+        "snake/snake_fsm/M_ram_read_q" BEL "snake/snake_fsm/M_r2_q_13" BEL
+        "snake/snake_fsm/M_r2_q_14" BEL "snake/snake_fsm/M_r2_q_15" BEL
+        "snake/snake_fsm/M_vram_refresh_ctr_q_10" BEL
+        "snake/snake_fsm/M_vram_refresh_ctr_q_11" BEL
+        "snake/snake_fsm/M_r3_q_10" BEL "snake/snake_fsm/M_r3_q_11" BEL
+        "snake/snake_fsm/M_r3_q_12" BEL "snake/snake_fsm/M_r3_q_13" BEL
+        "snake/snake_fsm/M_r3_q_14" BEL "snake/snake_fsm/M_r3_q_15" BEL
+        "snake/snake_fsm/M_r4_q_11" BEL "snake/snake_fsm/M_r4_q_16" BEL
+        "snake/snake_fsm/M_ram_write_q" BEL
+        "snake/snake_fsm/M_vram_refresh_ctr_q_0" BEL
+        "snake/snake_fsm/M_vram_refresh_ctr_q_1" BEL
+        "snake/snake_fsm/M_vram_refresh_ctr_q_2" BEL
+        "snake/snake_fsm/M_vram_refresh_ctr_q_3" BEL
+        "snake/snake_fsm/M_vram_refresh_ctr_q_4" BEL
+        "snake/snake_fsm/M_vram_refresh_ctr_q_5" BEL
+        "snake/snake_fsm/M_vram_refresh_ctr_q_6" BEL
+        "snake/snake_fsm/M_vram_refresh_ctr_q_7" BEL
+        "snake/snake_fsm/M_vram_refresh_ctr_q_8" BEL
+        "snake/snake_fsm/M_vram_refresh_ctr_q_9" BEL
+        "snake/snake_fsm/M_r1_q_0" BEL "snake/snake_fsm/M_r1_q_1" BEL
+        "snake/snake_fsm/M_r1_q_2" BEL "snake/snake_fsm/M_r1_q_3" BEL
+        "snake/snake_fsm/M_r1_q_4" BEL "snake/snake_fsm/M_r1_q_5" BEL
+        "snake/snake_fsm/M_r1_q_6" BEL "snake/snake_fsm/M_r1_q_7" BEL
+        "snake/snake_fsm/M_r1_q_8" BEL "snake/snake_fsm/M_r1_q_9" BEL
+        "snake/snake_fsm/M_head_address_q_0" BEL
+        "snake/snake_fsm/M_head_address_q_1" BEL
+        "snake/snake_fsm/M_head_address_q_2" BEL
+        "snake/snake_fsm/M_head_address_q_3" BEL
+        "snake/snake_fsm/M_head_address_q_4" BEL
+        "snake/snake_fsm/M_head_address_q_5" BEL
+        "snake/snake_fsm/M_head_address_q_6" BEL
+        "snake/snake_fsm/M_head_address_q_7" BEL
+        "snake/snake_fsm/M_head_address_q_8" BEL
+        "snake/snake_fsm/M_head_address_q_9" BEL "snake/snake_fsm/M_score_q_1"
+        BEL "snake/snake_fsm/M_score_q_2" BEL "snake/snake_fsm/M_score_q_3"
+        BEL "snake/snake_fsm/M_score_q_4" BEL "snake/snake_fsm/M_score_q_5"
+        BEL "snake/snake_fsm/M_score_q_6" BEL "snake/snake_fsm/M_score_q_7"
+        BEL "snake/snake_fsm/M_score_q_8" BEL "snake/snake_fsm/M_score_q_9"
+        BEL "snake/snake_fsm/M_vram_refresh_q" BEL "snake/snake_fsm/M_r2_q_0"
+        BEL "snake/snake_fsm/M_r2_q_1" BEL "snake/snake_fsm/M_r2_q_2" BEL
+        "snake/snake_fsm/M_r2_q_3" BEL "snake/snake_fsm/M_r2_q_4" BEL
+        "snake/snake_fsm/M_r2_q_5" BEL "snake/snake_fsm/M_r2_q_6" BEL
+        "snake/snake_fsm/M_r2_q_7" BEL "snake/snake_fsm/M_r2_q_8" BEL
+        "snake/snake_fsm/M_r2_q_9" BEL "snake/snake_fsm/M_state_q_FSM_FFd10"
+        BEL "snake/snake_fsm/M_state_q_FSM_FFd11" BEL
+        "snake/snake_fsm/M_state_q_FSM_FFd12" BEL
+        "snake/snake_fsm/M_state_q_FSM_FFd13" BEL
+        "snake/snake_fsm/M_state_q_FSM_FFd14" BEL
+        "snake/snake_fsm/M_previous_head_q_0" BEL
+        "snake/snake_fsm/M_previous_head_q_1" BEL
+        "snake/snake_fsm/M_previous_head_q_2" BEL
+        "snake/snake_fsm/M_previous_head_q_3" BEL
+        "snake/snake_fsm/M_previous_head_q_4" BEL
+        "snake/snake_fsm/M_previous_head_q_5" BEL
+        "snake/snake_fsm/M_previous_head_q_6" BEL
+        "snake/snake_fsm/M_previous_head_q_7" BEL
+        "snake/snake_fsm/M_previous_head_q_8" BEL
+        "snake/snake_fsm/M_previous_head_q_9" BEL
         "snake/divider/blk00000003/blk00000010" BEL
         "snake/divider/blk00000003/blk00000011" BEL
         "snake/divider/blk00000003/blk00000006" BEL
@@ -404,172 +658,8 @@ TIMEGRP clkgen_clkdv = BEL "vga/M_h_count_q_0" BEL "vga/M_h_count_q_1" BEL
         "snake/divider/blk00000003/blk000000fc" BEL
         "snake/divider/blk00000003/blk000000fd" BEL
         "snake/divider/blk00000003/blk000000fe" BEL
-        "snake/divider/blk00000003/blk000000ff" BEL "snake/M_user_input_q_0"
-        BEL "snake/M_user_input_q_1" BEL "snake/M_user_input_q_2" BEL
-        "snake/M_user_input_q_3" BEL "snake/random/M_y_q_31" BEL
-        "snake/random/M_y_q_29" BEL "snake/random/M_y_q_28" BEL
-        "snake/random/M_y_q_27" BEL "snake/random/M_y_q_26" BEL
-        "snake/random/M_y_q_24" BEL "snake/random/M_y_q_23" BEL
-        "snake/random/M_y_q_22" BEL "snake/random/M_y_q_18" BEL
-        "snake/random/M_y_q_15" BEL "snake/random/M_y_q_12" BEL
-        "snake/random/M_y_q_11" BEL "snake/random/M_y_q_10" BEL
-        "snake/random/M_y_q_8" BEL "snake/random/M_y_q_7" BEL
-        "snake/random/M_y_q_6" BEL "snake/random/M_y_q_4" BEL
-        "snake/random/M_y_q_3" BEL "snake/random/M_y_q_1" BEL
-        "snake/random/M_z_q_31" BEL "snake/random/M_z_q_30" BEL
-        "snake/random/M_z_q_26" BEL "snake/random/M_z_q_24" BEL
-        "snake/random/M_z_q_23" BEL "snake/random/M_z_q_20" BEL
-        "snake/random/M_z_q_19" BEL "snake/random/M_z_q_18" BEL
-        "snake/random/M_z_q_17" BEL "snake/random/M_z_q_15" BEL
-        "snake/random/M_z_q_14" BEL "snake/random/M_z_q_10" BEL
-        "snake/random/M_z_q_9" BEL "snake/random/M_z_q_7" BEL
-        "snake/random/M_z_q_4" BEL "snake/random/M_z_q_3" BEL
-        "snake/random/M_z_q_0" BEL "snake/random/M_w_q_30" BEL
-        "snake/random/M_w_q_29" BEL "snake/random/M_w_q_28" BEL
-        "snake/random/M_w_q_27" BEL "snake/random/M_w_q_25" BEL
-        "snake/random/M_w_q_24" BEL "snake/random/M_w_q_23" BEL
-        "snake/random/M_w_q_22" BEL "snake/random/M_w_q_19" BEL
-        "snake/random/M_w_q_18" BEL "snake/random/M_w_q_16" BEL
-        "snake/random/M_w_q_15" BEL "snake/random/M_w_q_14" BEL
-        "snake/random/M_w_q_11" BEL "snake/random/M_w_q_10" BEL
-        "snake/random/M_w_q_7" BEL "snake/random/M_w_q_5" BEL
-        "snake/random/M_w_q_3" BEL "snake/random/M_w_q_2" BEL
-        "snake/random/M_w_q_0" BEL "snake/random/M_x_q_31" BEL
-        "snake/random/M_x_q_28" BEL "snake/random/M_x_q_27" BEL
-        "snake/random/M_x_q_26" BEL "snake/random/M_x_q_24" BEL
-        "snake/random/M_x_q_23" BEL "snake/random/M_x_q_21" BEL
-        "snake/random/M_x_q_18" BEL "snake/random/M_x_q_17" BEL
-        "snake/random/M_x_q_15" BEL "snake/random/M_x_q_14" BEL
-        "snake/random/M_x_q_12" BEL "snake/random/M_x_q_9" BEL
-        "snake/random/M_x_q_8" BEL "snake/random/M_x_q_7" BEL
-        "snake/random/M_x_q_4" BEL "snake/random/M_x_q_3" BEL
-        "snake/random/M_x_q_2" BEL "snake/random/M_x_q_0" BEL
-        "snake/random/M_y_q_30" BEL "snake/random/M_y_q_25" BEL
-        "snake/random/M_y_q_21" BEL "snake/random/M_y_q_20" BEL
-        "snake/random/M_y_q_19" BEL "snake/random/M_y_q_17" BEL
-        "snake/random/M_y_q_16" BEL "snake/random/M_y_q_14" BEL
-        "snake/random/M_y_q_13" BEL "snake/random/M_y_q_9" BEL
-        "snake/random/M_y_q_5" BEL "snake/random/M_y_q_2" BEL
-        "snake/random/M_y_q_0" BEL "snake/random/M_z_q_29" BEL
-        "snake/random/M_z_q_28" BEL "snake/random/M_z_q_27" BEL
-        "snake/random/M_z_q_25" BEL "snake/random/M_z_q_22" BEL
-        "snake/random/M_z_q_21" BEL "snake/random/M_z_q_16" BEL
-        "snake/random/M_z_q_13" BEL "snake/random/M_z_q_12" BEL
-        "snake/random/M_z_q_11" BEL "snake/random/M_z_q_8" BEL
-        "snake/random/M_z_q_6" BEL "snake/random/M_z_q_5" BEL
-        "snake/random/M_z_q_2" BEL "snake/random/M_z_q_1" BEL
-        "snake/random/M_w_q_31" BEL "snake/random/M_w_q_26" BEL
-        "snake/random/M_w_q_21" BEL "snake/random/M_w_q_20" BEL
-        "snake/random/M_w_q_17" BEL "snake/random/M_w_q_13" BEL
-        "snake/random/M_w_q_12" BEL "snake/random/M_w_q_9" BEL
-        "snake/random/M_w_q_8" BEL "snake/random/M_w_q_6" BEL
-        "snake/random/M_w_q_4" BEL "snake/random/M_w_q_1" BEL
-        "snake/random/M_x_q_30" BEL "snake/random/M_x_q_29" BEL
-        "snake/random/M_x_q_25" BEL "snake/random/M_x_q_22" BEL
-        "snake/random/M_x_q_20" BEL "snake/random/M_x_q_19" BEL
-        "snake/random/M_x_q_16" BEL "snake/random/M_x_q_13" BEL
-        "snake/random/M_x_q_11" BEL "snake/random/M_x_q_10" BEL
-        "snake/random/M_x_q_6" BEL "snake/random/M_x_q_5" BEL
-        "snake/random/M_x_q_1" BEL "snake/M_tail_address_q_0" BEL
-        "snake/M_tail_address_q_1" BEL "snake/M_tail_address_q_2" BEL
-        "snake/M_tail_address_q_3" BEL "snake/M_tail_address_q_4" BEL
-        "snake/M_tail_address_q_5" BEL "snake/M_tail_address_q_6" BEL
-        "snake/M_tail_address_q_7" BEL "snake/M_tail_address_q_8" BEL
-        "snake/M_tail_address_q_9" BEL "snake/M_state_q_FSM_FFd1" BEL
-        "snake/M_state_q_FSM_FFd2" BEL "snake/M_state_q_FSM_FFd3" BEL
-        "snake/M_state_q_FSM_FFd4" BEL "snake/M_state_q_FSM_FFd5" BEL
-        "snake/M_state_q_FSM_FFd6" BEL "snake/M_state_q_FSM_FFd7" BEL
-        "snake/M_state_q_FSM_FFd8" BEL "snake/M_state_q_FSM_FFd9" BEL
-        "snake/M_score_q_10" BEL "snake/M_score_q_11" BEL "snake/M_score_q_12"
-        BEL "snake/M_score_q_13" BEL "snake/M_score_q_14" BEL
-        "snake/M_score_q_15" BEL "snake/M_score_q_20" BEL "snake/M_score_q_21"
-        BEL "snake/M_score_q_16" BEL "snake/M_score_q_17" BEL
-        "snake/M_score_q_22" BEL "snake/M_score_q_23" BEL "snake/M_score_q_18"
-        BEL "snake/M_score_q_19" BEL "snake/M_score_q_24" BEL
-        "snake/M_score_q_25" BEL "snake/M_score_q_30" BEL "snake/M_score_q_26"
-        BEL "snake/M_score_q_31" BEL "snake/M_score_q_27" BEL
-        "snake/M_score_q_28" BEL "snake/M_score_q_29" BEL "snake/M_r4_q_4" BEL
-        "snake/M_r4_q_5" BEL "snake/M_r4_q_7" BEL "snake/M_r4_q_8" BEL
-        "snake/M_debugreg_q_0" BEL "snake/M_debugreg_q_1" BEL
-        "snake/M_debugreg_q_2" BEL "snake/M_debugreg_q_3" BEL
-        "snake/M_debugreg_q_4" BEL "snake/M_debugreg_q_5" BEL
-        "snake/M_highscore_q_1" BEL "snake/M_highscore_q_2" BEL
-        "snake/M_highscore_q_3" BEL "snake/M_highscore_q_4" BEL
-        "snake/M_highscore_q_5" BEL "snake/M_highscore_q_6" BEL
-        "snake/M_highscore_q_7" BEL "snake/M_highscore_q_8" BEL
-        "snake/M_highscore_q_9" BEL "snake/M_highscore_q_10" BEL
-        "snake/M_highscore_q_11" BEL "snake/M_highscore_q_12" BEL
-        "snake/M_highscore_q_13" BEL "snake/M_highscore_q_14" BEL
-        "snake/M_highscore_q_20" BEL "snake/M_highscore_q_15" BEL
-        "snake/M_highscore_q_16" BEL "snake/M_highscore_q_21" BEL
-        "snake/M_highscore_q_17" BEL "snake/M_highscore_q_22" BEL
-        "snake/M_highscore_q_23" BEL "snake/M_highscore_q_18" BEL
-        "snake/M_highscore_q_19" BEL "snake/M_highscore_q_24" BEL
-        "snake/M_highscore_q_30" BEL "snake/M_highscore_q_25" BEL
-        "snake/M_highscore_q_26" BEL "snake/M_highscore_q_31" BEL
-        "snake/M_highscore_q_27" BEL "snake/M_highscore_q_28" BEL
-        "snake/M_highscore_q_29" BEL "snake/M_state_q_FSM_FFd10_1" BEL
-        "snake/M_state_q_FSM_FFd11_1" PIN "snake/Maddsub_n3023_pins<92>" BEL
-        "snake/M_state_q_FSM_FFd11_2" BEL "snake/M_state_q_FSM_FFd12_1" BEL
-        "snake/M_state_q_FSM_FFd13_1" PIN "snake/Maddsub_n2745_pins<92>" BEL
-        "snake/M_state_q_FSM_FFd14_1" PIN
+        "snake/divider/blk00000003/blk000000ff" PIN
         "snake/multiplier/blk00000001/blk00000004_pins<92>" PIN
-        "snake/disp_game_mem/Mram_ram_pins<10>" BEL "snake/M_ram_clear_q" BEL
-        "snake/M_r1_q_10" BEL "snake/M_r1_q_11" BEL "snake/M_r1_q_12" BEL
-        "snake/M_r1_q_13" BEL "snake/M_r1_q_14" BEL "snake/M_r1_q_15" BEL
-        "snake/M_ram_write_counter_q_0_1" BEL
-        "snake/M_ram_write_counter_q_0_2" BEL "snake/M_r2_q_10" BEL
-        "snake/M_r2_q_11" BEL "snake/M_r2_q_12" BEL "snake/M_ram_read_q" BEL
-        "snake/M_r2_q_13" BEL "snake/M_r2_q_14" BEL "snake/M_r2_q_15" BEL
-        "snake/M_ram_write_counter_q_1_1" BEL
-        "snake/M_ram_write_counter_q_2_1" BEL "snake/M_vram_refresh_ctr_q_10"
-        BEL "snake/M_vram_refresh_ctr_q_11" BEL "snake/M_r3_q_10" BEL
-        "snake/M_r3_q_11" BEL "snake/M_r3_q_12" BEL "snake/M_r3_q_13" BEL
-        "snake/M_r3_q_14" BEL "snake/M_r3_q_15" BEL
-        "snake/M_ram_write_counter_q_3_1" BEL "snake/M_r4_q_11" BEL
-        "snake/M_r4_q_16" BEL "snake/M_ram_write_q" BEL
-        "snake/M_vram_refresh_ctr_q_0" BEL "snake/M_vram_refresh_ctr_q_1" BEL
-        "snake/M_vram_refresh_ctr_q_2" BEL "snake/M_vram_refresh_ctr_q_3" BEL
-        "snake/M_vram_refresh_ctr_q_4" BEL "snake/M_vram_refresh_ctr_q_5" BEL
-        "snake/M_vram_refresh_ctr_q_6" BEL "snake/M_vram_refresh_ctr_q_7" BEL
-        "snake/M_vram_refresh_ctr_q_8" BEL "snake/M_vram_refresh_ctr_q_9" BEL
-        "snake/M_vram_temp_reg_q_130" BEL "snake/M_vram_temp_reg_q_131" BEL
-        "snake/M_vram_temp_reg_q_132" BEL "snake/M_vram_temp_reg_q_133" BEL
-        "snake/M_vram_temp_reg_q_128" BEL "snake/M_vram_temp_reg_q_134" BEL
-        "snake/M_vram_temp_reg_q_129" BEL "snake/M_vram_temp_reg_q_135" BEL
-        "snake/M_vram_temp_reg_q_136" BEL "snake/M_vram_temp_reg_q_142" BEL
-        "snake/M_vram_temp_reg_q_137" BEL "snake/M_head_address_q_4_1" BEL
-        "snake/M_head_address_q_4_2" BEL "snake/M_head_address_q_4_3" BEL
-        "snake/M_r1_q_0" BEL "snake/M_head_address_q_6_1" BEL "snake/M_r1_q_1"
-        BEL "snake/M_r1_q_2" BEL "snake/M_r1_q_3" BEL "snake/M_r1_q_4" BEL
-        "snake/M_r1_q_5" BEL "snake/M_r1_q_6" BEL "snake/M_r1_q_7" BEL
-        "snake/M_r1_q_8" BEL "snake/M_r1_q_9" BEL "snake/M_head_address_q_7_1"
-        BEL "snake/M_head_address_q_8_1" BEL "snake/M_head_address_q_9_1" BEL
-        "snake/M_head_address_q_0" BEL "snake/M_head_address_q_1" BEL
-        "snake/M_head_address_q_2" BEL "snake/M_head_address_q_3" BEL
-        "snake/M_head_address_q_4" BEL "snake/M_head_address_q_5" BEL
-        "snake/M_head_address_q_6" BEL "snake/M_head_address_q_7" BEL
-        "snake/M_head_address_q_8" BEL "snake/M_head_address_q_9" BEL
-        "snake/M_score_q_1" BEL "snake/M_score_q_2" BEL "snake/M_score_q_3"
-        BEL "snake/M_score_q_4" BEL "snake/M_score_q_5" BEL
-        "snake/M_score_q_6" BEL "snake/M_score_q_7" BEL "snake/M_score_q_8"
-        BEL "snake/M_score_q_9" BEL "snake/M_vram_refresh_q" BEL
-        "snake/M_head_address_q_15_1" BEL "snake/M_r2_q_0" BEL
-        "snake/M_r2_q_1" BEL "snake/M_r2_q_2" BEL "snake/M_r2_q_3" BEL
-        "snake/M_r2_q_4" BEL "snake/M_r2_q_5" BEL "snake/M_r2_q_6" BEL
-        "snake/M_r2_q_7" BEL "snake/M_r2_q_8" BEL "snake/M_r2_q_9" BEL
-        "snake/M_state_q_FSM_FFd10" BEL "snake/M_state_q_FSM_FFd11" BEL
-        "snake/M_state_q_FSM_FFd12" BEL "snake/M_state_q_FSM_FFd13" BEL
-        "snake/M_state_q_FSM_FFd14" BEL "snake/M_state_q_FSM_FFd1_1" BEL
-        "snake/M_state_q_FSM_FFd2_1" BEL "snake/M_state_q_FSM_FFd3_1" BEL
-        "snake/M_state_q_FSM_FFd4_1" BEL "snake/M_calc_counter_q_FSM_FFd2_1"
-        BEL "snake/M_state_q_FSM_FFd5_1" BEL "snake/M_state_q_FSM_FFd5_2" BEL
-        "snake/M_previous_head_q_0" BEL "snake/M_previous_head_q_1" BEL
-        "snake/M_previous_head_q_2" BEL "snake/M_previous_head_q_3" BEL
-        "snake/M_previous_head_q_4" BEL "snake/M_previous_head_q_5" BEL
-        "snake/M_previous_head_q_6" BEL "snake/M_previous_head_q_7" BEL
-        "snake/M_previous_head_q_8" BEL "snake/M_previous_head_q_9" BEL
-        "snake/M_state_q_FSM_FFd6_1" BEL "snake/M_state_q_FSM_FFd7_1" PIN
         "vga/oddr_pins<1>" PIN "vga/oddr_pins<2>" PIN "vga/oddr_pins<1>" PIN
         "vga/oddr_pins<2>";
 PIN SP6_BUFIO_INSERT_ML_BUFIO2_0_pins<0> = BEL "SP6_BUFIO_INSERT_ML_BUFIO2_0"
