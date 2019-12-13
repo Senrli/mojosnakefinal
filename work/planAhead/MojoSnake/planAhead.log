@@ -1,14 +1,14 @@
 #-----------------------------------------------------------
 # PlanAhead v14.7 (64-bit)
 # Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
-# Start of session at: Fri Dec 13 18:46:55 2019
-# Process ID: 92384
+# Start of session at: Sat Dec 14 00:27:30 2019
+# Process ID: 240148
 # Log file: D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/planAhead.log
 # Journal file: D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake\planAhead.jou
 #-----------------------------------------------------------
 INFO: [Common 17-78] Attempting to get a license: PlanAhead
 INFO: [Common 17-290] Got license for PlanAhead
-INFO: [Common 17-86] Your PlanAhead license expires in -1077 day(s)
+INFO: [Common 17-86] Your PlanAhead license expires in -1078 day(s)
 INFO: [Device 21-36] Loading parts and site information from D:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
 Parsing RTL primitives file [D:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
 Finished parsing RTL primitives file [D:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
@@ -17,11 +17,9 @@ open_project {D:\Sen\Documents\Projects\mojosnakefinal\work\planAhead\MojoSnake\
 Scanning sources...
 Finished scanning sources
 Qt: Untested Windows version 6.2 detected!
+open_project: Time (s): elapsed = 00:00:07 . Memory (MB): peak = 455.602 ; gain = 98.055
 update_compile_order -fileset sources_1
 update_compile_order -fileset sim_1
-INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1704] No user repositories specified
-INFO: [IP_Flow 19-816] Loaded Xilinx IP repository 'D:/Xilinx/14.7/ISE_DS/ISE/'
 open_rtl_design -name rtl_1
 Design is defaulting to project part: xc6slx9tqg144-2
 Using Verific elaboration
@@ -63,8 +61,8 @@ Writing EDIF netlist file div_gen_v3_0.edif ...
 ngc2edif: Total memory usage is 4318188 kilobytes
 
 Reading core file 'D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/cores/div_gen_v3_0.ngc' for (cell view 'div_gen_v3_0', library 'work', file 'div_gen_v3_0.v')
-Parsing EDIF File [./.Xil/PlanAhead-92384-IBM-PCjr/ngc2edif/div_gen_v3_0.edif]
-Finished Parsing EDIF File [./.Xil/PlanAhead-92384-IBM-PCjr/ngc2edif/div_gen_v3_0.edif]
+Parsing EDIF File [./.Xil/PlanAhead-240148-IBM-PCjr/ngc2edif/div_gen_v3_0.edif]
+Finished Parsing EDIF File [./.Xil/PlanAhead-240148-IBM-PCjr/ngc2edif/div_gen_v3_0.edif]
 Release 14.7 - ngc2edif P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 Reading design multiplier.ngc ...
@@ -77,8 +75,8 @@ Writing EDIF netlist file multiplier.edif ...
 ngc2edif: Total memory usage is 4318188 kilobytes
 
 Reading core file 'D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/cores/multiplier.ngc' for (cell view 'multiplier', library 'work', file 'multiplier.v')
-Parsing EDIF File [./.Xil/PlanAhead-92384-IBM-PCjr/ngc2edif/multiplier.edif]
-Finished Parsing EDIF File [./.Xil/PlanAhead-92384-IBM-PCjr/ngc2edif/multiplier.edif]
+Parsing EDIF File [./.Xil/PlanAhead-240148-IBM-PCjr/ngc2edif/multiplier.edif]
+Finished Parsing EDIF File [./.Xil/PlanAhead-240148-IBM-PCjr/ngc2edif/multiplier.edif]
 Loading clock regions from D:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx9/ClockRegion.xml
 Loading clock buffers from D:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx9/ClockBuffers.xml
 Loading package pin functions from D:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/PinFunctions.xml...
@@ -86,9 +84,6 @@ Loading package from D:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/
 Loading io standards from D:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/IOStandards.xml
 Loading device configuration modes from D:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/ConfigModes.xml
 Loading list of drcs for the architecture : D:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/drc.xml
-Parsing UCF File [D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/constrs_1/imports/constraint/clk_divider.ucf]
-CRITICAL WARNING: [Constraints 18-11] Could not find net 'CLK_IN1' [D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/constrs_1/imports/constraint/clk_divider.ucf:53]
-Finished Parsing UCF File [D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/constrs_1/imports/constraint/clk_divider.ucf]
 Parsing UCF File [D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/constrs_1/imports/constraint/VGA.ucf]
 Finished Parsing UCF File [D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/constrs_1/imports/constraint/VGA.ucf]
 Parsing UCF File [D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/constrs_1/imports/constraint/keys.ucf]
@@ -131,10 +126,12 @@ CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'led_key<1>' [D:
 Finished Parsing UCF File [D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/constrs_1/imports/constraint/keys.ucf]
 Parsing UCF File [D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/constrs_1/imports/components/mojo.ucf]
 Finished Parsing UCF File [D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/constrs_1/imports/components/mojo.ucf]
-CRITICAL WARNING: [Constraints 18-329] No definition for group 'CLK_IN1', timing constraint is ignored [D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/constrs_1/imports/constraint/clk_divider.ucf:54]
 INFO: [Designutils 20-20] Invalid constraints found, use command 'write_ucf -constraints invalid <file>' to save all the invalid constraints to a file
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Phase 0 | Netlist Checksum: 39b882a3
-open_rtl_design: Time (s): elapsed = 00:00:16 . Memory (MB): peak = 1025.281 ; gain = 516.258
+Phase 0 | Netlist Checksum: f065ad3e
+open_rtl_design: Time (s): elapsed = 00:00:20 . Memory (MB): peak = 991.137 ; gain = 522.090
+exit
+INFO: [Common 17-206] Exiting PlanAhead at Sat Dec 14 00:32:25 2019...
+INFO: [Common 17-83] Releasing license: PlanAhead

@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-IBM-PCJR::  Fri Dec 13 18:44:56 2019
+IBM-PCJR::  Sat Dec 14 00:25:16 2019
 
 par -intstyle pa -w -mt on mojo_top_0.ncd mojo_top_0_routed.ncd 
 
@@ -27,15 +27,15 @@ Device speed data version:  "PRODUCTION 1.23 2013-10-13".
 Device Utilization Summary:
 
 Slice Logic Utilization:
-  Number of Slice Registers:                   834 out of  11,440    7%
-    Number used as Flip Flops:                 735
+  Number of Slice Registers:                   864 out of  11,440    7%
+    Number used as Flip Flops:                 765
     Number used as Latches:                     86
     Number used as Latch-thrus:                  0
     Number used as AND/OR logics:               13
-  Number of Slice LUTs:                      3,715 out of   5,720   64%
-    Number used as logic:                    3,653 out of   5,720   63%
-      Number using O6 output only:           2,493
-      Number using O5 output only:             159
+  Number of Slice LUTs:                      3,876 out of   5,720   67%
+    Number used as logic:                    3,811 out of   5,720   66%
+      Number using O6 output only:           2,652
+      Number using O5 output only:             158
       Number using O5 and O6:                1,001
       Number used as ROM:                        0
     Number used as Memory:                       4 out of   1,440    1%
@@ -45,18 +45,18 @@ Slice Logic Utilization:
         Number using O6 output only:             4
         Number using O5 output only:             0
         Number using O5 and O6:                  0
-    Number used exclusively as route-thrus:     58
-      Number with same-slice register load:     48
+    Number used exclusively as route-thrus:     61
+      Number with same-slice register load:     51
       Number with same-slice carry load:        10
       Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                 1,201 out of   1,430   83%
+  Number of occupied Slices:                 1,222 out of   1,430   85%
   Number of MUXCYs used:                     1,392 out of   2,860   48%
-  Number of LUT Flip Flop pairs used:        3,757
-    Number with an unused Flip Flop:         3,018 out of   3,757   80%
-    Number with an unused LUT:                  42 out of   3,757    1%
-    Number of fully used LUT-FF pairs:         697 out of   3,757   18%
+  Number of LUT Flip Flop pairs used:        3,918
+    Number with an unused Flip Flop:         3,155 out of   3,918   80%
+    Number with an unused LUT:                  42 out of   3,918    1%
+    Number of fully used LUT-FF pairs:         721 out of   3,918   18%
     Number of slice register sites lost
       to control set restrictions:               0 out of  11,440    0%
 
@@ -118,29 +118,29 @@ WARNING:Par:288 - The signal spi_mosi_IBUF has no load.  PAR will not attempt to
 Starting Multi-threaded Router
 
 
-Phase  1  : 21253 unrouted;      REAL time: 5 secs 
+Phase  1  : 22144 unrouted;      REAL time: 6 secs 
 
-Phase  2  : 19302 unrouted;      REAL time: 6 secs 
+Phase  2  : 20173 unrouted;      REAL time: 7 secs 
 
-Phase  3  : 11820 unrouted;      REAL time: 8 secs 
+Phase  3  : 12331 unrouted;      REAL time: 10 secs 
 
-Phase  4  : 11820 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 9 secs 
+Phase  4  : 12331 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 11 secs 
 
 Updating file: mojo_top_0_routed.ncd with current fully routed design.
 
-Phase  5  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 13 secs 
+Phase  5  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 18 secs 
 
-Phase  6  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 13 secs 
+Phase  6  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 18 secs 
 
-Phase  7  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 13 secs 
+Phase  7  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 18 secs 
 
-Phase  8  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 13 secs 
+Phase  8  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 18 secs 
 
-Phase  9  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 13 secs 
+Phase  9  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 18 secs 
 
-Phase 10  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 13 secs 
-Total REAL time to Router completion: 13 secs 
-Total CPU time to Router completion (all processors): 17 secs 
+Phase 10  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 18 secs 
+Total REAL time to Router completion: 18 secs 
+Total CPU time to Router completion (all processors): 22 secs 
 
 Generating "PAR" statistics.
 
@@ -151,36 +151,36 @@ Generating Clock Report
 +---------------------+--------------+------+------+------------+-------------+
 |        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
 +---------------------+--------------+------+------+------------+-------------+
-|     M_clkgen_clk_25 | BUFGMUX_X3Y13| No   |  243 |  0.672     |  2.064      |
-+---------------------+--------------+------+------+------------+-------------+
 |snake/M_state_q[4]_M |              |      |      |            |             |
 |_vram_refresh_q_Sele |              |      |      |            |             |
-|      ct_2296_o_BUFG |  BUFGMUX_X2Y2| No   |   12 |  0.072     |  1.502      |
+|      ct_1797_o_BUFG |  BUFGMUX_X2Y2| No   |   11 |  0.035     |  1.437      |
++---------------------+--------------+------+------+------------+-------------+
+|     M_clkgen_clk_25 | BUFGMUX_X3Y13| No   |  259 |  0.671     |  2.062      |
++---------------------+--------------+------+------+------------+-------------+
+|snake/M_state_q[4]_P |              |      |      |            |             |
+|WR_203_o_Select_1723 |              |      |      |            |             |
+|                  _o |         Local|      |    4 |  0.624     |  2.157      |
++---------------------+--------------+------+------+------------+-------------+
+|snake/M_state_q[4]_P |              |      |      |            |             |
+|WR_135_o_Select_1587 |              |      |      |            |             |
+|                  _o |         Local|      |    1 |  0.000     |  1.012      |
 +---------------------+--------------+------+------+------------+-------------+
 |vga/M_h_count_q[9]_G |              |      |      |            |             |
-|   ND_171_o_OR_421_o |         Local|      |    4 |  0.204     |  1.869      |
+|   ND_171_o_OR_421_o |         Local|      |    4 |  0.027     |  1.364      |
++---------------------+--------------+------+------+------------+-------------+
+|        snake/_n5102 |         Local|      |    4 |  0.439     |  0.831      |
 +---------------------+--------------+------+------+------------+-------------+
 |snake/M_state_q[4]_P |              |      |      |            |             |
-|WR_131_o_Select_2078 |              |      |      |            |             |
-|                  _o |         Local|      |    1 |  0.000     |  0.829      |
+|WR_139_o_Select_1595 |              |      |      |            |             |
+|                  _o |         Local|      |    5 |  0.398     |  0.991      |
++---------------------+--------------+------+------+------------+-------------+
+|        snake/_n4946 |         Local|      |    4 |  0.435     |  1.951      |
++---------------------+--------------+------+------+------------+-------------+
+|        snake/_n5103 |         Local|      |    6 |  1.077     |  1.818      |
 +---------------------+--------------+------+------+------------+-------------+
 |snake/M_state_q[4]_P |              |      |      |            |             |
-|WR_139_o_Select_2094 |              |      |      |            |             |
-|                  _o |         Local|      |    5 |  2.564     |  4.071      |
-+---------------------+--------------+------+------+------------+-------------+
-|        snake/_n6557 |         Local|      |    6 |  0.942     |  2.071      |
-+---------------------+--------------+------+------+------------+-------------+
-|        snake/_n6345 |         Local|      |    5 |  1.686     |  3.112      |
-+---------------------+--------------+------+------+------------+-------------+
-|        snake/_n6352 |         Local|      |    4 |  0.220     |  0.806      |
-+---------------------+--------------+------+------+------------+-------------+
-|snake/M_state_q[4]_P |              |      |      |            |             |
-|WR_203_o_Select_2222 |              |      |      |            |             |
-|                  _o |         Local|      |    4 |  0.553     |  1.546      |
-+---------------------+--------------+------+------+------------+-------------+
-|snake/M_state_q[4]_P |              |      |      |            |             |
-|WR_135_o_Select_2086 |              |      |      |            |             |
-|                  _o |         Local|      |    1 |  0.000     |  1.355      |
+|WR_131_o_Select_1579 |              |      |      |            |             |
+|                  _o |         Local|      |    1 |  0.000     |  0.751      |
 +---------------------+--------------+------+------+------------+-------------+
 
 * Net Skew is the difference between the minimum and maximum routing
@@ -205,7 +205,7 @@ Asterisk (*) preceding a constraint indicates it was not met.
   TS_clk = PERIOD TIMEGRP "clk" 50 MHz HIGH | MINLOWPULSE |    12.000ns|     8.000ns|       0|           0
    50%                                      |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  TS_clkgen_clkdv = PERIOD TIMEGRP "clkgen_ | SETUP       |    21.389ns|    18.611ns|       0|           0
+  TS_clkgen_clkdv = PERIOD TIMEGRP "clkgen_ | SETUP       |    20.628ns|    19.372ns|       0|           0
   clkdv" TS_clk / 2 HIGH 50%                | HOLD        |     0.385ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
 
@@ -220,8 +220,8 @@ Derived Constraints for TS_clk
 |           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
 |                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
-|TS_clk                         |     20.000ns|      8.000ns|      9.306ns|            0|            0|            0|      1233329|
-| TS_clkgen_clkdv               |     40.000ns|     18.611ns|          N/A|            0|            0|      1233329|            0|
+|TS_clk                         |     20.000ns|      8.000ns|      9.686ns|            0|            0|            0|      1796715|
+| TS_clkgen_clkdv               |     40.000ns|     19.372ns|          N/A|            0|            0|      1796715|            0|
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
 
 All constraints were met.
@@ -233,10 +233,10 @@ All signals are completely routed.
 
 WARNING:Par:283 - There are 6 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
 
-Total REAL time to PAR completion: 15 secs 
-Total CPU time to PAR completion (all processors): 18 secs 
+Total REAL time to PAR completion: 20 secs 
+Total CPU time to PAR completion (all processors): 23 secs 
 
-Peak Memory Usage:  4566 MB
+Peak Memory Usage:  4591 MB
 
 Placer: Placement generated during map.
 Routing: Completed - No errors found.

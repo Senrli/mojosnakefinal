@@ -91,8 +91,8 @@ Elaborating module <simple_ram_7(SIZE=5'b10000,DEPTH=10'b1110111000)>.
 Elaborating module <pn_gen_8>.
 
 Elaborating module <div_gen_v3_0>.
-WARNING:HDLCompiler:1127 - "D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/verilog/snake_fsm_4.v" Line 184: Assignment to M_divider_rfd ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/verilog/snake_fsm_4.v" Line 186: Assignment to M_divider_fractional ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/verilog/snake_fsm_4.v" Line 179: Assignment to M_divider_rfd ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/verilog/snake_fsm_4.v" Line 181: Assignment to M_divider_fractional ignored, since the identifier is never used
 
 Elaborating module <multiplier>.
 
@@ -112,32 +112,32 @@ Elaborating module <hex_add_16>.
 Elaborating module <hex_boole_17>.
 
 Elaborating module <hex_shift_18>.
-WARNING:HDLCompiler:1127 - "D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/verilog/snake_fsm_4.v" Line 228: Assignment to M_alu_z ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/verilog/snake_fsm_4.v" Line 229: Assignment to M_alu_v ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/verilog/snake_fsm_4.v" Line 230: Assignment to M_alu_n ignored, since the identifier is never used
-WARNING:HDLCompiler:413 - "D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/verilog/snake_fsm_4.v" Line 271: Result of 32-bit expression is truncated to fit in 27-bit target.
-WARNING:HDLCompiler:413 - "D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/verilog/snake_fsm_4.v" Line 272: Result of 32-bit expression is truncated to fit in 27-bit target.
-WARNING:HDLCompiler:413 - "D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/verilog/snake_fsm_4.v" Line 277: Result of 16-bit expression is truncated to fit in 8-bit target.
-WARNING:HDLCompiler:413 - "D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/verilog/snake_fsm_4.v" Line 501: Result of 16-bit expression is truncated to fit in 8-bit target.
-WARNING:HDLCompiler:413 - "D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/verilog/snake_fsm_4.v" Line 543: Result of 16-bit expression is truncated to fit in 8-bit target.
-WARNING:HDLCompiler:413 - "D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/verilog/snake_fsm_4.v" Line 658: Result of 16-bit expression is truncated to fit in 10-bit target.
-WARNING:HDLCompiler:413 - "D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/verilog/snake_fsm_4.v" Line 663: Result of 16-bit expression is truncated to fit in 10-bit target.
-WARNING:HDLCompiler:413 - "D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/verilog/snake_fsm_4.v" Line 668: Result of 16-bit expression is truncated to fit in 10-bit target.
-WARNING:HDLCompiler:413 - "D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/verilog/snake_fsm_4.v" Line 673: Result of 16-bit expression is truncated to fit in 10-bit target.
-WARNING:HDLCompiler:413 - "D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/verilog/snake_fsm_4.v" Line 682: Result of 16-bit expression is truncated to fit in 8-bit target.
-WARNING:HDLCompiler:413 - "D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/verilog/snake_fsm_4.v" Line 715: Result of 16-bit expression is truncated to fit in 8-bit target.
-WARNING:HDLCompiler:413 - "D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/verilog/snake_fsm_4.v" Line 722: Result of 16-bit expression is truncated to fit in 12-bit target.
-WARNING:HDLCompiler:413 - "D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/verilog/snake_fsm_4.v" Line 764: Result of 16-bit expression is truncated to fit in 8-bit target.
-WARNING:HDLCompiler:413 - "D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/verilog/snake_fsm_4.v" Line 775: Result of 16-bit expression is truncated to fit in 8-bit target.
-WARNING:HDLCompiler:413 - "D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/verilog/snake_fsm_4.v" Line 782: Result of 16-bit expression is truncated to fit in 12-bit target.
-WARNING:HDLCompiler:413 - "D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/verilog/snake_fsm_4.v" Line 898: Result of 16-bit expression is truncated to fit in 10-bit target.
-WARNING:HDLCompiler:413 - "D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/verilog/snake_fsm_4.v" Line 910: Result of 16-bit expression is truncated to fit in 10-bit target.
-WARNING:HDLCompiler:413 - "D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/verilog/snake_fsm_4.v" Line 945: Result of 16-bit expression is truncated to fit in 8-bit target.
-WARNING:HDLCompiler:413 - "D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/verilog/snake_fsm_4.v" Line 952: Result of 16-bit expression is truncated to fit in 8-bit target.
-WARNING:HDLCompiler:413 - "D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/verilog/snake_fsm_4.v" Line 999: Result of 16-bit expression is truncated to fit in 8-bit target.
-WARNING:HDLCompiler:413 - "D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/verilog/snake_fsm_4.v" Line 1045: Result of 16-bit expression is truncated to fit in 8-bit target.
-WARNING:HDLCompiler:413 - "D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/verilog/snake_fsm_4.v" Line 1081: Result of 16-bit expression is truncated to fit in 8-bit target.
-WARNING:HDLCompiler:1127 - "D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/verilog/snake_fsm_4.v" Line 1119: Assignment to M_block_state_q ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/verilog/snake_fsm_4.v" Line 223: Assignment to M_alu_z ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/verilog/snake_fsm_4.v" Line 224: Assignment to M_alu_v ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/verilog/snake_fsm_4.v" Line 225: Assignment to M_alu_n ignored, since the identifier is never used
+WARNING:HDLCompiler:413 - "D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/verilog/snake_fsm_4.v" Line 261: Result of 32-bit expression is truncated to fit in 27-bit target.
+WARNING:HDLCompiler:413 - "D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/verilog/snake_fsm_4.v" Line 262: Result of 32-bit expression is truncated to fit in 27-bit target.
+WARNING:HDLCompiler:413 - "D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/verilog/snake_fsm_4.v" Line 267: Result of 16-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/verilog/snake_fsm_4.v" Line 486: Result of 16-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/verilog/snake_fsm_4.v" Line 508: Result of 16-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/verilog/snake_fsm_4.v" Line 603: Result of 16-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/verilog/snake_fsm_4.v" Line 608: Result of 16-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/verilog/snake_fsm_4.v" Line 613: Result of 16-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/verilog/snake_fsm_4.v" Line 618: Result of 16-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/verilog/snake_fsm_4.v" Line 627: Result of 16-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/verilog/snake_fsm_4.v" Line 640: Result of 16-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/verilog/snake_fsm_4.v" Line 647: Result of 16-bit expression is truncated to fit in 12-bit target.
+WARNING:HDLCompiler:413 - "D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/verilog/snake_fsm_4.v" Line 669: Result of 16-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/verilog/snake_fsm_4.v" Line 680: Result of 16-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/verilog/snake_fsm_4.v" Line 687: Result of 16-bit expression is truncated to fit in 12-bit target.
+WARNING:HDLCompiler:413 - "D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/verilog/snake_fsm_4.v" Line 782: Result of 16-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/verilog/snake_fsm_4.v" Line 794: Result of 16-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/verilog/snake_fsm_4.v" Line 829: Result of 16-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/verilog/snake_fsm_4.v" Line 836: Result of 16-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/verilog/snake_fsm_4.v" Line 883: Result of 16-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/verilog/snake_fsm_4.v" Line 927: Result of 16-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/verilog/snake_fsm_4.v" Line 962: Result of 16-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:1127 - "D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/verilog/snake_fsm_4.v" Line 1000: Assignment to M_block_state_q ignored, since the identifier is never used
 
 Elaborating module <vga_cga_5>.
 
@@ -222,11 +222,11 @@ Unit <edge_detector_3> synthesized.
 
 Synthesizing Unit <snake_fsm_4>.
     Related source file is "D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/verilog/snake_fsm_4.v".
-INFO:Xst:3210 - "D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/verilog/snake_fsm_4.v" line 180: Output port <fractional> of the instance <divider> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/verilog/snake_fsm_4.v" line 180: Output port <rfd> of the instance <divider> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/verilog/snake_fsm_4.v" line 223: Output port <z> of the instance <alu> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/verilog/snake_fsm_4.v" line 223: Output port <v> of the instance <alu> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/verilog/snake_fsm_4.v" line 223: Output port <n> of the instance <alu> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/verilog/snake_fsm_4.v" line 175: Output port <fractional> of the instance <divider> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/verilog/snake_fsm_4.v" line 175: Output port <rfd> of the instance <divider> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/verilog/snake_fsm_4.v" line 218: Output port <z> of the instance <alu> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/verilog/snake_fsm_4.v" line 218: Output port <v> of the instance <alu> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSnake/MojoSnake.srcs/sources_1/imports/verilog/snake_fsm_4.v" line 218: Output port <n> of the instance <alu> is unconnected or connected to loadless signal.
     Found 25-bit register for signal <M_input_counter_q>.
     Found 4-bit register for signal <M_user_input_q>.
     Found 16-bit register for signal <M_head_address_q>.
@@ -239,7 +239,7 @@ INFO:Xst:3210 - "D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSna
     Found 1-bit register for signal <M_ram_write_q>.
     Found 8-bit register for signal <M_ram_write_counter_q>.
     Found 1-bit register for signal <M_vram_refresh_q>.
-    Found 256-bit register for signal <M_vram_temp_reg_q>.
+    Found 160-bit register for signal <M_vram_temp_reg_q>.
     Found 3-bit register for signal <M_keep_length_counter_q>.
     Found 12-bit register for signal <M_vram_refresh_ctr_q>.
     Found 32-bit register for signal <M_score_q>.
@@ -294,126 +294,126 @@ INFO:Xst:3210 - "D:/Sen/Documents/Projects/mojosnakefinal/work/planAhead/MojoSna
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 13-bit subtractor for signal <GND_10_o_GND_10_o_sub_1157_OUT> created at line 388.
-    Found 13-bit subtractor for signal <GND_10_o_GND_10_o_sub_1162_OUT> created at line 391.
-    Found 13-bit subtractor for signal <GND_10_o_GND_10_o_sub_1169_OUT> created at line 394.
-    Found 13-bit subtractor for signal <GND_10_o_GND_10_o_sub_1174_OUT> created at line 397.
-    Found 13-bit subtractor for signal <GND_10_o_GND_10_o_sub_1179_OUT> created at line 400.
-    Found 13-bit subtractor for signal <GND_10_o_GND_10_o_sub_1184_OUT> created at line 403.
-    Found 13-bit subtractor for signal <GND_10_o_GND_10_o_sub_1189_OUT> created at line 406.
-    Found 13-bit subtractor for signal <GND_10_o_GND_10_o_sub_1194_OUT> created at line 409.
-    Found 13-bit subtractor for signal <GND_10_o_GND_10_o_sub_1199_OUT> created at line 412.
-    Found 13-bit subtractor for signal <GND_10_o_GND_10_o_sub_1204_OUT> created at line 415.
-    Found 13-bit subtractor for signal <GND_10_o_GND_10_o_sub_1209_OUT> created at line 418.
-    Found 13-bit subtractor for signal <GND_10_o_GND_10_o_sub_1214_OUT> created at line 421.
-    Found 12-bit subtractor for signal <M_vram_refresh_ctr_q[11]_PWR_10_o_sub_1219_OUT> created at line 423.
-    Found 13-bit subtractor for signal <GND_10_o_GND_10_o_sub_1612_OUT> created at line 835.
-    Found 13-bit subtractor for signal <GND_10_o_GND_10_o_sub_1620_OUT> created at line 841.
-    Found 10-bit subtractor for signal <M_head_address_q[9]_PWR_10_o_sub_1706_OUT> created at line 974.
-    Found 13-bit subtractor for signal <GND_10_o_GND_10_o_sub_1811_OUT> created at line 1089.
-    Found 10-bit adder for signal <M_ram_clear_counter_q[9]_GND_10_o_add_4_OUT> created at line 300.
-    Found 8-bit adder for signal <M_ram_write_counter_q[7]_GND_10_o_add_279_OUT> created at line 318.
-    Found 32-bit adder for signal <n3572> created at line 388.
-    Found 32-bit adder for signal <n3576> created at line 391.
-    Found 13-bit adder for signal <n5426[12:0]> created at line 391.
-    Found 32-bit adder for signal <n3580> created at line 394.
-    Found 32-bit adder for signal <n3583> created at line 397.
-    Found 32-bit adder for signal <n3586> created at line 400.
-    Found 32-bit adder for signal <n3589> created at line 403.
-    Found 32-bit adder for signal <n3592> created at line 406.
-    Found 32-bit adder for signal <n3595> created at line 409.
-    Found 32-bit adder for signal <n3598> created at line 412.
-    Found 32-bit adder for signal <n3601> created at line 415.
-    Found 32-bit adder for signal <n3604> created at line 418.
-    Found 32-bit adder for signal <n3607> created at line 421.
-    Found 12-bit adder for signal <M_vram_refresh_ctr_q[11]_GND_10_o_add_1246_OUT> created at line 452.
-    Found 16-bit adder for signal <n5452> created at line 711.
-    Found 16-bit adder for signal <M_r1_q[15]_GND_10_o_add_1307_OUT> created at line 711.
-    Found 12-bit adder for signal <n2480> created at line 723.
-    Found 12-bit adder for signal <GND_10_o_M_vram_refresh_ctr_q[11]_add_1610_OUT> created at line 834.
-    Found 32-bit adder for signal <n3939> created at line 835.
-    Found 13-bit adder for signal <n5461> created at line 835.
-    Found 12-bit adder for signal <GND_10_o_M_vram_refresh_ctr_q[11]_add_1618_OUT> created at line 840.
-    Found 32-bit adder for signal <n3944> created at line 841.
-    Found 13-bit adder for signal <n5467> created at line 841.
-    Found 25-bit adder for signal <M_input_counter_q[24]_GND_10_o_add_1681_OUT> created at line 944.
-    Found 32-bit adder for signal <M_score_q[31]_GND_10_o_add_1775_OUT> created at line 1070.
-    Found 32-bit adder for signal <n4020> created at line 1089.
-    Found 30-bit subtractor for signal <GND_10_o_GND_10_o_sub_1163_OUT<29:0>> created at line 391.
-    Found 159-bit shifter logical right for signal <n3573> created at line 388
-    Found 63-bit shifter logical right for signal <n3577> created at line 391
-    Found 159-bit shifter logical right for signal <n3581> created at line 394
-    Found 159-bit shifter logical right for signal <n3584> created at line 397
-    Found 159-bit shifter logical right for signal <n3587> created at line 400
-    Found 159-bit shifter logical right for signal <n3590> created at line 403
-    Found 159-bit shifter logical right for signal <n3593> created at line 406
-    Found 159-bit shifter logical right for signal <n3596> created at line 409
-    Found 159-bit shifter logical right for signal <n3599> created at line 412
-    Found 159-bit shifter logical right for signal <n3602> created at line 415
-    Found 159-bit shifter logical right for signal <n3605> created at line 418
-    Found 159-bit shifter logical right for signal <n3608> created at line 421
-    Found 7x12-bit multiplier for signal <n3610> created at line 423.
-    Found 511-bit shifter logical right for signal <n3648> created at line 723
-    Found 63-bit shifter logical right for signal <n3940> created at line 835
-    Found 63-bit shifter logical right for signal <n3945> created at line 841
-    Found 6x10-bit multiplier for signal <n3983> created at line 974.
-    Found 159-bit shifter logical right for signal <n4021> created at line 1089
-    Found 4x10-bit Read Only RAM for signal <_n6364>
-    Found 1-bit tristate buffer for signal <M_alu_a<15>> created at line 233
-    Found 1-bit tristate buffer for signal <M_alu_a<14>> created at line 233
-    Found 1-bit tristate buffer for signal <M_alu_a<13>> created at line 233
-    Found 1-bit tristate buffer for signal <M_alu_a<12>> created at line 233
-    Found 1-bit tristate buffer for signal <M_alu_a<11>> created at line 233
-    Found 1-bit tristate buffer for signal <M_alu_a<10>> created at line 233
-    Found 1-bit tristate buffer for signal <M_alu_a<9>> created at line 233
-    Found 1-bit tristate buffer for signal <M_alu_a<8>> created at line 233
-    Found 1-bit tristate buffer for signal <M_alu_a<7>> created at line 233
-    Found 1-bit tristate buffer for signal <M_alu_a<6>> created at line 233
-    Found 1-bit tristate buffer for signal <M_alu_a<5>> created at line 233
-    Found 1-bit tristate buffer for signal <M_alu_a<4>> created at line 233
-    Found 1-bit tristate buffer for signal <M_alu_a<3>> created at line 233
-    Found 1-bit tristate buffer for signal <M_alu_a<2>> created at line 233
-    Found 1-bit tristate buffer for signal <M_alu_a<1>> created at line 233
-    Found 1-bit tristate buffer for signal <M_alu_a<0>> created at line 233
-    Found 1-bit tristate buffer for signal <M_alu_b<15>> created at line 233
-    Found 1-bit tristate buffer for signal <M_alu_b<14>> created at line 233
-    Found 1-bit tristate buffer for signal <M_alu_b<13>> created at line 233
-    Found 1-bit tristate buffer for signal <M_alu_b<12>> created at line 233
-    Found 1-bit tristate buffer for signal <M_alu_b<11>> created at line 233
-    Found 1-bit tristate buffer for signal <M_alu_b<10>> created at line 233
-    Found 1-bit tristate buffer for signal <M_alu_b<9>> created at line 233
-    Found 1-bit tristate buffer for signal <M_alu_b<8>> created at line 233
-    Found 1-bit tristate buffer for signal <M_alu_b<7>> created at line 233
-    Found 1-bit tristate buffer for signal <M_alu_b<6>> created at line 233
-    Found 1-bit tristate buffer for signal <M_alu_b<5>> created at line 233
-    Found 1-bit tristate buffer for signal <M_alu_b<4>> created at line 233
-    Found 1-bit tristate buffer for signal <M_alu_b<3>> created at line 233
-    Found 1-bit tristate buffer for signal <M_alu_b<2>> created at line 233
-    Found 1-bit tristate buffer for signal <M_alu_b<1>> created at line 233
-    Found 1-bit tristate buffer for signal <M_alu_b<0>> created at line 233
-    Found 1-bit tristate buffer for signal <M_alu_alufn<5>> created at line 233
-    Found 1-bit tristate buffer for signal <M_alu_alufn<4>> created at line 233
-    Found 1-bit tristate buffer for signal <M_alu_alufn<3>> created at line 233
-    Found 1-bit tristate buffer for signal <M_alu_alufn<2>> created at line 233
-    Found 1-bit tristate buffer for signal <M_alu_alufn<1>> created at line 233
-    Found 1-bit tristate buffer for signal <M_alu_alufn<0>> created at line 233
+    Found 13-bit subtractor for signal <GND_10_o_GND_10_o_sub_765_OUT> created at line 374.
+    Found 13-bit subtractor for signal <GND_10_o_GND_10_o_sub_770_OUT> created at line 377.
+    Found 13-bit subtractor for signal <GND_10_o_GND_10_o_sub_777_OUT> created at line 380.
+    Found 13-bit subtractor for signal <GND_10_o_GND_10_o_sub_782_OUT> created at line 383.
+    Found 13-bit subtractor for signal <GND_10_o_GND_10_o_sub_787_OUT> created at line 386.
+    Found 13-bit subtractor for signal <GND_10_o_GND_10_o_sub_792_OUT> created at line 389.
+    Found 13-bit subtractor for signal <GND_10_o_GND_10_o_sub_797_OUT> created at line 392.
+    Found 13-bit subtractor for signal <GND_10_o_GND_10_o_sub_802_OUT> created at line 395.
+    Found 13-bit subtractor for signal <GND_10_o_GND_10_o_sub_807_OUT> created at line 398.
+    Found 13-bit subtractor for signal <GND_10_o_GND_10_o_sub_812_OUT> created at line 401.
+    Found 13-bit subtractor for signal <GND_10_o_GND_10_o_sub_817_OUT> created at line 404.
+    Found 13-bit subtractor for signal <GND_10_o_GND_10_o_sub_822_OUT> created at line 407.
+    Found 12-bit subtractor for signal <M_vram_refresh_ctr_q[11]_PWR_10_o_sub_827_OUT> created at line 409.
+    Found 13-bit subtractor for signal <GND_10_o_GND_10_o_sub_1121_OUT> created at line 719.
+    Found 13-bit subtractor for signal <GND_10_o_GND_10_o_sub_1129_OUT> created at line 725.
+    Found 10-bit subtractor for signal <M_head_address_q[9]_PWR_10_o_sub_1215_OUT> created at line 858.
+    Found 13-bit subtractor for signal <GND_10_o_GND_10_o_sub_1317_OUT> created at line 970.
+    Found 10-bit adder for signal <M_ram_clear_counter_q[9]_GND_10_o_add_4_OUT> created at line 290.
+    Found 8-bit adder for signal <M_ram_write_counter_q[7]_GND_10_o_add_183_OUT> created at line 307.
+    Found 32-bit adder for signal <n2707> created at line 374.
+    Found 32-bit adder for signal <n2711> created at line 377.
+    Found 13-bit adder for signal <n3986[12:0]> created at line 377.
+    Found 32-bit adder for signal <n2715> created at line 380.
+    Found 32-bit adder for signal <n2718> created at line 383.
+    Found 32-bit adder for signal <n2721> created at line 386.
+    Found 32-bit adder for signal <n2724> created at line 389.
+    Found 32-bit adder for signal <n2727> created at line 392.
+    Found 32-bit adder for signal <n2730> created at line 395.
+    Found 32-bit adder for signal <n2733> created at line 398.
+    Found 32-bit adder for signal <n2736> created at line 401.
+    Found 32-bit adder for signal <n2739> created at line 404.
+    Found 32-bit adder for signal <n2742> created at line 407.
+    Found 12-bit adder for signal <M_vram_refresh_ctr_q[11]_GND_10_o_add_854_OUT> created at line 438.
+    Found 16-bit adder for signal <n4012> created at line 636.
+    Found 16-bit adder for signal <M_r1_q[15]_GND_10_o_add_912_OUT> created at line 636.
+    Found 12-bit adder for signal <n2797> created at line 648.
+    Found 12-bit adder for signal <GND_10_o_M_vram_refresh_ctr_q[11]_add_1119_OUT> created at line 718.
+    Found 32-bit adder for signal <n2979> created at line 719.
+    Found 13-bit adder for signal <n4021> created at line 719.
+    Found 12-bit adder for signal <GND_10_o_M_vram_refresh_ctr_q[11]_add_1127_OUT> created at line 724.
+    Found 32-bit adder for signal <n2984> created at line 725.
+    Found 13-bit adder for signal <n4027> created at line 725.
+    Found 25-bit adder for signal <M_input_counter_q[24]_GND_10_o_add_1190_OUT> created at line 828.
+    Found 32-bit adder for signal <M_score_q[31]_GND_10_o_add_1282_OUT> created at line 951.
+    Found 32-bit adder for signal <n3060> created at line 970.
+    Found 30-bit subtractor for signal <GND_10_o_GND_10_o_sub_771_OUT<29:0>> created at line 377.
+    Found 159-bit shifter logical right for signal <n2708> created at line 374
+    Found 63-bit shifter logical right for signal <n2712> created at line 377
+    Found 159-bit shifter logical right for signal <n2716> created at line 380
+    Found 159-bit shifter logical right for signal <n2719> created at line 383
+    Found 159-bit shifter logical right for signal <n2722> created at line 386
+    Found 159-bit shifter logical right for signal <n2725> created at line 389
+    Found 159-bit shifter logical right for signal <n2728> created at line 392
+    Found 159-bit shifter logical right for signal <n2731> created at line 395
+    Found 159-bit shifter logical right for signal <n2734> created at line 398
+    Found 159-bit shifter logical right for signal <n2737> created at line 401
+    Found 159-bit shifter logical right for signal <n2740> created at line 404
+    Found 159-bit shifter logical right for signal <n2743> created at line 407
+    Found 7x12-bit multiplier for signal <n2745> created at line 409.
+    Found 319-bit shifter logical right for signal <n2783> created at line 648
+    Found 63-bit shifter logical right for signal <n2980> created at line 719
+    Found 63-bit shifter logical right for signal <n2985> created at line 725
+    Found 6x10-bit multiplier for signal <n3023> created at line 858.
+    Found 159-bit shifter logical right for signal <n3061> created at line 970
+    Found 4x10-bit Read Only RAM for signal <_n4911>
+    Found 1-bit tristate buffer for signal <M_alu_a<15>> created at line 228
+    Found 1-bit tristate buffer for signal <M_alu_a<14>> created at line 228
+    Found 1-bit tristate buffer for signal <M_alu_a<13>> created at line 228
+    Found 1-bit tristate buffer for signal <M_alu_a<12>> created at line 228
+    Found 1-bit tristate buffer for signal <M_alu_a<11>> created at line 228
+    Found 1-bit tristate buffer for signal <M_alu_a<10>> created at line 228
+    Found 1-bit tristate buffer for signal <M_alu_a<9>> created at line 228
+    Found 1-bit tristate buffer for signal <M_alu_a<8>> created at line 228
+    Found 1-bit tristate buffer for signal <M_alu_a<7>> created at line 228
+    Found 1-bit tristate buffer for signal <M_alu_a<6>> created at line 228
+    Found 1-bit tristate buffer for signal <M_alu_a<5>> created at line 228
+    Found 1-bit tristate buffer for signal <M_alu_a<4>> created at line 228
+    Found 1-bit tristate buffer for signal <M_alu_a<3>> created at line 228
+    Found 1-bit tristate buffer for signal <M_alu_a<2>> created at line 228
+    Found 1-bit tristate buffer for signal <M_alu_a<1>> created at line 228
+    Found 1-bit tristate buffer for signal <M_alu_a<0>> created at line 228
+    Found 1-bit tristate buffer for signal <M_alu_b<15>> created at line 228
+    Found 1-bit tristate buffer for signal <M_alu_b<14>> created at line 228
+    Found 1-bit tristate buffer for signal <M_alu_b<13>> created at line 228
+    Found 1-bit tristate buffer for signal <M_alu_b<12>> created at line 228
+    Found 1-bit tristate buffer for signal <M_alu_b<11>> created at line 228
+    Found 1-bit tristate buffer for signal <M_alu_b<10>> created at line 228
+    Found 1-bit tristate buffer for signal <M_alu_b<9>> created at line 228
+    Found 1-bit tristate buffer for signal <M_alu_b<8>> created at line 228
+    Found 1-bit tristate buffer for signal <M_alu_b<7>> created at line 228
+    Found 1-bit tristate buffer for signal <M_alu_b<6>> created at line 228
+    Found 1-bit tristate buffer for signal <M_alu_b<5>> created at line 228
+    Found 1-bit tristate buffer for signal <M_alu_b<4>> created at line 228
+    Found 1-bit tristate buffer for signal <M_alu_b<3>> created at line 228
+    Found 1-bit tristate buffer for signal <M_alu_b<2>> created at line 228
+    Found 1-bit tristate buffer for signal <M_alu_b<1>> created at line 228
+    Found 1-bit tristate buffer for signal <M_alu_b<0>> created at line 228
+    Found 1-bit tristate buffer for signal <M_alu_alufn<5>> created at line 228
+    Found 1-bit tristate buffer for signal <M_alu_alufn<4>> created at line 228
+    Found 1-bit tristate buffer for signal <M_alu_alufn<3>> created at line 228
+    Found 1-bit tristate buffer for signal <M_alu_alufn<2>> created at line 228
+    Found 1-bit tristate buffer for signal <M_alu_alufn<1>> created at line 228
+    Found 1-bit tristate buffer for signal <M_alu_alufn<0>> created at line 228
 WARNING:Xst:737 - Found 1-bit latch for signal <M_state_q[4]_M_state_q[4]_DLATCH_2_q>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <M_state_q[4]_M_state_q[4]_DLATCH_3_q>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-    Found 1-bit tristate buffer for signal <M_direction_lut_dir_state<7>> created at line 233
+    Found 1-bit tristate buffer for signal <M_direction_lut_dir_state<7>> created at line 228
 WARNING:Xst:737 - Found 1-bit latch for signal <M_state_q[4]_M_state_q[4]_DLATCH_5_q>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-    Found 1-bit tristate buffer for signal <M_direction_lut_dir_state<6>> created at line 233
+    Found 1-bit tristate buffer for signal <M_direction_lut_dir_state<6>> created at line 228
 WARNING:Xst:737 - Found 1-bit latch for signal <M_state_q[4]_M_state_q[4]_DLATCH_7_q>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-    Found 1-bit tristate buffer for signal <M_direction_lut_dir_state<5>> created at line 233
+    Found 1-bit tristate buffer for signal <M_direction_lut_dir_state<5>> created at line 228
 WARNING:Xst:737 - Found 1-bit latch for signal <M_state_q[4]_M_state_q[4]_DLATCH_9_q>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-    Found 1-bit tristate buffer for signal <M_direction_lut_dir_state<4>> created at line 233
+    Found 1-bit tristate buffer for signal <M_direction_lut_dir_state<4>> created at line 228
 WARNING:Xst:737 - Found 1-bit latch for signal <M_state_q[4]_M_state_q[4]_DLATCH_11_q>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-    Found 1-bit tristate buffer for signal <M_direction_lut_dir_state<3>> created at line 233
+    Found 1-bit tristate buffer for signal <M_direction_lut_dir_state<3>> created at line 228
 WARNING:Xst:737 - Found 1-bit latch for signal <M_state_q[4]_M_state_q[4]_DLATCH_13_q>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-    Found 1-bit tristate buffer for signal <M_direction_lut_dir_state<2>> created at line 233
+    Found 1-bit tristate buffer for signal <M_direction_lut_dir_state<2>> created at line 228
 WARNING:Xst:737 - Found 1-bit latch for signal <M_state_q[4]_M_state_q[4]_DLATCH_15_q>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-    Found 1-bit tristate buffer for signal <M_direction_lut_dir_state<1>> created at line 233
+    Found 1-bit tristate buffer for signal <M_direction_lut_dir_state<1>> created at line 228
 WARNING:Xst:737 - Found 1-bit latch for signal <vram_wr_en>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-    Found 1-bit tristate buffer for signal <M_direction_lut_dir_state<0>> created at line 233
+    Found 1-bit tristate buffer for signal <M_direction_lut_dir_state<0>> created at line 228
 WARNING:Xst:737 - Found 1-bit latch for signal <ram_wr_en>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <ram_wr_data<15>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <ram_wr_data<14>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
@@ -495,56 +495,56 @@ WARNING:Xst:737 - Found 1-bit latch for signal <dividend<2>>. Latches may be gen
 WARNING:Xst:737 - Found 1-bit latch for signal <dividend<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <dividend<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <M_state_q[4]_M_state_q[4]_DLATCH_1_q>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-    Found 12-bit comparator greater for signal <M_vram_refresh_ctr_q[11]_PWR_10_o_LessThan_1138_o> created at line 361
-    Found 12-bit comparator greater for signal <GND_10_o_M_vram_refresh_ctr_q[11]_LessThan_1151_o> created at line 381
-    Found 12-bit comparator greater for signal <M_vram_refresh_ctr_q[11]_GND_10_o_LessThan_1152_o> created at line 381
-    Found 12-bit comparator greater for signal <PWR_10_o_M_vram_refresh_ctr_q[11]_LessThan_1153_o> created at line 384
-    Found 12-bit comparator greater for signal <M_vram_refresh_ctr_q[11]_PWR_10_o_LessThan_1154_o> created at line 384
-    Found 12-bit comparator lessequal for signal <n1135> created at line 387
-    Found 12-bit comparator lessequal for signal <n1137> created at line 387
-    Found 12-bit comparator lessequal for signal <n1143> created at line 390
-    Found 12-bit comparator lessequal for signal <n1145> created at line 390
-    Found 12-bit comparator lessequal for signal <n1153> created at line 393
-    Found 12-bit comparator lessequal for signal <n1155> created at line 393
-    Found 12-bit comparator lessequal for signal <n1161> created at line 396
-    Found 12-bit comparator lessequal for signal <n1163> created at line 396
-    Found 12-bit comparator lessequal for signal <n1169> created at line 399
-    Found 12-bit comparator lessequal for signal <n1171> created at line 399
-    Found 12-bit comparator lessequal for signal <n1177> created at line 402
-    Found 12-bit comparator lessequal for signal <n1179> created at line 402
-    Found 12-bit comparator lessequal for signal <n1185> created at line 405
-    Found 12-bit comparator lessequal for signal <n1187> created at line 405
-    Found 12-bit comparator lessequal for signal <n1193> created at line 408
-    Found 12-bit comparator lessequal for signal <n1195> created at line 408
-    Found 12-bit comparator lessequal for signal <n1201> created at line 411
-    Found 12-bit comparator lessequal for signal <n1203> created at line 411
-    Found 12-bit comparator lessequal for signal <n1209> created at line 414
-    Found 12-bit comparator lessequal for signal <n1211> created at line 414
-    Found 12-bit comparator lessequal for signal <n1217> created at line 417
-    Found 12-bit comparator lessequal for signal <n1219> created at line 417
-    Found 12-bit comparator lessequal for signal <n1225> created at line 420
-    Found 12-bit comparator lessequal for signal <n1227> created at line 420
-    Found 12-bit comparator greater for signal <GND_10_o_M_vram_refresh_ctr_q[11]_LessThan_1220_o> created at line 423
-    Found 12-bit comparator greater for signal <M_vram_refresh_ctr_q[11]_GND_10_o_LessThan_1224_o> created at line 423
-    Found 10-bit comparator greater for signal <PWR_10_o_M_random_num_q[9]_LessThan_1255_o> created at line 461
-    Found 12-bit comparator greater for signal <M_vram_refresh_ctr_q[11]_GND_10_o_LessThan_1609_o> created at line 831
-    Found 12-bit comparator greater for signal <M_vram_refresh_ctr_q[11]_GND_10_o_LessThan_1610_o> created at line 832
-    Found 32-bit comparator greater for signal <GND_10_o_M_score_q[31]_LessThan_1632_o> created at line 847
-    Found 32-bit comparator greater for signal <n1657> created at line 847
-    Found 32-bit comparator equal for signal <GND_10_o_M_r4_q[31]_equal_1653_o> created at line 893
-    Found 10-bit comparator greater for signal <PWR_10_o_ram_addr[9]_LessThan_1674_o> created at line 924
-    Found 10-bit comparator greater for signal <n1712> created at line 959
-    Found 10-bit comparator greater for signal <n1716> created at line 964
-    Found 10-bit comparator greater for signal <n1718> created at line 964
-    Found 32-bit comparator greater for signal <n1829> created at line 1074
+    Found 12-bit comparator greater for signal <M_vram_refresh_ctr_q[11]_PWR_10_o_LessThan_746_o> created at line 347
+    Found 12-bit comparator greater for signal <GND_10_o_M_vram_refresh_ctr_q[11]_LessThan_759_o> created at line 367
+    Found 12-bit comparator greater for signal <M_vram_refresh_ctr_q[11]_GND_10_o_LessThan_760_o> created at line 367
+    Found 12-bit comparator greater for signal <PWR_10_o_M_vram_refresh_ctr_q[11]_LessThan_761_o> created at line 370
+    Found 12-bit comparator greater for signal <M_vram_refresh_ctr_q[11]_PWR_10_o_LessThan_762_o> created at line 370
+    Found 12-bit comparator lessequal for signal <n0751> created at line 373
+    Found 12-bit comparator lessequal for signal <n0753> created at line 373
+    Found 12-bit comparator lessequal for signal <n0759> created at line 376
+    Found 12-bit comparator lessequal for signal <n0761> created at line 376
+    Found 12-bit comparator lessequal for signal <n0769> created at line 379
+    Found 12-bit comparator lessequal for signal <n0771> created at line 379
+    Found 12-bit comparator lessequal for signal <n0777> created at line 382
+    Found 12-bit comparator lessequal for signal <n0779> created at line 382
+    Found 12-bit comparator lessequal for signal <n0785> created at line 385
+    Found 12-bit comparator lessequal for signal <n0787> created at line 385
+    Found 12-bit comparator lessequal for signal <n0793> created at line 388
+    Found 12-bit comparator lessequal for signal <n0795> created at line 388
+    Found 12-bit comparator lessequal for signal <n0801> created at line 391
+    Found 12-bit comparator lessequal for signal <n0803> created at line 391
+    Found 12-bit comparator lessequal for signal <n0809> created at line 394
+    Found 12-bit comparator lessequal for signal <n0811> created at line 394
+    Found 12-bit comparator lessequal for signal <n0817> created at line 397
+    Found 12-bit comparator lessequal for signal <n0819> created at line 397
+    Found 12-bit comparator lessequal for signal <n0825> created at line 400
+    Found 12-bit comparator lessequal for signal <n0827> created at line 400
+    Found 12-bit comparator lessequal for signal <n0833> created at line 403
+    Found 12-bit comparator lessequal for signal <n0835> created at line 403
+    Found 12-bit comparator lessequal for signal <n0841> created at line 406
+    Found 12-bit comparator lessequal for signal <n0843> created at line 406
+    Found 12-bit comparator greater for signal <GND_10_o_M_vram_refresh_ctr_q[11]_LessThan_828_o> created at line 409
+    Found 12-bit comparator greater for signal <M_vram_refresh_ctr_q[11]_GND_10_o_LessThan_832_o> created at line 409
+    Found 10-bit comparator greater for signal <PWR_10_o_M_random_num_q[9]_LessThan_863_o> created at line 447
+    Found 12-bit comparator greater for signal <M_vram_refresh_ctr_q[11]_GND_10_o_LessThan_1118_o> created at line 715
+    Found 12-bit comparator greater for signal <M_vram_refresh_ctr_q[11]_GND_10_o_LessThan_1119_o> created at line 716
+    Found 32-bit comparator greater for signal <GND_10_o_M_score_q[31]_LessThan_1141_o> created at line 731
+    Found 32-bit comparator greater for signal <n1177> created at line 731
+    Found 32-bit comparator equal for signal <GND_10_o_M_r4_q[31]_equal_1162_o> created at line 777
+    Found 10-bit comparator greater for signal <PWR_10_o_ram_addr[9]_LessThan_1183_o> created at line 808
+    Found 10-bit comparator greater for signal <n1232> created at line 843
+    Found 10-bit comparator greater for signal <n1236> created at line 848
+    Found 10-bit comparator greater for signal <n1238> created at line 848
+    Found 32-bit comparator greater for signal <n1349> created at line 955
     Summary:
 	inferred   1 RAM(s).
 	inferred   2 Multiplier(s).
 	inferred  46 Adder/Subtractor(s).
-	inferred 545 D-type flip-flop(s).
+	inferred 449 D-type flip-flop(s).
 	inferred  90 Latch(s).
 	inferred  42 Comparator(s).
-	inferred 1687 Multiplexer(s).
+	inferred 1207 Multiplexer(s).
 	inferred  16 Combinational logic shifter(s).
 	inferred  46 Tristate(s).
 	inferred   3 Finite State Machine(s).
@@ -900,10 +900,10 @@ Macro Statistics
  10-bit register                                       : 4
  12-bit register                                       : 1
  16-bit register                                       : 9
+ 160-bit register                                      : 1
  2-bit register                                        : 4
  20-bit register                                       : 4
  25-bit register                                       : 1
- 256-bit register                                      : 1
  32-bit register                                       : 7
  4-bit register                                        : 2
  8-bit register                                        : 2
@@ -925,7 +925,7 @@ Macro Statistics
  27-bit comparator greater                             : 160
  32-bit comparator equal                               : 1
  32-bit comparator greater                             : 3
-# Multiplexers                                         : 2642
+# Multiplexers                                         : 2162
  1-bit 2-to-1 multiplexer                              : 1068
  1-bit 4-to-1 multiplexer                              : 1
  10-bit 2-to-1 multiplexer                             : 24
@@ -934,7 +934,7 @@ Macro Statistics
  13-bit 2-to-1 multiplexer                             : 9
  14-bit 2-to-1 multiplexer                             : 9
  15-bit 2-to-1 multiplexer                             : 9
- 16-bit 2-to-1 multiplexer                             : 1248
+ 16-bit 2-to-1 multiplexer                             : 768
  16-bit 4-to-1 multiplexer                             : 3
  2-bit 2-to-1 multiplexer                              : 9
  25-bit 2-to-1 multiplexer                             : 4
@@ -952,8 +952,8 @@ Macro Statistics
  16-bit shifter arithmetic right                       : 1
  16-bit shifter logical left                           : 1
  16-bit shifter logical right                          : 1
+ 319-bit shifter logical right                         : 1
  32767-bit shifter logical right                       : 2
- 511-bit shifter logical right                         : 1
  63-bit shifter logical right                          : 3
 # Tristates                                            : 52
  1-bit tristate buffer                                 : 52
@@ -1040,11 +1040,11 @@ Unit <simple_ram_7> synthesized (advanced).
 
 Synthesizing (advanced) Unit <snake_fsm_4>.
 The following registers are absorbed into counter <M_ram_clear_counter_q>: 1 register on signal <M_ram_clear_counter_q>.
-	Multiplier <Mmult_n3610> in block <snake_fsm_4> and adder/subtractor <Msub_M_vram_refresh_ctr_q[11]_PWR_10_o_sub_1219_OUT> in block <snake_fsm_4> are combined into a MAC<Maddsub_n3610>.
+	Multiplier <Mmult_n2745> in block <snake_fsm_4> and adder/subtractor <Msub_M_vram_refresh_ctr_q[11]_PWR_10_o_sub_827_OUT> in block <snake_fsm_4> are combined into a MAC<Maddsub_n2745>.
 	The following registers are also absorbed by the MAC: <M_vram_refresh_ctr_q> in block <snake_fsm_4>.
-	Multiplier <Mmult_n3983> in block <snake_fsm_4> and adder/subtractor <Msub_M_head_address_q[9]_PWR_10_o_sub_1706_OUT> in block <snake_fsm_4> are combined into a MAC<Maddsub_n3983>.
+	Multiplier <Mmult_n3023> in block <snake_fsm_4> and adder/subtractor <Msub_M_head_address_q[9]_PWR_10_o_sub_1215_OUT> in block <snake_fsm_4> are combined into a MAC<Maddsub_n3023>.
 	The following registers are also absorbed by the MAC: <M_head_address_q> in block <snake_fsm_4>.
-INFO:Xst:3231 - The small RAM <Mram__n6364> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+INFO:Xst:3231 - The small RAM <Mram__n4911> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
     -----------------------------------------------------------------------
     | ram_type           | Distributed                         |          |
     -----------------------------------------------------------------------
@@ -1093,13 +1093,12 @@ Macro Statistics
  4-bit subtractor                                      : 12
  5-bit adder                                           : 3
  7-bit adder                                           : 12
- 8-bit adder                                           : 1
- 9-bit adder                                           : 1
+ 8-bit adder                                           : 2
 # Counters                                             : 7
  10-bit up counter                                     : 3
  20-bit up counter                                     : 4
-# Registers                                            : 679
- Flip-Flops                                            : 679
+# Registers                                            : 583
+ Flip-Flops                                            : 583
 # Comparators                                          : 232
  10-bit comparator greater                             : 8
  10-bit comparator lessequal                           : 8
@@ -1116,7 +1115,7 @@ Macro Statistics
  27-bit comparator greater                             : 160
  32-bit comparator equal                               : 1
  32-bit comparator greater                             : 3
-# Multiplexers                                         : 2650
+# Multiplexers                                         : 2170
  1-bit 2-to-1 multiplexer                              : 1077
  1-bit 4-to-1 multiplexer                              : 1
  10-bit 2-to-1 multiplexer                             : 23
@@ -1125,7 +1124,7 @@ Macro Statistics
  13-bit 2-to-1 multiplexer                             : 9
  14-bit 2-to-1 multiplexer                             : 9
  15-bit 2-to-1 multiplexer                             : 9
- 16-bit 2-to-1 multiplexer                             : 1248
+ 16-bit 2-to-1 multiplexer                             : 768
  16-bit 4-to-1 multiplexer                             : 3
  2-bit 2-to-1 multiplexer                              : 9
  25-bit 2-to-1 multiplexer                             : 4
@@ -1143,8 +1142,8 @@ Macro Statistics
  16-bit shifter arithmetic right                       : 1
  16-bit shifter logical left                           : 1
  16-bit shifter logical right                          : 1
+ 319-bit shifter logical right                         : 1
  32767-bit shifter logical right                       : 2
- 511-bit shifter logical right                         : 1
  63-bit shifter logical right                          : 3
 # FSMs                                                 : 3
 # Xors                                                 : 5
@@ -1178,11 +1177,11 @@ WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_r4_q_2> has a con
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_r4_q_1> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_r4_q_0> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
 INFO:Xst:2261 - The FF/Latch <M_r4_q_5> in Unit <snake_fsm_4> is equivalent to the following 2 FFs/Latches, which will be removed : <M_r4_q_10> <M_r4_q_13> 
+INFO:Xst:2261 - The FF/Latch <M_r4_q_11> in Unit <snake_fsm_4> is equivalent to the following FF/Latch, which will be removed : <M_r4_q_19> 
 INFO:Xst:2261 - The FF/Latch <M_r4_q_16> in Unit <snake_fsm_4> is equivalent to the following FF/Latch, which will be removed : <M_r4_q_20> 
 INFO:Xst:2261 - The FF/Latch <M_r4_q_8> in Unit <snake_fsm_4> is equivalent to the following 2 FFs/Latches, which will be removed : <M_r4_q_18> <M_r4_q_21> 
-INFO:Xst:2261 - The FF/Latch <M_r4_q_4> in Unit <snake_fsm_4> is equivalent to the following 3 FFs/Latches, which will be removed : <M_r4_q_6> <M_r4_q_9> <M_r4_q_12> 
-INFO:Xst:2261 - The FF/Latch <M_r4_q_11> in Unit <snake_fsm_4> is equivalent to the following FF/Latch, which will be removed : <M_r4_q_19> 
 INFO:Xst:2261 - The FF/Latch <M_r4_q_7> in Unit <snake_fsm_4> is equivalent to the following FF/Latch, which will be removed : <M_r4_q_17> 
+INFO:Xst:2261 - The FF/Latch <M_r4_q_4> in Unit <snake_fsm_4> is equivalent to the following 3 FFs/Latches, which will be removed : <M_r4_q_6> <M_r4_q_9> <M_r4_q_12> 
 Analyzing FSM <MFsm> for best encoding.
 Optimizing FSM <snake/FSM_1> on signal <M_calc_counter_q[1:5]> with user encoding.
 -------------------
@@ -1241,18 +1240,18 @@ Optimizing FSM <snake/FSM_0> on signal <M_keep_length_counter_q[1:3]> with user 
 WARNING:Xst:1710 - FF/Latch <ram_wr_data_11> (without init value) has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <vram_wr_data_14> (without init value) has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <vram_wr_data_12> (without init value) has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:2677 - Node <M_previous_head_q_10> of sequential type is unconnected in block <snake_fsm_4>.
-WARNING:Xst:2677 - Node <M_previous_head_q_11> of sequential type is unconnected in block <snake_fsm_4>.
-WARNING:Xst:2677 - Node <M_previous_head_q_12> of sequential type is unconnected in block <snake_fsm_4>.
-WARNING:Xst:2677 - Node <M_previous_head_q_13> of sequential type is unconnected in block <snake_fsm_4>.
-WARNING:Xst:2677 - Node <M_previous_head_q_14> of sequential type is unconnected in block <snake_fsm_4>.
-WARNING:Xst:2677 - Node <M_previous_head_q_15> of sequential type is unconnected in block <snake_fsm_4>.
 WARNING:Xst:2677 - Node <M_tail_address_q_10> of sequential type is unconnected in block <snake_fsm_4>.
 WARNING:Xst:2677 - Node <M_tail_address_q_11> of sequential type is unconnected in block <snake_fsm_4>.
 WARNING:Xst:2677 - Node <M_tail_address_q_12> of sequential type is unconnected in block <snake_fsm_4>.
 WARNING:Xst:2677 - Node <M_tail_address_q_13> of sequential type is unconnected in block <snake_fsm_4>.
 WARNING:Xst:2677 - Node <M_tail_address_q_14> of sequential type is unconnected in block <snake_fsm_4>.
 WARNING:Xst:2677 - Node <M_tail_address_q_15> of sequential type is unconnected in block <snake_fsm_4>.
+WARNING:Xst:2677 - Node <M_previous_head_q_10> of sequential type is unconnected in block <snake_fsm_4>.
+WARNING:Xst:2677 - Node <M_previous_head_q_11> of sequential type is unconnected in block <snake_fsm_4>.
+WARNING:Xst:2677 - Node <M_previous_head_q_12> of sequential type is unconnected in block <snake_fsm_4>.
+WARNING:Xst:2677 - Node <M_previous_head_q_13> of sequential type is unconnected in block <snake_fsm_4>.
+WARNING:Xst:2677 - Node <M_previous_head_q_14> of sequential type is unconnected in block <snake_fsm_4>.
+WARNING:Xst:2677 - Node <M_previous_head_q_15> of sequential type is unconnected in block <snake_fsm_4>.
 WARNING:Xst:2677 - Node <M_direction_q_4> of sequential type is unconnected in block <snake_fsm_4>.
 WARNING:Xst:2677 - Node <M_direction_q_5> of sequential type is unconnected in block <snake_fsm_4>.
 WARNING:Xst:2677 - Node <M_direction_q_6> of sequential type is unconnected in block <snake_fsm_4>.
@@ -1295,24 +1294,6 @@ WARNING:Xst:2677 - Node <M_vram_temp_reg_q_141> of sequential type is unconnecte
 WARNING:Xst:2677 - Node <M_vram_temp_reg_q_155> of sequential type is unconnected in block <snake_fsm_4>.
 WARNING:Xst:2677 - Node <M_vram_temp_reg_q_156> of sequential type is unconnected in block <snake_fsm_4>.
 WARNING:Xst:2677 - Node <M_vram_temp_reg_q_157> of sequential type is unconnected in block <snake_fsm_4>.
-WARNING:Xst:2677 - Node <M_vram_temp_reg_q_171> of sequential type is unconnected in block <snake_fsm_4>.
-WARNING:Xst:2677 - Node <M_vram_temp_reg_q_172> of sequential type is unconnected in block <snake_fsm_4>.
-WARNING:Xst:2677 - Node <M_vram_temp_reg_q_173> of sequential type is unconnected in block <snake_fsm_4>.
-WARNING:Xst:2677 - Node <M_vram_temp_reg_q_187> of sequential type is unconnected in block <snake_fsm_4>.
-WARNING:Xst:2677 - Node <M_vram_temp_reg_q_188> of sequential type is unconnected in block <snake_fsm_4>.
-WARNING:Xst:2677 - Node <M_vram_temp_reg_q_189> of sequential type is unconnected in block <snake_fsm_4>.
-WARNING:Xst:2677 - Node <M_vram_temp_reg_q_203> of sequential type is unconnected in block <snake_fsm_4>.
-WARNING:Xst:2677 - Node <M_vram_temp_reg_q_204> of sequential type is unconnected in block <snake_fsm_4>.
-WARNING:Xst:2677 - Node <M_vram_temp_reg_q_205> of sequential type is unconnected in block <snake_fsm_4>.
-WARNING:Xst:2677 - Node <M_vram_temp_reg_q_219> of sequential type is unconnected in block <snake_fsm_4>.
-WARNING:Xst:2677 - Node <M_vram_temp_reg_q_220> of sequential type is unconnected in block <snake_fsm_4>.
-WARNING:Xst:2677 - Node <M_vram_temp_reg_q_221> of sequential type is unconnected in block <snake_fsm_4>.
-WARNING:Xst:2677 - Node <M_vram_temp_reg_q_235> of sequential type is unconnected in block <snake_fsm_4>.
-WARNING:Xst:2677 - Node <M_vram_temp_reg_q_236> of sequential type is unconnected in block <snake_fsm_4>.
-WARNING:Xst:2677 - Node <M_vram_temp_reg_q_237> of sequential type is unconnected in block <snake_fsm_4>.
-WARNING:Xst:2677 - Node <M_vram_temp_reg_q_251> of sequential type is unconnected in block <snake_fsm_4>.
-WARNING:Xst:2677 - Node <M_vram_temp_reg_q_252> of sequential type is unconnected in block <snake_fsm_4>.
-WARNING:Xst:2677 - Node <M_vram_temp_reg_q_253> of sequential type is unconnected in block <snake_fsm_4>.
 INFO:Xst:2261 - The FF/Latch <M_debugreg_q_5> in Unit <snake_fsm_4> is equivalent to the following FF/Latch, which will be removed : <M_debugreg_q_7> 
 INFO:Xst:2261 - The FF/Latch <ram_wr_data_13> in Unit <snake_fsm_4> is equivalent to the following FF/Latch, which will be removed : <ram_wr_data_12> 
 INFO:Xst:2261 - The FF/Latch <M_debugreg_q_4> in Unit <snake_fsm_4> is equivalent to the following FF/Latch, which will be removed : <M_debugreg_q_6> 
@@ -1323,96 +1304,57 @@ Optimizing unit <mojo_top_0> ...
 
 Optimizing unit <snake_fsm_4> ...
 WARNING:Xst:1293 - FF/Latch <M_vram_temp_reg_q_153> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_164> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_165> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_169> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_180> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_181> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_185> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_196> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_197> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_201> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_212> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_213> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_217> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_228> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_229> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_233> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_244> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_245> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_249> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_score_q_0> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_36> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_37> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_41> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_52> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_53> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_57> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_68> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_69> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_73> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_84> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_85> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_89> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_100> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_101> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_105> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_116> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_117> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_121> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_148> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_149> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_148> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_145> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_121> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_117> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_116> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_105> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_101> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_100> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_97> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_89> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_85> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_84> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_81> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_73> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_69> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_68> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_57> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_53> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_52> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_41> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_37> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_36> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_score_q_0> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_highscore_q_0> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <M_vram_temp_reg_q_32> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_64> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_96> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <M_vram_temp_reg_q_153> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_164> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_165> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_169> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_180> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_181> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_185> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_196> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_197> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_201> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_212> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_213> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_217> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_228> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_229> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_233> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_244> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_245> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_249> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_score_q_0> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_36> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_37> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_41> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_52> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_53> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_57> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_68> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_69> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_73> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_84> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_85> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_89> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_100> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_101> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_105> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_116> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_117> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_121> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_148> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_149> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_148> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_145> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_121> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_117> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_116> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_105> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_101> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_100> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_97> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_89> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_85> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_84> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_81> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_73> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_69> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_68> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_57> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_53> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_52> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_41> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_37> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_36> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_score_q_0> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_highscore_q_0> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <M_vram_temp_reg_q_32> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_64> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_96> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_160> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_192> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_vram_temp_reg_q_224> has a constant value of 0 in block <snake_fsm_4>. This FF/Latch will be trimmed during the optimization process.
 
 Optimizing unit <pn_gen_8> ...
 
@@ -1423,115 +1365,58 @@ Optimizing unit <div_10u_6u> ...
 Optimizing unit <bin_to_dec_9> ...
 
 Optimizing unit <vga_cga_5> ...
-WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_104> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_106> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_110> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_111> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_112> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_113> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_114> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_115> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_118> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_119> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_120> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_122> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_126> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_127> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_143> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_144> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_145> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_146> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_147> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_150> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_151> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_152> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_154> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_158> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_159> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_161> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_162> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_34> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_49> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_50> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_65> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_66> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_67> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_70> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_71> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_72> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_74> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_78> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_79> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_80> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_81> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_82> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_83> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_86> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_87> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_88> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_90> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_94> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_95> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_97> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_98> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_99> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_102> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_98> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_96> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_95> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_94> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_90> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_88> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_87> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_86> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_83> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_82> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_80> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_79> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_78> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_74> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_72> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_71> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_70> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_67> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_66> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_65> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_64> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_50> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_49> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_34> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_32> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_159> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_158> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_154> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_152> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_151> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_150> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_147> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_146> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_144> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_143> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_127> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_126> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_122> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_120> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_119> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_118> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_115> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_114> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_113> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_112> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_111> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_110> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_106> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_104> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_103> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_210> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_211> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_214> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_215> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_216> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_218> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_222> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_223> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_225> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_226> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_227> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_230> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_231> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_232> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_234> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_238> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_239> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_240> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_241> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_242> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_243> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_246> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_247> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_248> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_250> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_254> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_255> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_163> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_166> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_167> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_168> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_170> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_174> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_175> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_176> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_177> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_178> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_179> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_182> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_183> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_184> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_186> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_190> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_191> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_193> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_194> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_195> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_198> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_199> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_200> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_202> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_206> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_207> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_208> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_209> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <snake/M_vram_temp_reg_q_102> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
 INFO:Xst:2261 - The FF/Latch <snake/M_vram_temp_reg_q_31> in Unit <mojo_top_0> is equivalent to the following FF/Latch, which will be removed : <snake/M_vram_temp_reg_q_30> 
 INFO:Xst:2261 - The FF/Latch <snake/M_vram_temp_reg_q_47> in Unit <mojo_top_0> is equivalent to the following 7 FFs/Latches, which will be removed : <snake/M_vram_temp_reg_q_46> <snake/M_vram_temp_reg_q_42> <snake/M_vram_temp_reg_q_40> <snake/M_vram_temp_reg_q_39> <snake/M_vram_temp_reg_q_38> <snake/M_vram_temp_reg_q_35> <snake/M_vram_temp_reg_q_33> 
 INFO:Xst:2261 - The FF/Latch <snake/M_vram_temp_reg_q_63> in Unit <mojo_top_0> is equivalent to the following 7 FFs/Latches, which will be removed : <snake/M_vram_temp_reg_q_62> <snake/M_vram_temp_reg_q_58> <snake/M_vram_temp_reg_q_56> <snake/M_vram_temp_reg_q_55> <snake/M_vram_temp_reg_q_54> <snake/M_vram_temp_reg_q_51> <snake/M_vram_temp_reg_q_48> 
@@ -1541,6 +1426,32 @@ Mapping all equations...
 Building and optimizing final netlist ...
 Found area constraint ratio of 100 (+ 0) on block mojo_top_0, actual ratio is 110.
 Optimizing block <mojo_top_0> to meet ratio 100 (+ 0) of 1430 slices :
+WARNING:Xst:2254 - Area constraint could not be met for block <mojo_top_0>, final ratio is 109.
+FlipFlop snake/M_calc_counter_q_FSM_FFd2 has been replicated 1 time(s)
+FlipFlop snake/M_head_address_q_15 has been replicated 1 time(s)
+FlipFlop snake/M_head_address_q_4 has been replicated 3 time(s)
+FlipFlop snake/M_head_address_q_6 has been replicated 1 time(s)
+FlipFlop snake/M_head_address_q_7 has been replicated 1 time(s)
+FlipFlop snake/M_head_address_q_8 has been replicated 1 time(s)
+FlipFlop snake/M_head_address_q_9 has been replicated 1 time(s)
+FlipFlop snake/M_ram_write_counter_q_0 has been replicated 2 time(s)
+FlipFlop snake/M_ram_write_counter_q_1 has been replicated 1 time(s)
+FlipFlop snake/M_ram_write_counter_q_2 has been replicated 1 time(s)
+FlipFlop snake/M_ram_write_counter_q_3 has been replicated 1 time(s)
+FlipFlop snake/M_state_q_FSM_FFd1 has been replicated 1 time(s)
+FlipFlop snake/M_state_q_FSM_FFd10 has been replicated 1 time(s)
+FlipFlop snake/M_state_q_FSM_FFd11 has been replicated 2 time(s)
+FlipFlop snake/M_state_q_FSM_FFd12 has been replicated 1 time(s)
+FlipFlop snake/M_state_q_FSM_FFd13 has been replicated 1 time(s)
+FlipFlop snake/M_state_q_FSM_FFd14 has been replicated 1 time(s)
+FlipFlop snake/M_state_q_FSM_FFd2 has been replicated 1 time(s)
+FlipFlop snake/M_state_q_FSM_FFd3 has been replicated 1 time(s)
+FlipFlop snake/M_state_q_FSM_FFd4 has been replicated 1 time(s)
+FlipFlop snake/M_state_q_FSM_FFd5 has been replicated 2 time(s)
+FlipFlop snake/M_state_q_FSM_FFd6 has been replicated 1 time(s)
+FlipFlop snake/M_state_q_FSM_FFd7 has been replicated 1 time(s)
+FlipFlop snake/M_state_q_FSM_FFd8 has been replicated 1 time(s)
+FlipFlop snake/M_state_q_FSM_FFd9 has been replicated 1 time(s)
 
 Final Macro Processing ...
 
@@ -1556,8 +1467,8 @@ Unit <mojo_top_0> processed.
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 531
- Flip-Flops                                            : 531
+# Registers                                            : 561
+ Flip-Flops                                            : 561
 # Shift Registers                                      : 4
  2-bit shift register                                  : 4
 
@@ -1580,20 +1491,20 @@ Partition Implementation Status
 
 Clock Information:
 ------------------
------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------+-------+
-Clock Signal                                                                                                     | Clock buffer(FF name)                               | Load  |
------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------+-------+
-clk                                                                                                              | DCM_SP:CLKDV                                        | 813   |
-snake/_n6345(snake/_n63451:O)                                                                                    | NONE(*)(snake/mul_a_0)                              | 12    |
-snake/_n6557(snake/M_state_q__n65571:O)                                                                          | NONE(*)(snake/dividend_0)                           | 10    |
-snake/_n6352(snake/_n63521:O)                                                                                    | NONE(*)(snake/M_state_q[4]_M_state_q[4]_DLATCH_15_q)| 9     |
-snake/M_state_q[4]_M_vram_refresh_q_Select_2296_o(snake/M_state_q_M_state_q[4]_M_vram_refresh_q_Select_2296_o1:O)| BUFG(*)(snake/vram_wr_data_0)                       | 25    |
-snake/M_state_q[4]_PWR_135_o_Select_2086_o(snake/M_state_q_M_state_q[4]_PWR_135_o_Select_2086_o1:O)              | NONE(*)(snake/ram_wr_en)                            | 1     |
-snake/M_state_q[4]_PWR_131_o_Select_2078_o(snake/M_state_q_M_state_q[4]_PWR_131_o_Select_2078_o1:O)              | NONE(*)(snake/vram_wr_en)                           | 1     |
-snake/M_state_q[4]_PWR_203_o_Select_2222_o(snake/M_state_q_M_state_q[4]_PWR_203_o_Select_2222_o3:O)              | NONE(*)(snake/ram_addr_0)                           | 10    |
-snake/M_state_q[4]_PWR_139_o_Select_2094_o(snake/M_state_q_M_state_q[4]_PWR_139_o_Select_2094_o:O)               | NONE(*)(snake/ram_wr_data_0)                        | 14    |
-vga/M_h_count_q[9]_GND_171_o_OR_421_o(vga/M_h_count_q[9]_GND_171_o_OR_421_o1:O)                                  | NONE(*)(vga/M_cga_color_lut_bright)                 | 4     |
------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------+-------+
+----------------------------------------------------------------------------------------------------------------+-----------------------------------------------------+-------+
+Clock Signal                                                                                                    | Clock buffer(FF name)                               | Load  |
+----------------------------------------------------------------------------------------------------------------+-----------------------------------------------------+-------+
+clk                                                                                                             | DCM_SP:CLKDV                                        | 843   |
+snake/_n4946(snake/_n49461:O)                                                                                   | NONE(*)(snake/mul_a_0)                              | 12    |
+snake/_n5103(snake/M_state_q__n51031:O)                                                                         | NONE(*)(snake/dividend_1)                           | 10    |
+snake/_n5102(snake/_n51021:O)                                                                                   | NONE(*)(snake/M_state_q[4]_M_state_q[4]_DLATCH_15_q)| 9     |
+snake/M_state_q[4]_M_vram_refresh_q_Select_1797_o(snake/M_state_q_M_state_q[4]_M_vram_refresh_q_Select_1797_o:O)| BUFG(*)(snake/vram_wr_data_1)                       | 25    |
+snake/M_state_q[4]_PWR_131_o_Select_1579_o(snake/M_state_q_M_state_q[4]_PWR_131_o_Select_1579_o1:O)             | NONE(*)(snake/vram_wr_en)                           | 1     |
+snake/M_state_q[4]_PWR_203_o_Select_1723_o(snake/M_state_q_M_state_q[4]_PWR_203_o_Select_1723_o3:O)             | NONE(*)(snake/ram_addr_0)                           | 10    |
+snake/M_state_q[4]_PWR_139_o_Select_1595_o(snake/M_state_q_M_state_q[4]_PWR_139_o_Select_1595_o:O)              | NONE(*)(snake/ram_wr_data_0)                        | 14    |
+snake/M_state_q[4]_PWR_135_o_Select_1587_o(snake/M_state_q_M_state_q[4]_PWR_135_o_Select_1587_o1:O)             | NONE(*)(snake/ram_wr_en)                            | 1     |
+vga/M_h_count_q[9]_GND_171_o_OR_421_o(vga/M_h_count_q[9]_GND_171_o_OR_421_o1:O)                                 | NONE(*)(vga/M_cga_color_lut_bright)                 | 4     |
+----------------------------------------------------------------------------------------------------------------+-----------------------------------------------------+-------+
 (*) These 9 clock signal(s) are generated by combinatorial logic,
 and XST is not able to identify which are the primary clock signals.
 Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
@@ -1607,7 +1518,7 @@ Timing Summary:
 ---------------
 Speed Grade: -2
 
-   Minimum period: 8.999ns (Maximum Frequency: 111.123MHz)
+   Minimum period: 7.375ns (Maximum Frequency: 135.593MHz)
    Minimum input arrival time before clock: 3.526ns
    Maximum output required time after clock: 10.960ns
    Maximum combinational path delay: No path found

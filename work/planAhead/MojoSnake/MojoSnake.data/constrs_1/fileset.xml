@@ -2,14 +2,6 @@
 <DARoots Version="1" Minor="26">
   <FileSet Name="constrs_1" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
     <Filter Type="Constrs"/>
-    <File Path="$PSRCDIR/constrs_1/imports/constraint/clk_divider.ucf">
-      <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../constraint/clk_divider.ucf"/>
-        <Attr Name="ImportTime" Val="1574690456"/>
-        <Attr Name="UsedInSynthesis" Val="1"/>
-        <Attr Name="UsedInImplementation" Val="1"/>
-      </FileInfo>
-    </File>
     <File Path="$PSRCDIR/constrs_1/imports/constraint/VGA.ucf">
       <FileInfo>
         <Attr Name="ImportPath" Val="$PPRDIR/../../../constraint/VGA.ucf"/>

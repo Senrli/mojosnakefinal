@@ -32,7 +32,6 @@
     <src>hex_add.luc</src>
     <component>edge_detector.luc</component>
     <src>hex_cmp.luc</src>
-    <constraint>clk_divider.ucf</constraint>
     <constraint>VGA.ucf</constraint>
     <constraint>keys.ucf</constraint>
     <constraint lib="true">mojo.ucf</constraint>
